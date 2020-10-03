@@ -1,0 +1,30 @@
+namespace = planet_attack
+
+planet_event = {
+	id = planet_attack.0
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				OR = {
+					is_planet_class = pc_arid
+					is_planet_class = pc_alpine
+					is_planet_class = pc_arctic
+					is_planet_class = pc_continental
+					is_planet_class = pc_desert
+					is_planet_class = pc_gaia
+					is_planet_class = pc_nuked
+					is_planet_class = pc_ocean
+					is_planet_class = pc_tropical
+					is_planet_class = pc_tundra
+				}
+			}
+			change_pc = pc_black_hole
+		}
+		else = {
+			change_pc = pc_gaia
+		}
+	}
+}

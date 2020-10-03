@@ -1,0 +1,622 @@
+#138炮
+weapon_component_template = {
+	key = "138.6cm_single_pack_laser_gun_1"
+	icon = GFX_138.6cm_single_pack_laser_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "blue_laser_s"
+	power = -30
+	prerequisites = { tech_138.6cm_single_pack_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			mind_club = 0.3
+		}
+	}
+	tags = { 
+		weapon_type_energy 
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 100
+		max = 100
+	}
+	windup = {
+		max = 20
+		min = 20
+	}
+	total_fire_time = 1
+
+	shield_damage = 1.5
+
+	armor_penetration = 0.3
+
+	range = 60
+	tracking = 0
+	accuracy = 0.8
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 152cm_trigeminy_pack_laser_gun_1
+	component_set = "138.6MM_SINGLE_PACK_LASER_GUN"
+}
+weapon_component_template = {
+	key = "138.6cm_single_pack_laser_gun_2"
+	icon = GFX_138.6cm_single_pack_laser_gun
+	icon_frame = 1
+	type = instant
+	size = medium
+	projectile_gfx = "blue_laser_m"
+	power = -50
+	prerequisites = { tech_138.6cm_single_pack_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_energy 
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 300
+		max = 300
+	}
+	windup = {
+		max = 20
+		min = 20
+	}
+	total_fire_time = 1
+
+	shield_damage = 1.5
+
+	armor_penetration = 0.3
+
+	range = 70
+	tracking = 0.3
+	accuracy = 0.8
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 152cm_trigeminy_pack_laser_gun_2
+	component_set = "138.6MM_SINGLE_PACK_LASER_GUN"
+}
+weapon_component_template = {
+	key = "138.6cm_single_pack_laser_gun_3"
+	icon = GFX_138.6cm_single_pack_laser_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "blue_laser_l"
+	power = -60
+	prerequisites = { tech_138.6cm_single_pack_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			mind_club = 0.5
+		}
+	}
+	tags = { 
+		weapon_type_energy 
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 400
+		max = 400
+	}
+	windup = {
+		max = 20
+		min = 20
+	}
+	total_fire_time = 2
+
+	shield_damage = 1.5
+
+	armor_penetration = 0.3
+
+	range = 80
+	tracking = 0.3
+	accuracy = 0.8
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 152cm_trigeminy_pack_laser_gun_3
+	component_set = "138.6MM_SINGLE_PACK_LASER_GUN"
+}
+###152 炮
+weapon_component_template = {
+	key = "152cm_trigeminy_pack_laser_gun_1"
+	icon = GFX_152cm_trigeminy_pack_laser_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "plasma_cannon_s"
+	power = -100
+	prerequisites = { tech_152cm_trigeminy_pack_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			mind_club = 0.3
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 360
+		max = 360
+	}
+	windup = {
+		max = 100
+		min = 40
+	}
+	total_fire_time = 1
+
+	armor_damage = 0.5
+
+	armor_penetration = 0.6
+
+	range = 70
+
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 203cm_trigeminy_pack_SKC_laser_gun_1
+	component_set = "152MM_TRIGEMINY_PACK_LASER_GUN"
+}
+weapon_component_template = {
+	key = "152cm_trigeminy_pack_laser_gun_2"
+	icon = GFX_152cm_trigeminy_pack_laser_gun
+	icon_frame = 1
+	type = instant
+	size = medium
+	projectile_gfx = "plasma_cannon_m"
+	power = -120
+	prerequisites = { tech_152cm_trigeminy_pack_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 360
+		max = 360
+	}
+	windup = {
+		max = 100
+		min = 20
+	}
+	total_fire_time = 2
+
+	armor_damage = 0.5
+
+	armor_penetration = 0.6
+
+	range = 80
+
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 203cm_trigeminy_pack_SKC_laser_gun_2
+	component_set = "152MM_TRIGEMINY_PACK_LASER_GUN"
+}
+weapon_component_template = {
+	key = "152cm_trigeminy_pack_laser_gun_3"
+	icon = GFX_152cm_trigeminy_pack_laser_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "plasma_cannon_l"
+	power = -160
+	prerequisites = { tech_152cm_trigeminy_pack_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			mind_club = 0.5
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 720
+		max = 720
+	}
+	windup = {
+		max = 100
+		min = 20
+	}
+	total_fire_time = 3
+
+	armor_damage = 0.5
+
+	armor_penetration = 0.6
+
+	range = 125
+
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 203cm_trigeminy_pack_SKC_laser_gun_3
+	component_set = "152MM_TRIGEMINY_PACK_LASER_GUN"
+}
+#203 炮
+weapon_component_template = {
+	key = "203cm_trigeminy_pack_SKC_laser_gun_1"
+	icon = GFX_203cm_trigeminy_pack_SKC_laser_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "arc_emitter"
+	power = -120
+	prerequisites = { tech_203cm_trigeminy_pack_SKC_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			mind_club = 0.2
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 450
+		max = 650
+	}
+	windup = {
+		max = 100
+		min = 60
+	}
+	total_fire_time = 1
+
+	armor_damage = 1
+
+	shield_penetration = 0.6
+
+	range = 80
+
+	accuracy = 0.9
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "203MM_TRIGEMINY_PACK_SKC_LASER_GUN"
+}
+weapon_component_template = {
+	key = "203cm_trigeminy_pack_SKC_laser_gun_2"
+	icon = GFX_203cm_trigeminy_pack_SKC_laser_gun
+	icon_frame = 1
+	type = instant
+	size = medium
+	projectile_gfx = "arc_emitter"
+	power = -160
+	prerequisites = { tech_203cm_trigeminy_pack_SKC_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 700
+		max = 900
+	}
+	windup = {
+		max = 100
+		min = 60
+	}
+	total_fire_time = 2
+
+	armor_damage = 1
+
+	shield_penetration = 0.6
+
+	range = 120
+
+	accuracy = 0.9
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "203MM_TRIGEMINY_PACK_SKC_LASER_GUN"
+}
+weapon_component_template = {
+	key = "203cm_trigeminy_pack_SKC_laser_gun_3"
+	icon = GFX_203cm_trigeminy_pack_SKC_laser_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "arc_emitter"
+	power = -200
+	prerequisites = { tech_203cm_trigeminy_pack_SKC_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			mind_club = 0.6
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 1000
+		max = 1200
+	}
+	windup = {
+		max = 100
+		min = 20
+	}
+	total_fire_time = 3
+
+	armor_damage = 0.5
+
+	armor_penetration = 0.6
+
+	range = 160
+
+	accuracy = 0.9
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "203MM_TRIGEMINY_PACK_SKC_LASER_GUN"
+}
+###406 50炮
+weapon_component_template = {
+	key = "406cm_trigeminy_pack_50_laser_gun_1"
+	icon = GFX_406cm_trigeminy_pack_50_laser_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "uv_laser_l"
+	power = -80
+	prerequisites = { tech_406cm_trigeminy_pack_50_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			mind_club = 1
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 600
+		max = 1000
+	}
+	windup = {
+		max = 50
+		min = 50
+	}
+	total_fire_time = 2
+
+	hull_damage = 1.5
+	shield_damage = 1.5
+
+	armor_penetration = 0.6
+
+	range = 150
+
+	tracking = 0.3
+	accuracy = 0.9
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 457cm_duplex_pack_MKA_laser_gun_1
+	component_set = "406MM_TRIGEMINY_PACK_50_LASER_GUN"
+}
+weapon_component_template = {
+	key = "406cm_trigeminy_pack_50_laser_gun_2"
+	icon = GFX_406cm_trigeminy_pack_50_laser_gun
+	icon_frame = 1
+	type = instant
+	size = extra_large
+	projectile_gfx = "uv_laser_l"
+	power = -100
+	prerequisites = { tech_406cm_trigeminy_pack_50_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			mind_club = 2
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 800
+		max = 1400
+	}
+	windup = {
+		max = 80
+		min = 60
+	}
+	total_fire_time = 2
+
+	hull_damage = 2
+	shield_damage = 2
+
+	armor_penetration = 1
+
+	range = 180
+	min_range = 50
+	firing_arc = 45
+
+	tracking = 0.2
+	accuracy = 0.8
+
+	use_ship_kill_target = no
+	static_rotation = yes
+	upgrades_to = 457cm_duplex_pack_MKA_laser_gun_1
+	component_set = "406MM_TRIGEMINY_PACK_50_LASER_GUN_X"
+}
+###457炮
+weapon_component_template = {
+	key = "457cm_duplex_pack_MKA_laser_gun_1"
+	icon = GFX_457cm_duplex_pack_MKA_laser_gun
+	icon_frame = 1
+	type = instant
+	size = extra_large
+	projectile_gfx = "adv_kinetic_artillery"
+	power = -160
+	prerequisites = { tech_457cm_duplex_pack_MKA_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 220
+			mind_club = 2.5
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 1000
+		max = 2000
+	}
+	windup = {
+		max = 40
+		min = 10
+	}
+	total_fire_time = 3
+
+	hull_damage = 2
+	armor_damage = 2
+
+	armor_penetration = 0.8
+	shield_penetration = 0.6
+
+	range = 240
+	min_range = 100
+	firing_arc = 30
+
+	tracking = 0.1
+	accuracy = 0.8
+
+	use_ship_kill_target = no
+	static_rotation = yes
+	component_set = "457MM_DUPLEX_PACK_MKA_LASER_GUN"
+}
+weapon_component_template = {
+	key = "457cm_duplex_pack_MKA_laser_gun_2"
+	icon = GFX_457cm_duplex_pack_MKA_laser_gun
+	icon_frame = 1
+	type = instant
+	size = titanic
+	projectile_gfx = "adv_kinetic_artillery"
+	power = -200
+	prerequisites = { tech_457cm_duplex_pack_MKA_laser_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+			mind_club = 3.0
+		}
+	}
+	tags = { 
+		weapon_type_energy
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 8000
+		max = 20000
+	}
+	windup = {
+		max = 20
+		min = 20
+	}
+	total_fire_time = 5
+
+	armor_damage = 3
+
+	armor_penetration = 0.8
+	shield_penetration = 1
+
+	range = 240
+	min_range = 120
+	firing_arc = 30
+
+	accuracy = 0.9
+
+	use_ship_kill_target = no
+	static_rotation = yes
+	component_set = "457MM_DUPLEX_PACK_MKA_LASER_GUN_T"
+}

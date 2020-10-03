@@ -1,0 +1,13 @@
+colorful_rubik's_cube_cooldown = {
+	icon = "gfx/interface/icons/modifiers/mod_relic_cooldown.dds"
+}
+colorful_rubik's_cube_charge = {
+	country_energy_produces_mult = -1
+}
+colorful_rubik's_cube_activate = {
+	planet_jobs_produces_mult = 0.5
+	
+}
+colorful_rubik's_cube_disturb = {
+	planet_jobs_produces_mult = -0.5
+}

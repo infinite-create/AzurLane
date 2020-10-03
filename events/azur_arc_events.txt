@@ -1,0 +1,79 @@
+namespace = azur_arc
+
+country_event = {
+	id = azur_arc.0
+	is_triggered_only = yes
+	title = azur_arc.0.name
+	desc = azur_arc.0.desc
+	picture = ""
+
+	option = {
+		name = azur_arc.0.aa
+	}
+}
+
+fleet_event = {
+	id = azur_arc.1
+	title = azur_arc.1.name
+	desc = azur_arc.1.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = ""
+
+	option = {
+		name = azur_arc.1.aa
+	}
+}
+fleet_event = {
+	id = azur_arc.2
+	title = azur_arc.2.name
+	desc = azur_arc.2.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = ""
+
+	option = {
+		name = azur_arc.2.aa
+	}
+}
+fleet_event = {
+	id = azur_arc.3
+	title = azur_arc.3.name
+	desc = azur_arc.3.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = ""
+
+	option = {
+		name = azur_arc.3.aa
+	}
+}
+fleet_event = {
+	id = azur_arc.4
+	title = azur_arc.4.name
+	desc = azur_arc.4.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = ""
+
+	option = {
+		name = azur_arc.4.aa
+	}
+}
+fleet_event = {
+	id = azur_arc.5
+	title = azur_arc.5.name
+	desc = azur_arc.5.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = ""
+
+	option = {
+		name = azur_arc.5.aa
+	}
+}

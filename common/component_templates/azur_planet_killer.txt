@@ -1,0 +1,20 @@
+weapon_component_template = {
+	key = "gaia_wave_gun"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+	windup = {
+		min = 100
+		max = 100
+	}
+	total_fire_time = 20
+
+	icon = GFX_gaia_wave_gun
+	icon_frame = 1
+
+	component_set = "GAIA_WAVE_GUN"
+	
+	prerequisites = { tech_gaia_wave_gun }
+	planet_destruction_gfx = "shatter_planet_gfx"
+}

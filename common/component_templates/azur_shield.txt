@@ -1,0 +1,194 @@
+utility_component_template = {
+	key = "mind_excursive_shield_1"
+	size = small
+	icon = GFX_mind_excursive_shield
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			mind_club = 1
+			alloys = 10
+		}
+		upkeep = {
+			mind_club = 0.1
+			alloys = 0.1
+		}
+	}
+	modifier = {
+		ship_shield_add = 300
+		ship_shield_regen_add_static = 10
+		ship_shield_regen_add_perc = 1
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_excursive_shield }
+	component_set = "MIND_EXCURSIVE_SHIELD"
+}
+utility_component_template = {
+	key = "mind_excursive_shield_2"
+	size = medium
+	icon = GFX_mind_excursive_shield
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			mind_club = 1
+			alloys = 20
+		}
+		upkeep = {
+			mind_club = 0.2
+			alloys = 0.3
+		}
+	}
+	modifier = {
+		ship_shield_add = 500
+		ship_shield_regen_add_static = 15
+		ship_shield_regen_add_perc = 2
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_excursive_shield }
+	component_set = "MIND_EXCURSIVE_SHIELD"
+}
+utility_component_template = {
+	key = "mind_excursive_shield_3"
+	size = large
+	icon = GFX_mind_excursive_shield
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			mind_club = 1.5
+			alloys = 30
+		}
+		upkeep = {
+			mind_club = 0.3
+			alloys = 0.3
+		}
+	}
+	modifier = {
+		ship_shield_add = 800
+		ship_shield_regen_add_static = 20
+		ship_shield_regen_add_perc = 3
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_excursive_shield }
+	component_set = "MIND_EXCURSIVE_SHIELD"
+}
+
+utility_component_template = {
+	key = "mind_distortion_shield_1"
+	size = small
+	icon = GFX_mind_distortion_shield
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			star_trek_armour = 1
+			alloys = 10
+		}
+	}
+	modifier = {
+		ship_shield_add = 500
+		ship_shield_regen_add_static = 20
+		ship_shield_regen_add_perc = 1
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_excursive_shield }
+	component_set = "MIND_DISTORTION_SHIELD"
+}
+utility_component_template = {
+	key = "mind_distortion_shield_2"
+	size = medium
+	icon = GFX_mind_distortion_shield
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			star_trek_armour = 1
+			alloys = 20
+		}
+	}
+	modifier = {
+		ship_shield_add = 800
+		ship_shield_regen_add_static = 25
+		ship_shield_regen_add_perc = 2
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_excursive_shield }
+	component_set = "MIND_DISTORTION_SHIELD"
+}
+utility_component_template = {
+	key = "mind_distortion_shield_3"
+	size = large
+	icon = GFX_mind_distortion_shield
+
+	icon_frame = 1
+	power = -60
+	resources = {
+		category = ship_components
+		cost = {
+			star_trek_armour = 1.5
+			alloys = 30
+		}
+	}
+	modifier = {
+		ship_shield_add = 1400
+		ship_shield_regen_add_static = 30
+		ship_shield_regen_add_perc = 3
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_excursive_shield }
+	component_set = "MIND_DISTORTION_SHIELD"
+}

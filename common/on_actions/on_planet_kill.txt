@@ -1,0 +1,5 @@
+on_destroy_planet_with_gaia_wave_gun = {
+	events = {
+		planet_attack.0
+	}
+}

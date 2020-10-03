@@ -1,0 +1,29 @@
+on_game_start = {
+	events = {
+		azur.1
+	}
+}
+
+on_game_start_country = {
+	events = {
+		#azur_count.0
+	}
+} 
+
+on_leader_spawned = {
+	events = {
+		azur.1001
+	}
+}
+
+on_leader_spawned = {
+	events = {
+		azur.1003
+	}
+}
+
+on_tech_increased = {
+	events = {
+		#azur_tech.0
+	}
+}

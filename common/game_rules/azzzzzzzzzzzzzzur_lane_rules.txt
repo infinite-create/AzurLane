@@ -1,0 +1,28 @@
+#物种可以组装
+can_species_be_assembled = {
+	is_sapient = yes
+	OR = {
+		AND = {
+			OR = {
+				has_trait = trait_machine_unit
+				has_trait = trait_mechanical
+			}
+			ROOT = { owner = { NOT = { has_authority = auth_azur_dictatorial } } }
+		}
+		#建造
+		AND = {
+			OR={
+				has_trait = trait_azur_a1
+				has_trait = trait_azurlanegirls
+			}
+			ROOT = { 
+				owner = { 
+					OR = { 
+						has_authority = auth_azur_dictatorial 
+						has_authority = auth_azur_lane_0
+					} 
+				}
+			}
+		}
+	}
+}

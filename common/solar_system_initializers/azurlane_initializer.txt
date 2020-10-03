@@ -1,0 +1,251 @@
+azur_1_system_initializer = {
+	name = "Azur Lane Core"
+	class = "sc_azur_star_1"
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	flags = {
+		empire_home_system
+		custom_system
+	}
+	usage = origin
+	planet = {
+		name = "NAME_a_star"
+		class = "pc_b_star"
+		orbit_distance = 15
+		orbit_angle = 90
+		size = 25
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_physics_5
+		}
+	}
+	planet = {
+		name = "NAME_b_star"
+		class = "pc_b_star"
+		orbit_distance = 15
+		orbit_angle = 180
+		size = 25
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_physics_5
+		}
+	}
+	planet = {
+		name = "NAME_c_star"
+		class = "pc_b_star"
+		orbit_distance = 15
+		orbit_angle = 270
+		size = 25
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_physics_5
+		}
+	}
+	change_orbit = 50
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 95
+	}
+	planet = {
+		count = 2
+		class = pc_rare_crystal_asteroid
+		orbit_distance = 0
+		orbit_angle = {
+			min = 40
+			max = 100
+		}
+	}
+	planet = {#狱火星
+		name = "NAME_hell_planet"
+		orbit_distance = 18
+		size = 13
+		class = pc_molten
+		has_ring = no
+		orbit_angle = {
+			min = 90
+			max = 270
+		}
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_energy_5
+		}
+		change_orbit = @base_moon_distance
+	}
+	planet = {#前文明遗迹
+		name = "NAME_pre_civilization_relics"
+		orbit_distance = 25
+		class = pc_broken
+		size = 31
+		orbit_angle = {
+			min = 90
+			max = 270
+		}
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_minerals_10
+			add_deposit = d_minerals_5
+			add_deposit = d_alloys_5
+			add_modifier = {
+				modifier = "planet_azur_broken_modifier"
+				days = -1
+			}
+		}
+		change_orbit = @base_moon_distance
+		moon = {#旧日堡垒
+			name = "NAME_old_fortress"
+			size = 15
+			init_effect = {
+				clear_deposits = yes
+				add_deposit = d_engineering_10
+			}
+			class = pc_shielded
+			orbit_angle = {
+				min = 90
+				max = 270
+			}
+			orbit_distance = 5
+		}
+	}
+	planet = {#碧蓝航线总部
+		name = "NAME_azur_lane_headquarters"
+		orbit_distance = 25
+		class = pc_gaia
+		orbit_angle = {
+			min = 90
+			max = 270
+		}
+		size = 36
+		deposit_blockers = none
+		modifiers = none
+		has_ring = no
+		home_planet = yes
+		init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = "planet_azur_core_modifier"
+				days = -1
+			}
+			add_building = azur_building_core
+			add_deposit = d_rushing_waterfalls
+			add_deposit = d_rushing_waterfalls
+			add_deposit = d_hot_springs
+			add_deposit = d_tempestous_mountain
+			add_deposit = d_mineral_fields
+			add_deposit = d_mineral_fields
+			add_deposit = d_prosperous_mesa
+			add_deposit = d_submerged_ore_veins
+			add_deposit = d_rich_mountain
+			add_deposit = d_ore_rich_caverns
+			add_deposit = d_green_hills
+			add_deposit = d_boggy_fens
+			add_deposit = d_lush_jungle
+			add_deposit = d_fertile_lands
+			add_deposit = d_black_soil
+			add_deposit = d_teeming_reef
+			while = {
+				count = 10
+				create_pop = {
+					species = owner_main_species
+				}
+			}
+		}
+		moon = {#碧蓝月
+			name = "NAME_blue_moon"
+			class = "pc_gaia"
+			size = 23
+			orbit_distance = 14
+			orbit_angle = 10
+			deposit_blockers = none
+			modifiers = none
+			init_effect = {
+				add_modifier = {
+					modifier = "planet_azur_moon_modifier"
+					days = -1
+				}
+			}
+		}
+	}
+	planet = {#空无都市
+		name = "NAME_empty_city"
+		orbit_distance = 30
+		size = 31
+		class = pc_city
+		has_ring = yes
+		orbit_angle = {
+			min = 90
+			max = 270
+		}
+		init_effect = {
+			clear_deposits = yes
+			add_modifier = {
+				modifier = "planet_azur_city_modifier"
+				days = -1
+			}
+		}
+		change_orbit = @base_moon_distance
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
+	planet = {#塞壬之眼
+		name = "NAME_eye_of_the_sirens"
+		orbit_distance = 50
+		size = 30
+		class = pc_gas_giant
+		has_ring = yes
+		orbit_angle = {
+			min = 90
+			max = 270
+		}
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+			add_deposit = d_energy_10
+		}
+		change_orbit = @base_moon_distance
+	}
+	planet = {#冰牢星
+		name = "NAME_ice_planet"
+		orbit_distance = 23
+		size = 23
+		class = pc_frozen
+		has_ring = no
+		orbit_angle = {
+			min = 90
+			max = 270
+		}
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_minerals_5
+		}
+		change_orbit = @base_moon_distance
+	}
+	neighbor_system = {
+		trigger = {
+			num_guaranteed_colonies >= 2
+		}
+		hyperlane_jumps = {
+			min = 1
+			max = @jumps
+		}
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = {
+			num_guaranteed_colonies >= 1
+		}
+		hyperlane_jumps = {
+			min = 1
+			max = @jumps
+		}
+		initializer = "neighbor_t1_first_colony"
+	}
+}

@@ -1,0 +1,12 @@
+component_set = {
+	key = "HEAVY_SHELLS"
+
+	icon = GFX_heavy_shells
+	icon_frame = 1
+}
+component_set = {
+	key = "ONE_STYLE_ARMOR_PIERCING_PROJECTILE"
+
+	icon = GFX_one_style_armor-piercing_projectile
+	icon_frame = 1
+}

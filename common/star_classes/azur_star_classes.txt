@@ -1,0 +1,21 @@
+sc_azur_star_1 = {
+	class = b_star
+	icon = azur_1_star
+	planet = {
+		key = pc_b_star
+		class = g_star
+	}
+	planet = {
+		key = pc_b_star
+		class = b_star
+	}
+	planet = {
+		key = pc_b_star
+		class = b_star
+	}
+	spawn_odds = 0
+	num_planets = {
+		min = 4
+		max = 20
+	}
+}

@@ -1,0 +1,1604 @@
+###################
+# Azur Jobs
+###################
+nutrition_expert = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_food_processing_facility
+	clothes_texture_index = 3
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_farmers
+		produces = {
+			food = 12
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_unity
+				}
+			}
+			unity = 1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_harmonious
+				}
+			}
+			food = 3
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_specialist
+				}
+			}
+			society_research = 2
+		}
+		upkeep = {
+			consumer_goods = 1
+		}
+	}
+	planet_modifier = {
+		pop_growth_speed = 0.02
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 3
+			OR = {
+				has_trait = trait_robot_harvesters
+				has_trait = trait_agrarian
+			}
+		}
+		modifier = {
+			factor = 1.1
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = {
+				has_technology = tech_droid_workers
+			}
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_syncretic_proles
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_syncretic_proles
+		}
+		modifier = {
+			factor = 1.4
+			has_trait = trait_presapient_proles
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_nerve_stapled
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+mineral_expert = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_crystal_mines
+	clothes_texture_index = 3
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 12
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_unity
+				}
+			}
+			unity = 1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_harmonious
+				}
+			}
+			minerals = 3
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_specialist
+				}
+			}
+			engineering_research = 2
+		}
+		upkeep = {
+			consumer_goods = 1
+		}
+	}
+	planet_modifier = {
+		planet_jobs_alloys_produces_mult = 0.02
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 3
+			OR = {
+				has_trait = trait_industrious
+				has_trait = trait_robot_power_drills
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = {
+				has_technology = tech_droid_workers
+			}
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_syncretic_proles
+		}
+		modifier = {
+			factor = 1.4
+			has_trait = trait_presapient_proles
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_nerve_stapled
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+		modifier = {
+			factor = 4
+			has_trait = trait_azur_robot_structure
+		}
+	}
+}
+
+club_operator = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_power_plant
+	clothes_texture_index = 3
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_technician
+		produces = {
+			energy = 20
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_unity
+				}
+			}
+			unity = 1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_harmonious
+				}
+			}
+			energy = 5
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_specialist
+				}
+			}
+			physics_research = 2
+		}
+		upkeep = {
+			mind_club = 0.5
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_superconductive
+				has_trait = trait_ingenious
+				has_trait = trait_nuumismatic_administration
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_syncretic_proles
+		}
+		modifier = {
+			factor = 4
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+		modifier = {
+			factor = 4
+			has_trait = trait_robot_mind_link_core
+		}
+	}
+}
+
+alloy_expert = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_foundry_1
+	clothes_texture_index = 3
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			alloys = 5
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_specialist
+				}
+			}
+			alloys = 1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_unity
+				}
+			}
+			unity = 1
+		}
+		upkeep = {
+			minerals = 7.5
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_job = foundry
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+club_artist = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_factory_1
+	clothes_texture_index = 3
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_artisans
+		produces = {
+			consumer_goods = 10
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_specialist
+				}
+			}
+			consumer_goods = 2
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_unity
+				}
+			}
+			unity = 1
+		}
+		upkeep = {
+			minerals = 6
+			energy = 1.5
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = artisan
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+club_bishop = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_capital
+	clothes_texture_index = 1
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_administrators
+		produces = {
+			unity = 20
+			mind_club = 1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_holy
+				}
+			}
+			unity = 30
+			mind_club = 1.5
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_council
+				}
+			}
+			society_research = 8
+		}
+		upkeep = {
+			energy = 10
+			consumer_goods = 10
+		}
+	}
+	planet_modifier = {
+		planet_buildings_mind_club_upkeep_mult = -0.2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_mind_club_weakup
+		}
+		modifier = {
+			planet_amenities_add = 10
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+mind_doctor = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_clinic
+	clothes_texture_index = 3
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_amenities_add = 8
+		pop_happiness = 0.04
+	}
+	resources = {
+		category = planet_culture_workers
+		produces = {
+			unity = 8
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_unity
+				}
+			}
+			unity = 2
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_specialist
+				}
+			}
+			society_research = 2
+		}
+		upkeep = {
+			consumer_goods = 2
+			energy = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -2
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = healthcare
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+azur_general = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_capital
+	clothes_texture_index = 1
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+	country_modifier = {
+		country_naval_cap_add = 10
+	}
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_azur_expand
+			}
+		}
+		modifier = {
+			army_damage_mult = 0.05
+			army_health = 0.05
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_azur_ship
+			}
+		}
+		modifier = {
+			country_naval_cap_add = 20
+		}
+	}
+	pop_modifier = {
+		pop_defense_armies_add = 10
+	}
+	resources = {
+		category = planet_administrators
+		produces = {
+			unity = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_council
+				}
+			}
+			unity = 6
+		}
+		upkeep = {
+			consumer_goods = 10
+			energy = 10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_modifier = martial_law
+			}
+		}
+		modifier = {
+			planet_stability_add = 50
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 10
+			planet = {
+				has_modifier = martial_law
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_resilient
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_strong
+		}
+		modifier = {
+			factor = 0.1
+			has_trait = trait_weak
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+		modifier = {
+			factor = 3
+			has_trait = trait_azur_robot_core
+		}
+		modifier = {
+			factor = 3.5
+			has_trait = trait_azur_robot_structure
+		}
+		modifier = {
+			factor = 3
+			has_trait = trait_azur_biology_gene
+		}
+	}
+}
+
+club_worker = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_chemical_plant
+	clothes_texture_index = 3
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_chemists
+		produces = {
+			mind_club = 1
+			engineering_research = 3
+		}
+		upkeep = {
+			minerals = 6
+			energy = 6
+			alloys = 2
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+club_expert = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_capital
+	clothes_texture_index = 1
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_chemists
+		produces = {
+			mind_club = 1
+			physics_research = 2
+			engineering_research = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_council
+				}
+			}
+			unity = 3
+		}
+		upkeep = {
+			unity = 3
+			minerals = 3
+			energy = 3
+			alloys = 1
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_holy
+				}
+			}
+			unity = -3
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+mind_club_nurse = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_clinic
+	clothes_texture_index = 3
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_amenities_add = 15
+		pop_growth_speed = 0.08
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_azur_harmonious
+			}
+		}
+		modifier = {
+			pop_growth_speed = 0.04
+		}
+	}
+	resources = {
+		category = planet_doctors
+		produces = {
+			unity = 2
+			society_research = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_specialist
+				}
+			}
+			society_research = 2
+		}
+		upkeep = {
+			energy = 2.5
+			consumer_goods = 2.5
+			mind_club = 0.2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -5
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = healthcare
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+mind_servant = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_luxury_residence
+	clothes_texture_index = 2
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_amenities_add = 3
+		planet_jobs_produces_mult = 0.02
+	}
+	resources = {
+		category = planet_researchers
+		produces = {
+			unity = 1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_technology
+				}
+			}
+			physics_research = 0.5
+			engineering_research = 0.5
+			society_research = 0.5
+		}
+		upkeep = {
+			energy = 1
+			food = 1
+			consumer_goods = 0.5
+		}
+	}
+	triggered_pop_modifier = {
+		potential = {
+			is_organic_species = yes
+		}
+		pop_housing_usage_add = -0.75
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -1
+		}
+	}
+	weight = {
+		weight = @worker_job_weight
+		modifier = {
+			factor = 4
+			can_take_servant_job = yes
+		}
+	}
+}
+
+mind_enforcer = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_precinct_house
+	clothes_texture_index = 5
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_enforcers
+		produces = {
+			unity = 5
+			society_research = 3
+		}
+		upkeep = {
+			energy = 5
+			consumer_goods = 2
+		}
+	}
+	pop_modifier = {
+		pop_defense_armies_add = 4
+	}
+	planet_modifier = {
+		planet_stability_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_azur_expand
+			}
+		}
+		modifier = {
+			planet_stability_add = 6
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_resilient
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_strong
+		}
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_military
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_weak
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = enforcer
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+		modifier = {
+			factor = 3
+			has_trait = trait_azur_robot_core
+		}
+		modifier = {
+			factor = 3.5
+			has_trait = trait_azur_robot_structure
+		}
+		modifier = {
+			factor = 3
+			has_trait = trait_azur_biology_gene
+		}
+	}
+}
+
+mind_administrator = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_capital
+	clothes_texture_index = 1
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_administrators
+		produces = {
+			unity = 15
+		}
+	}
+	planet_modifier = {
+		planet_amenities_add = 10
+		planet_buildings_energy_upkeep_mult = -0.03
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -5
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_trait = trait_robot_propaganda_machines
+				has_trait = trait_traditional
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_trait = trait_quarrelsome
+		}
+		modifier = {
+			factor = 5
+			has_job = administrator
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+mind_researcher = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_institute
+	clothes_texture_index = 3
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_researchers_produces_mult = 0.1
+	}
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 15
+			engineering_research = 15
+			society_research = 15
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_technology
+				}
+			}
+			physics_research = 5
+			engineering_research = 5
+			society_research = 5
+		}
+		upkeep = {
+			consumer_goods = 6
+			energy = 6
+			mind_club = 0.5
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 3
+			has_trait = trait_erudite
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+		modifier = {
+			factor = 3.5
+			has_trait = trait_azur_biology_gene
+		}
+		modifier = {
+			factor = 3.5
+			has_trait = trait_robot_mind_link_core
+		}
+	}
+}
+
+azur_researcher = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_research_lab_1
+	clothes_texture_index = 3
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 8
+			engineering_research = 8
+			society_research = 8
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_technology
+				}
+			}
+			physics_research = 2
+			engineering_research = 2
+			society_research = 2
+		}
+		upkeep = {
+			energy = 2
+			consumer_goods = 2
+			mind_club = 0.2
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 2
+			has_living_standard = {
+				type = living_standard_academic_privilege
+			}
+		}
+		modifier = {
+			factor = 3
+			has_trait = trait_erudite
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = trait_robot_logic_engines
+				has_trait = trait_intelligent
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_brainslug
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_natural_engineers
+				has_trait = trait_natural_physicists
+				has_trait = trait_natural_sociologists
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 0.65
+			has_trait = trait_presapient_proles
+		}
+		modifier = {
+			factor = 1.5
+			has_job = researcher
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_latent_psionic
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_psionic
+		}
+		modifier = {
+			factor = 0.1
+			has_trait = trait_enigmatic_intelligence_failed
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = trait_enigmatic_intelligence
+				has_trait = trait_enigmatic_intelligence_poor
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_presapient_natural_intellectuals
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+		modifier = {
+			factor = 3.5
+			has_trait = trait_azur_biology_gene
+		}
+		modifier = {
+			factor = 3.5
+			has_trait = trait_robot_mind_link_core
+		}
+	}
+}
+
+azur_bureaucrat = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_capital
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_bureaucrats
+		upkeep = {
+			consumer_goods = 6
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_valid_civic = civic_azur_council
+				}
+			}
+			unity = 3
+		}
+	}
+	country_modifier = {
+		country_admin_cap_add = 12
+		country_naval_cap_add = 4
+	}
+	triggered_country_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				exists = sector
+				sector = {
+					exists = leader
+					leader = {
+						has_trait = leader_trait_azur_governor
+					}
+				}
+			}
+		}
+		modifier = {
+			country_admin_cap_add = 3
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_azur_ship
+			}
+		}
+		modifier = {
+			country_naval_cap_add = 2
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+azur_roboticist_ruler = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_robot_assembly_plant
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_pop_assembly_add = 1
+		planet_pop_assembly_mult = 0.10
+	}
+	resources = {
+		category = planet_pop_assemblers
+		produces = {
+			engineering_research = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_azur_technology
+				}
+			}
+			engineering_research = 1
+		}
+		upkeep = {
+			consumer_goods = 2
+			energy = 4
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+	}
+}
+
+azur_roboticist = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_robot_assembly_plant
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_pop_assembly_add = 3
+	}
+	resources = {
+		category = planet_pop_assemblers
+		upkeep = {
+			alloys = 2
+			energy = 1
+			mind_club = 0.5
+		}
+	}
+	weight = {
+		weight = 500
+	}
+}
+
+azur_manufacturing_technician = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_refinery
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_refiners
+		produces = {
+			exotic_gases = 1
+			rare_crystals = 1
+			volatile_motes = 1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_mine_betharian
+				}
+			}
+			sr_living_metal = 0.1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_mine_zro
+				}
+			}
+			sr_zro = 0.1
+		}
+		upkeep = {
+			minerals = 12
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_void_dweller_1
+		}
+		modifier = {
+			factor = 6
+			has_trait = trait_azurlanegirls
+		}
+		modifier = {
+			factor = 8
+			has_trait = trait_mind_club_weakup
+		}
+		modifier = {
+			factor = 3.5
+			has_trait = trait_robot_mind_link_core
+		}
+	}
+}

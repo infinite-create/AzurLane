@@ -1,0 +1,90 @@
+azur_eggs = {
+	desc = azur_eggs_desc
+	picture = GFX_azur_eggs_event_1
+
+	max_instances = 1
+
+	potential = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+		custom_tooltip = {
+			fail_text = "not_selected_leader"
+			leader = {
+				NOT = {
+					has_leader_flag = azur_eggs_selected_leader
+				}
+			}
+		}
+	}
+
+	on_create = {
+		all_random_events = yes
+		planet.space_owner = {
+			country_event = {
+				id = azur_eggs.0
+			}
+		}
+	}
+
+	visible = {
+		default_site_visible_trigger = yes
+	}
+
+	stages = 5
+
+	stage = {
+		difficulty = {
+			min = 2
+			max = 4
+		}
+		icon = GFX_azur_serial_number_1
+		event = azur_eggs.1
+	}
+
+	stage = {
+		difficulty = {
+			min = 2
+			max = 8
+		}
+		icon = GFX_azur_serial_number_2
+		event = azur_eggs.2
+	}
+
+	stage = {
+		difficulty = {
+			min = 3
+			max = 8
+		}
+		icon = GFX_azur_serial_number_3
+		event = azur_eggs.3
+	}
+	
+	stage = {
+		difficulty = {
+			min = 4
+			max = 8
+		}
+		icon = GFX_azur_serial_number_4
+		event = azur_eggs.2
+	}
+
+	stage = {
+		difficulty = {
+			min = 6
+			max = 8
+		}
+		icon = GFX_azur_serial_number_4
+		event = azur_eggs.3
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

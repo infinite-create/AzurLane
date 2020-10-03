@@ -1,0 +1,36 @@
+azur_star_trek_armour_assembly_plant = {
+	base_buildtime = 480
+	base_cap_amount = 3
+	can_be_ruined = no
+	can_be_disabled = no
+	category = pop_assembly
+	potential = {
+		owner = {
+			is_regular_empire = yes
+			always = no #锁死
+		}
+	}
+	planet_modifier = {
+		job_azur_roboticist_ruler_add = 1
+		job_azur_roboticist_add = 2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+			mind_club = 50
+		}
+		upkeep = {
+			mind_club = 2
+		}
+	}
+	prerequisites = {
+	
+	}
+	triggered_desc = {
+		text = job_azur_roboticist_effect_desc
+	}
+	ai_weight = {
+		weight = 1
+	}
+}

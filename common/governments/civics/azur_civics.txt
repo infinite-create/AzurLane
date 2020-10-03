@@ -1,0 +1,364 @@
+civic_azur_unity = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_unity.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		pop_citizen_happiness = 0.05
+		pop_factions_produces_mult = 0.5
+	}
+}
+
+civic_azur_ship = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_ship.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_pacifist
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		ships_upkeep_mult = -0.2
+		country_command_limit_add = 30
+		country_naval_cap_mult = 0.2
+	}
+}
+
+civic_azur_immigration = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_immigration.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		pop_growth_from_immigration = 0.25
+		pop_resettlement_cost_mult = -0.75
+		trade_value_mult = 0.5
+	}
+}
+
+civic_azur_envoys = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_envoys.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_xenophobe
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		envoys_add = 3
+	}
+}
+
+civic_azur_council = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_council.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		country_election_influence_cost_mult = -1
+		planet_jobs_consumer_goods_upkeep_mult = 0.2
+		planet_jobs_ruler_produces_mult = 0.2
+	}
+}
+
+civic_azur_starbaser = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_starbaser.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		country_starbase_influence_cost_mult = -0.1
+		country_starbase_minerals_cost_mult = -0.2
+		station_gatherers_produces_mult = 0.15
+		station_researchers_produces_mult = 0.15
+		starbases_upkeep_mult = -0.1
+	}
+}
+
+civic_azur_specialist = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_specialist.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		leader_skill_levels = 2
+		planet_jobs_specialist_produces_mult = 0.1
+	}
+}
+
+civic_azur_technology = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_technology.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		species_leader_exp_gain = 0.5
+		all_technology_research_speed = 0.1
+		science_ship_survey_speed = 0.5
+	}
+}
+
+civic_azur_expand = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_expand.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		country_admin_cap_mult = 0.2
+		country_war_exhaustion_mult = -0.2
+		country_claim_influence_cost_mult = -0.4
+	}
+	description = ADD_AZUR_CIVIC_EXPAND
+}
+
+civic_azur_harmonious = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_harmonious.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		country_unity_produces_mult = 0.1
+		planet_jobs_produces_mult = 0.05
+		planet_structures_upkeep_mult = -0.1
+		planet_pops_consumer_goods_upkeep_mult = -0.1
+	}
+}
+
+civic_azur_holy = {
+	icon = "gfx/interface/icons/governments/civics/civic_azur_holy.dds"
+	modification = yes
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_azur_lane_0
+				value = auth_azur_dictatorial
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		country_unity_produces_mult = 0.1
+		pop_government_ethic_attraction = 0.75
+		country_edict_cap_add = 1
+		edicts_cost_mult = -0.3
+	}
+}

@@ -1,0 +1,30 @@
+#root = planet
+
+@small_planet_threshold = 18
+@free_districts_verylow_threshold = 3
+@free_districts_low_threshold = 5
+@free_districts_medium_threshold = 10
+@free_districts_high_threshold = 15
+@built_districts_low_threshold = 3
+@built_districts_medium_threshold = 4
+@built_districts_high_threshold = 8
+
+azur_city1 = {
+	icon = 1
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_azur_colony_types }
+		is_special_colony_type = no
+	}
+
+	planet_modifier = {
+                                planet_jobs_produces_mult = 0.10
+		planet_buildings_mind_club_cost_mult = -0.25
+		planet_buildings_mind_club_upkeep_mult = -0.10
+	}
+
+	weight_modifier = {
+		base = 0
+	}
+}

@@ -1,0 +1,12 @@
+component_set = {
+	key = "MIND_ARMOURS"
+
+	icon = GFX_mind_armours
+	icon_frame = 1
+}
+component_set = {
+	key = "MIND_DISTORTION_INTEGRATED_ARMOR"
+
+	icon = GFX_mind_distortion_integrated_armor
+	icon_frame = 1
+}

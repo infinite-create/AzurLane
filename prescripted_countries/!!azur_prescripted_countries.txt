@@ -1,0 +1,73 @@
+"azur_lane_k"={
+	key="碧蓝航线"
+	ship_prefix="PRESCRIPTED_ship_prefix_azur_lane"
+	species={
+		class="Azur_Lane_k"
+		portrait="Azur_Lane_k"
+		name="PRESCRIPTED_species_name_azur_lane"
+		plural = "PRESCRIPTED_species_plural_azur_lane"
+		adjective = "PRESCRIPTED_species_adjective_Azur_Lane_k"
+		name_list="AZURLANE"
+		trait="trait_azurlanegirls"
+		trait="trait_azurlanegirls_1"
+		trait="trait_azurlanegirls_2"
+		trait="trait_azurlanegirls_3"
+		trait="trait_azurlanegirls_4"
+		trait="trait_azurlanegirls_5"
+		trait="trait_azurlanegirls_6"
+		trait="trait_azurlanegirls_7"
+		trait="trait_azurlanegirls_8"
+		trait="trait_azurlanegirls_9"
+	}
+	name="azur_lane_k"
+	adjective="PRESCRIPTED_adjective_azur_lane"
+	authority="auth_azur_lane_0"
+	government="gov_azur_00"
+	planet_name="PRESCRIPTED_planet_name_azur_lane"
+	planet_class="pc_continental"
+	system_name="PRESCRIPTED_system_name_azur_lane"
+	initializer="azur_1_system_initializer"
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	flags = {
+		"azur_lane"
+		"custom_start_screen"
+	}
+	empire_flag={
+		icon={
+			category="azurlane_flags_sp"
+			file="flag_azurSP_1.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"dark_blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="圣女贞德"
+		portrait="aierdeliqi"
+		texture=0
+		hair=0
+		clothes=0
+		leader_class="ruler"
+	}
+	spawn_as_fallen = no
+	ignore_portrait_duplication = no
+	room = "default_room"
+	spawn_enabled=yes
+	ethic="ethic_egalitarian"
+	ethic="ethic_xenophile"
+	ethic="ethic_materialist"
+	civics={
+		"civic_azur_technology"
+		"civic_azur_immigration"
+	}
+	origin="origin_azur_1"
+}

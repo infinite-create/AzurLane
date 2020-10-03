@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_azur_starbase_shipyard"
+		textureFile = "gfx/interface/icons/modules/azur_shipyard.dds"
+	}
+
+	spriteType = {
+		name = "GFX_azur_starbase_anchorage"
+		textureFile = "gfx/interface/icons/modules/azur_anchorage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_azur_naval_headquarters"
+		textureFile = "gfx/interface/icons/modules/azur_naval_headquarters.dds"
+	}
+
+	spriteType = {
+		name = "GFX_azur_cube_station_computer"
+		textureFile = "gfx/interface/icons/modules/azur_cube_station_computer.dds"
+	}
+}

@@ -1,0 +1,66 @@
+﻿l_simp_chinese:
+ azur_tech.2.name:0 "[root.GetAzurTechTitle]"
+ azur_tech.2.desc:0 "[root.GetAzurTechDesc]"
+
+
+ research_tech_mind_club_0_title:0 "1"
+ research_tech_mind_club_0_desc:0 ""
+ azur_tech.2.aa:0 "1"
+
+ research_tech_mind_club_1_title:0 "2"
+ research_tech_mind_club_1_desc:0 ""
+ azur_tech.2.bb:0 "2"
+
+ research_tech_mind_club_2_title:0 "3"
+ research_tech_mind_club_2_desc:0 "3"
+ azur_tech.2.cc:0 "3"
+
+ research_tech_mind_club_3_title:0 "4"
+ research_tech_mind_club_3_desc:0 "4"
+ azur_tech.2.dd:0 "4"
+
+ research_tech_mind_club_4_title:0 "5"
+ research_tech_mind_club_4_desc:0 "5"
+ azur_tech.2.ee:0 "5"
+
+ research_tech_mind_club_5_title:0 "6"
+ research_tech_mind_club_5_desc:0 "6"
+ azur_tech.2.ff:0 "6"
+
+ research_tech_mind_net_1_title:0 "太空站点接入测试成功"
+ research_tech_mind_net_1_desc:0 "时间：§G[this.azur_count_years].[this.azur_count_months].[this.azur_count_days]§!\n\n§Y银河心智网络§!的第一阶段测试在不久之前成功完成，这将会是一个良好的开端！"
+ azur_tech.2.gg:0 "期望接下来也能够顺利进行"
+
+ research_tech_mind_net_2_title:0 "信息与能量传输测试成功"
+ research_tech_mind_net_2_desc:0 "时间：§G[this.azur_count_years].[this.azur_count_months].[this.azur_count_days]§!\n\n虽然中途存在一些难以克服的问题，但是我们仍然成功了！现在我们能够与§Y银河心智网络§!相连接并稳定的传输信息"
+ azur_tech.2.hh:0 "胜利在望！"
+
+ research_tech_mind_net_3_title:0 "个体心智魔方接入测试成功"
+ research_tech_mind_net_3_desc:0 "时间：§G[this.azur_count_years].[this.azur_count_months].[this.azur_count_days]§!\n\n我们终于迎来了今天，最后一个阶段的测试就在这不就之前完成：我们成功的将个体心智魔方接入了§Y银河心智网络§!。至此，所有的测试均以完成，§Y银河心智网络§!将彻底改变我们现在的生活方式！"
+ azur_tech.2.ii:0 "很好！"
+ azur_tech.2.ii.tooltip:0 "§Y银河心智网络§!:\n\n通过心智网络相互连接有利于我们的科研，每半年都将会处理增加当前的科技进度"
+
+ research_tech_mind_sy_1_title:0 "10"
+ research_tech_mind_sy_1_desc:0 "10"
+ azur_tech.2.jj:0 "10"
+
+ research_tech_mind_sy_2_title:0 "11"
+ research_tech_mind_sy_2_desc:0 "11"
+ azur_tech.2.kk:0 "11"
+
+ research_tech_mind_sy_3_title:0 "12"
+ research_tech_mind_sy_3_desc:0 "12"
+ azur_tech.2.ll:0 "12"
+
+ research_tech_mind_sy_4_title:0 "13"
+ research_tech_mind_sy_4_desc:0 "13"
+ azur_tech.2.mm:0 "13"
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+##修改
+"Azur_Lane" = {
+	archetype = KANSEN
+	randomized = no
+	
+	gender = no
+	
+	portrait_modding = no		#人像是否可以通过基因修饰/修饰来修饰？？？
+
+	portraits = {
+		"Azur_Lane"
+	}
+
+	graphical_culture = humanoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+"Azur_Factions" = {
+	archetype = KANSEN
+	randomized = no
+	
+	gender = no
+	
+	portrait_modding = no		#人像是否可以通过基因修饰/修饰来修饰？？？
+
+	portraits = { 
+		"White_Eagle"
+		"Shigezakura"
+		"Royal"
+		"Ironblood"
+		"Donghuang"
+		"Hyperdimension"
+		"Freeiris"
+		"North"
+		"Sardegne"
+	}
+
+	graphical_culture = humanoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}

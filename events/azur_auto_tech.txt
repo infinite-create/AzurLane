@@ -1,0 +1,1571 @@
+namespace = azur_auto_tech
+
+country_event = {
+	id = azur_auto_tech.0
+	is_triggered_only = yes
+	title = azur_auto_tech.0.name
+	desc = azur_auto_tech.0.desc
+	picture = GFX_evt_strategic_resources
+
+	immediate = {
+		set_variable = {
+			which = auto_tech
+			value = 0
+		}
+	}
+
+	option = { #物理
+		name = azur_auto_tech.0.aa
+		trigger = {
+			NOT = {
+				has_country_flag = auto_tech_phy
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_phy
+			country_event = {
+				id = azur_auto_tech.0
+			}
+		}
+	}
+	option = { #物理
+		name = azur_auto_tech.0.aa.r
+		trigger = {
+			has_country_flag = auto_tech_phy
+		}
+		hidden_effect = {
+			country_event = {
+				id = azur_auto_tech.0
+			}
+			remove_country_flag = auto_tech_phy
+		}
+	}
+
+	option = { #社会
+		name = azur_auto_tech.0.bb
+		trigger = {
+			NOT = {
+				has_country_flag = auto_tech_soc
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_soc
+			country_event = {
+				id = azur_auto_tech.0
+			}
+		}
+	}
+	option = { #社会
+		name = azur_auto_tech.0.bb.r
+		trigger = {
+			has_country_flag = auto_tech_soc
+		}
+		hidden_effect = {
+			country_event = {
+				id = azur_auto_tech.0
+			}
+			remove_country_flag = auto_tech_soc
+		}
+	}
+
+	option = { #工程
+		name = azur_auto_tech.0.cc
+		trigger = {
+			NOT = {
+				has_country_flag = auto_tech_eng
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_eng
+			country_event = {
+				id = azur_auto_tech.0
+			}
+		}
+	}
+	option = { #工程
+		name = azur_auto_tech.0.cc.r
+		trigger = {
+			has_country_flag = auto_tech_eng
+		}
+		hidden_effect = {
+			country_event = {
+				id = azur_auto_tech.0
+			}
+			remove_country_flag = auto_tech_eng
+		}
+	}
+
+
+	option = { #配置物理
+		name = azur_auto_tech.0.dd
+		allow = {
+			hidden_trigger = {
+				has_country_flag = auto_tech_phy
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = auto_tech
+				value = 1
+			}
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #配置社会
+		name = azur_auto_tech.0.ee
+		allow = {
+			hidden_trigger = {
+				has_country_flag = auto_tech_soc
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = auto_tech
+				value = 2
+			}
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #配置工程
+		name = azur_auto_tech.0.ff
+		allow = {
+			hidden_trigger = {
+				has_country_flag = auto_tech_eng
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = auto_tech
+				value = 3
+			}
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+	option = { #配置时间
+		name = azur_auto_tech.0.gg
+		hidden_effect = {
+			country_event = {
+				id = azur_auto_tech.2
+			}
+		}
+	}
+
+	option = { #完成
+		name = azur_auto_tech.0.00
+	}
+}
+
+country_event = {
+	id = azur_auto_tech.1
+	is_triggered_only = yes
+	title = azur_auto_tech.1.name
+	desc = azur_auto_tech.1.desc
+	picture = GFX_evt_strategic_resources
+	#物理
+	option = { #超导应用
+		name = azur_auto_tech.1.aa
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_tile_energy_output
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_tile_energy_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #超导应用
+		name = azur_auto_tech.1.aa.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			has_country_flag = auto_tech_repeatable_improved_tile_energy_output
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_tile_energy_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #护盾数律分析
+		name = azur_auto_tech.1.bb
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_shield_output
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_shield_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #护盾数律分析
+		name = azur_auto_tech.1.bb.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			has_country_flag = auto_tech_repeatable_improved_shield_output
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_shield_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #聚焦阵列
+		name = azur_auto_tech.1.cc
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_weapon_type_energy_damage
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_weapon_type_energy_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #聚焦阵列
+		name = azur_auto_tech.1.cc.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			has_country_flag = auto_tech_repeatable_weapon_type_energy_damage
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_weapon_type_energy_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #快速冷却剂
+		name = azur_auto_tech.1.dd
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_weapon_type_energy_fire_rate
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_weapon_type_energy_fire_rate
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #快速冷却剂
+		name = azur_auto_tech.1.dd.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			has_country_flag = auto_tech_repeatable_weapon_type_energy_fire_rate
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_weapon_type_energy_fire_rate
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #引力分析
+		name = azur_auto_tech.1.ee
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			NOR = {
+				has_country_flag = auto_tech_repeatable_reduced_building_cost
+				check_variable = {
+					which = tech_repeatable_reduced_building_cost_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_reduced_building_cost
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #引力分析
+		name = azur_auto_tech.1.ee.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 1 
+			}
+			has_country_flag = auto_tech_repeatable_reduced_building_cost
+			NOT = {
+				check_variable = {
+					which = tech_repeatable_reduced_building_cost_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_reduced_building_cost
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	#社会
+	option = { #转基因作物
+		name = azur_auto_tech.1.ff
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_tile_food_output
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_tile_food_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #转基因作物
+		name = azur_auto_tech.1.ff.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			has_country_flag = auto_tech_repeatable_improved_tile_food_output
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_tile_food_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #行政效率
+		name = azur_auto_tech.1.gg
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_core_system_cap
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_core_system_cap
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #行政效率
+		name = azur_auto_tech.1.gg.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			has_country_flag = auto_tech_repeatable_improved_core_system_cap
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_core_system_cap
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #公告广播
+		name = azur_auto_tech.1.hh
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_edict_length
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_edict_length
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #公告广播
+		name = azur_auto_tech.1.hh.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			has_country_flag = auto_tech_repeatable_improved_edict_length
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_edict_length
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #主动适应
+		name = azur_auto_tech.1.ii
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_army_damage
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_army_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #主动适应
+		name = azur_auto_tech.1.ii.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			has_country_flag = auto_tech_repeatable_improved_army_damage
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_army_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #神经抑制器
+		name = azur_auto_tech.1.jj
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_army_health
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_army_health
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #神经抑制器
+		name = azur_auto_tech.1.jj.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			has_country_flag = auto_tech_repeatable_improved_army_health
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_army_health
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #细胞活力
+		name = azur_auto_tech.1.kk
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_leader_life_span
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_leader_life_span
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #细胞活力
+		name = azur_auto_tech.1.kk.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			has_country_flag = auto_tech_repeatable_improved_leader_life_span
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_leader_life_span
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #舰队管理规程
+		name = azur_auto_tech.1.ll
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			NOR = {
+				has_country_flag = auto_tech_repeatable_naval_cap
+				check_variable = {
+					which = tech_repeatable_naval_cap_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_naval_cap
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #舰队管理规程
+		name = azur_auto_tech.1.ll.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			has_country_flag = auto_tech_repeatable_naval_cap
+			NOT = {
+				check_variable = {
+					which = tech_repeatable_naval_cap_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_naval_cap
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #司令幕僚
+		name = azur_auto_tech.1.mm
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			NOR = {
+				has_country_flag = auto_tech_repeatable_command_limit
+				check_variable = {
+					which = tech_repeatable_command_limit_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_command_limit
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #司令幕僚
+		name = azur_auto_tech.1.mm.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			has_country_flag = auto_tech_repeatable_command_limit
+			NOT = {
+				check_variable = {
+					which = tech_repeatable_command_limit_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_command_limit
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #星际扩张
+		name = azur_auto_tech.1.nn
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			NOR = {
+				has_country_flag = auto_tech_repeatable_improved_starbase_capacity
+				check_variable = {
+					which = tech_repeatable_improved_starbase_capacity_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_starbase_capacity
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #星际扩张
+		name = azur_auto_tech.1.nn.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 2
+			}
+			has_country_flag = auto_tech_repeatable_improved_starbase_capacity
+			NOT = {
+				check_variable = {
+					which = tech_repeatable_improved_starbase_capacity_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_starbase_capacity
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	#工程
+	option = { #提取模式
+		name = azur_auto_tech.1.oo
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_tile_mineral_output
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_tile_mineral_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #提取模式
+		name = azur_auto_tech.1.oo.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_improved_tile_mineral_output
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_tile_mineral_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #同步开火模式
+		name = azur_auto_tech.1.pp
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_military_station_damage
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_military_station_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #同步开火模式
+		name = azur_auto_tech.1.pp.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_improved_military_station_damage
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_military_station_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #强化核心层
+		name = azur_auto_tech.1.qq
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_military_station_health
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_military_station_health
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #强化核心层
+		name = azur_auto_tech.1.qq.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_improved_military_station_health
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_military_station_health
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #物质压缩
+		name = azur_auto_tech.1.rr
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_improved_armor_output
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_improved_armor_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #物质压缩
+		name = azur_auto_tech.1.rr.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_improved_armor_output
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_improved_armor_output
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #热力学当量控制
+		name = azur_auto_tech.1.ss
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_weapon_type_explosive_damage
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_weapon_type_explosive_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #热力学当量控制
+		name = azur_auto_tech.1.ss.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_weapon_type_explosive_damage
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_weapon_type_explosive_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #小型预点火装置
+		name = azur_auto_tech.1.tt
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_weapon_type_explosive_fire_rate
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_weapon_type_explosive_fire_rate
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #小型预点火装置
+		name = azur_auto_tech.1.tt.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_weapon_type_explosive_fire_rate
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_weapon_type_explosive_fire_rate
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #高密度弹药
+		name = azur_auto_tech.1.uu
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_weapon_type_kinetic_damage
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_weapon_type_kinetic_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #高密度弹药
+		name = azur_auto_tech.1.uu.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_weapon_type_kinetic_damage
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_weapon_type_kinetic_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #装载效率
+		name = azur_auto_tech.1.vv
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_weapon_type_kinetic_fire_rate
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_weapon_type_kinetic_fire_rate
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #装载效率
+		name = azur_auto_tech.1.vv.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_weapon_type_kinetic_fire_rate
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_weapon_type_kinetic_fire_rate
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #突触拦截器
+		name = azur_auto_tech.1.ww
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_damage
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #突触拦截器
+		name = azur_auto_tech.1.ww.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_damage
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_damage
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #热力循环器
+		name = azur_auto_tech.1.xx
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOT = {
+				has_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_rate
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_rate
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #热力循环器
+		name = azur_auto_tech.1.xx.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_rate
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_rate
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #组装算法
+		name = azur_auto_tech.1.yy
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			NOR = {
+				has_country_flag = auto_tech_repeatable_reduced_building_time
+				check_variable = {
+					which = tech_repeatable_reduced_building_time_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = auto_tech_repeatable_reduced_building_time
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+	option = { #组装算法
+		name = azur_auto_tech.1.yy.r
+		trigger = {
+			check_variable = {
+				which = auto_tech
+				value = 3
+			}
+			has_country_flag = auto_tech_repeatable_reduced_building_time
+			NOT = {
+				check_variable = {
+					which = tech_repeatable_reduced_building_time_total
+					value >= 5
+				}
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = auto_tech_repeatable_reduced_building_time
+			country_event = {
+				id = azur_auto_tech.1
+			}
+		}
+	}
+
+
+	option = { #返回
+		name = azur_auto_tech.1.00
+		hidden_effect = {
+			country_event = {
+				id = azur_auto_tech.0
+			}
+		}
+	}
+	option = { #退出
+		name = azur_auto_tech.1.01
+	}
+}
+country_event = {
+	id = azur_auto_tech.2
+	is_triggered_only = yes
+	title = azur_auto_tech.2.name
+	desc = azur_auto_tech.2.desc
+	picture = GFX_evt_strategic_resources
+
+	option = { #一月
+		name = azur_auto_tech.2.aa
+		hidden_effect = {
+			set_variable = {
+				which = auto_tech_time
+				value = 1
+			}
+			country_event = {
+				id = azur_auto_tech.2
+			}
+		}
+	}
+	option = { #二月
+		name = azur_auto_tech.2.bb
+		hidden_effect = {
+			set_variable = {
+				which = auto_tech_time
+				value = 2
+			}
+			country_event = {
+				id = azur_auto_tech.2
+			}
+		}
+	}
+	option = { #三月
+		name = azur_auto_tech.2.cc
+		hidden_effect = {
+			set_variable = {
+				which = auto_tech_time
+				value = 3
+			}
+			country_event = {
+				id = azur_auto_tech.2
+			}
+		}
+	}
+	option = { #返回
+		name = azur_auto_tech.2.00
+		hidden_effect = {
+			country_event = {
+				id = azur_auto_tech.0
+			}
+		}
+	}
+
+	option = { #退出
+		name = azur_auto_tech.2.01
+	}
+}
+
+country_event = {
+	id = azur_auto_tech.100
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_edict = azur_auto_tech_research
+	}
+
+	immediate = {
+		if = { #一月
+			limit = { 
+				check_variable = {
+					which = auto_tech_time
+					value = 1
+				}
+			}
+			country_event = {
+				id = azur_auto_tech.100
+				days = 30
+			}
+		}
+		else_if = { #二月
+			limit = { 
+				check_variable = {
+					which = auto_tech_time
+					value = 2
+				}
+			}
+			country_event = {
+				id = azur_auto_tech.100
+				days = 60
+			}
+		}
+		else_if = { #三月
+			limit = { 
+				check_variable = {
+					which = auto_tech_time
+					value = 3
+				}
+			}
+			country_event = {
+				id = azur_auto_tech.100
+				days = 90
+			}
+		}
+		else = { #默认
+			country_event = {
+				id = azur_auto_tech.100
+				days = 90
+			}
+		}
+	}
+
+	after = {
+		if = {
+			limit = { 
+				has_country_flag = auto_tech_phy
+			}
+			random_list = {
+				10 = { #超导应用
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_tile_energy_output
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_tile_energy_output
+						message = no
+					}
+				}
+				10 = { #护盾数律分析
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_shield_output
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_shield_output
+						message = no
+					}
+				}
+				10 = { #聚焦阵列
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_tile_energy_output
+					}
+					give_technology = {
+						tech = tech_repeatable_weapon_type_energy_damage
+						message = no
+					}
+				}
+				10 = { #快速冷却剂
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_weapon_type_energy_fire_rate
+					}
+					give_technology = {
+						tech = tech_repeatable_weapon_type_energy_fire_rate
+						message = no
+					}
+				}
+				10 = { #引力分析
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = auto_tech_repeatable_reduced_building_cost
+							check_variable = {
+								which = tech_repeatable_reduced_building_cost_total
+								value >= 5
+							}
+						}
+					}
+					give_technology = {
+						tech = tech_repeatable_reduced_building_cost
+						message = no
+					}
+					change_variable = {
+						which = tech_repeatable_reduced_building_cost_total
+						value = 1
+					}
+				}
+				
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = auto_tech_soc
+			}
+			random_list = {
+				10 = { #转基因作物
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_tile_food_output
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_tile_food_output
+						message = no
+					}
+				}
+				10 = { #行政效率
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_core_system_cap
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_core_system_cap
+						message = no
+					}
+				}
+				10 = { #公告广播
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_edict_length
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_edict_length
+						message = no
+					}
+				}
+				10 = { #主动适应
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_army_damage
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_army_damage
+						message = no
+					}
+				}
+				10 = { #神经抑制器
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_army_health
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_army_health
+						message = no
+					}
+				}
+				10 = { #细胞活力
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_leader_life_span
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_leader_life_span
+						message = no
+					}
+				}
+				10 = { #舰队管理规程
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = auto_tech_repeatable_naval_cap
+							check_variable = {
+								which = tech_repeatable_naval_cap_total
+								value >= 5
+							}
+						}
+					}
+					give_technology = {
+						tech = tech_repeatable_naval_cap
+						message = no
+					}
+					change_variable = {
+						which = tech_repeatable_naval_cap_total
+						value = 1
+					}
+				}
+				10 = { #司令幕僚
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = auto_tech_repeatable_command_limit
+							check_variable = {
+								which = tech_repeatable_command_limit_total
+								value >= 5
+							}
+						}
+					}
+					give_technology = {
+						tech = tech_repeatable_command_limit
+						message = no
+					}
+					change_variable = {
+						which = tech_repeatable_command_limit_total
+						value = 1
+					}
+				}
+				10 = { #星际扩张
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = auto_tech_repeatable_improved_starbase_capacity
+							check_variable = {
+								which = tech_repeatable_improved_starbase_capacity_total
+								value >= 5
+							}
+						}
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_starbase_capacity
+						message = no
+					}
+					change_variable = {
+						which = tech_repeatable_improved_starbase_capacity_total
+						value = 1
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = auto_tech_eng
+			}
+			random_list = {
+				10 = { #提取模式
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_tile_mineral_output
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_tile_mineral_output
+						message = no
+					}
+				}
+				10 = { #同步开火模式
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_military_station_damage
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_military_station_damage
+						message = no
+					}
+				}
+				10 = { #强化核心层
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_military_station_health
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_military_station_health
+						message = no
+					}
+				}
+				10 = { #物质压缩
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_improved_armor_output
+					}
+					give_technology = {
+						tech = tech_repeatable_improved_armor_output
+						message = no
+					}
+				}
+				10 = { #热力学当量控制
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_weapon_type_explosive_damage
+					}
+					give_technology = {
+						tech = tech_repeatable_weapon_type_explosive_damage
+						message = no
+					}
+				}
+				10 = { #小型预点火装置
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_weapon_type_explosive_fire_rate
+					}
+					give_technology = {
+						tech = tech_repeatable_weapon_type_explosive_fire_rate
+						message = no
+					}
+				}
+				10 = { #高密度弹药
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_weapon_type_kinetic_damage
+					}
+					give_technology = {
+						tech = tech_repeatable_weapon_type_kinetic_damage
+						message = no
+					}
+				}
+				10 = { #装载效率
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_weapon_type_kinetic_fire_rate
+					}
+					give_technology = {
+						tech = tech_repeatable_weapon_type_kinetic_fire_rate
+						message = no
+					}
+				}
+				10 = { #突触拦截器
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_damage
+					}
+					give_technology = {
+						tech = tech_repeatable_weapon_type_strike_craft_fire_damage
+						message = no
+					}
+				}
+				10 = { #热力循环器
+					modifier = {
+						factor = 0
+						has_country_flag = auto_tech_repeatable_weapon_type_strike_craft_fire_rate
+					}
+					give_technology = {
+						tech = tech_repeatable_weapon_type_strike_craft_fire_rate
+						message = no
+					}
+				}
+				10 = { #组装算法
+					modifier = {
+						factor = 0
+						OR = {
+							has_country_flag = auto_tech_repeatable_reduced_building_time
+							check_variable = {
+								which = tech_repeatable_reduced_building_time_total
+								value >= 5
+							}
+						}
+					}
+					give_technology = {
+						tech = tech_repeatable_reduced_building_time
+						message = no
+					}
+					change_variable = {
+						which = tech_repeatable_reduced_building_time_total
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}

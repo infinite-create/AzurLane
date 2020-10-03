@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Stellaris_Modder_Association"
+		textureFile = "gfx/event_pictures/eggs/Stellaris_Modder_Association.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+}

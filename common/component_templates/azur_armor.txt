@@ -1,0 +1,175 @@
+utility_component_template = {
+	key = "mind_armours_1"
+	size = small
+	icon = GFX_mind_armours
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			mind_club = 1.5
+			alloys = 30
+		}
+	}
+	modifier = {
+		ship_armor_add = 400
+		ship_hull_add = 200
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_armours }
+	component_set = "MIND_ARMOURS"
+}
+utility_component_template = {
+	key = "mind_armours_2"
+	size = medium
+	icon = GFX_mind_armours
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			mind_club = 1.5
+			alloys = 40
+		}
+	}
+	modifier = {
+		ship_armor_add = 800
+		ship_hull_add = 400
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_armours }
+	component_set = "MIND_ARMOURS"
+}
+utility_component_template = {
+	key = "mind_armours_3"
+	size = large
+	icon = GFX_mind_armours
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			mind_club = 1.5
+			alloys = 50
+		}
+	}
+	modifier = {
+		ship_armor_add = 1400
+		ship_hull_add = 700
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_armours }
+	component_set = "MIND_ARMOURS"
+}
+
+utility_component_template = {
+	key = "mind_distortion_Integrated_armor_1"
+	size = small
+	icon = GFX_mind_distortion_integrated_armor
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			star_trek_armour = 1.5
+			alloys = 30
+		}
+	}
+	modifier = {
+		ship_armor_add = 600
+		ship_hull_add = 300
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_armours }
+	component_set = "MIND_DISTORTION_INTEGRATED_ARMOR"
+}
+utility_component_template = {
+	key = "mind_distortion_Integrated_armor_2"
+	size = medium
+	icon = GFX_mind_distortion_integrated_armor
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			star_trek_armour = 1.5
+			alloys = 40
+		}
+	}
+	modifier = {
+		ship_armor_add = 1000
+		ship_hull_add = 500
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_armours }
+	component_set = "MIND_DISTORTION_INTEGRATED_ARMOR"
+}
+utility_component_template = {
+	key = "mind_distortion_Integrated_armor_3"
+	size = large
+	icon = GFX_mind_distortion_integrated_armor
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			star_trek_armour = 1.5
+			alloys = 50
+		}
+	}
+	modifier = {
+		ship_armor_add = 1600
+		ship_hull_add = 800
+	}
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	prerequisites = { tech_mind_armours }
+	component_set = "MIND_DISTORTION_INTEGRATED_ARMOR"
+}

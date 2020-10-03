@@ -1,0 +1,24 @@
+#限定种族
+is_azur_lane_leader = { 
+	species = { 
+		OR = {
+			is_species_class = Azur_Lane
+			is_species_class = Azur_Factions
+			is_species_class = 舰娘
+			is_species_class = Azur_Lane_R
+			is_species_class = Azur_Lane_k
+		}
+	}
+}
+#维护费修正
+is_azur_lane_species_R = {
+	species = {
+		OR = {
+			is_species_class = Azur_Lane
+			is_species_class = Azur_Factions
+			is_species_class = 舰娘
+			is_species_class = Azur_Lane_R
+			is_species_class = Azur_Lane_k
+		}
+	}
+}

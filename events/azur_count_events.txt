@@ -1,0 +1,96 @@
+namespace = azur_count
+
+country_event = {
+	id = azur_count.0
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		set_variable = {
+			which = azur_count_years
+			value = 2200
+		}
+		set_variable = {
+			which = azur_count_months
+			value = 1
+		}
+		set_variable = {
+			which = azur_count_days
+			value = 1
+		}
+		country_event = {
+			id = azur_count.1
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = azur_count.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		change_variable = {
+			which = azur_count_days
+			value = 1
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = azur_count_days
+					value > 30
+				}
+			}
+			change_variable = {
+				which = azur_count_months
+				value = 1
+			}
+			set_variable = {
+				which = azur_count_days
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = azur_count_months
+					value > 12
+				}
+			}
+			change_variable = {
+				which = azur_count_years
+				value = 1
+			}
+			set_variable = {
+				which = azur_count_months
+				value = 1
+			}
+		}
+		country_event = {
+			id = azur_count.1
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = azur_count.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		capital_scope = {
+			while = {
+				count = 20
+				create_pop = {
+					species = root.species
+				}
+			}
+		}
+	}
+}

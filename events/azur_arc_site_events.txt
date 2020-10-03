@@ -1,0 +1,27 @@
+namespace = azur_arc_site
+
+country_event = {#引导
+	id = azur_arc_site.0
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		
+	}
+}
+
+country_event = {
+	id = azur_arc_site.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_edict = ed
+	}
+
+	immediate = {
+		capital_scope = {
+			create_archaeological_site = azur_pioneer_begin
+		}
+	}
+}

@@ -1,0 +1,347 @@
+@tier6cost1 = 30000
+@tier6cost2 = 40000
+@tier6cost3 = 50000
+@tier7cost1 = 100000
+@tier7cost2 = 150000
+@tier7cost3 = 200000
+tech_army_damage = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_mind_club_3"
+	}
+	is_rare = no
+	weight = @tier3weight3
+	is_reverse_engineerable = no
+	modifier = {
+		army_damage_mult = 0.5
+	}
+	potential = {
+		has_ascension_perk = ap_azur_3
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_3
+		}
+		modifier = {
+			factor = 2
+			years_passed > 40
+		}
+	}
+}
+
+tech_army_health = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_mind_club_3"
+	}
+	is_rare = no
+	weight = @tier3weight3
+	is_reverse_engineerable = no
+	modifier = {
+		army_health = 0.5
+	}
+	potential = {
+		has_ascension_perk = ap_azur_3
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_3
+		}
+		modifier = {
+			factor = 2
+			years_passed > 40
+		}
+	}
+}
+
+tech_azur_military_academy = {
+	area = society
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_mind_club_control"
+	}
+	tier = 5
+	cost = @tier6cost1
+	is_rare = yes
+	weight = @tier5weight3
+	is_reverse_engineerable = no
+	potential = {
+		has_ascension_perk = ap_azur_3
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_3
+		}
+	}
+}
+
+tech_azur_army = {
+	area = society
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_army_health"
+		"tech_army_damage"
+		"tech_mind_club_5"
+		"tech_combat_training"
+	}
+	tier = 4
+	cost = @tier4cost3
+	is_rare = no
+	weight = @tier4weight3
+	is_reverse_engineerable = no
+	potential = {
+		has_ascension_perk = ap_azur_3
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_3
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+	}
+}
+
+tech_azur_alien_army = {
+	area = society
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_mind_club_4"
+		"tech_auto_machine_army"
+	}
+	tier = 4
+	cost = @tier4cost2
+	is_rare = no
+	weight = @tier4weight2
+	is_reverse_engineerable = no
+	potential = {
+		has_ascension_perk = ap_azur_3
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_3
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+	}
+}
+
+tech_azur_army_upgrade = {
+	area = society
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_azur_army"
+		"tech_azur_military_academy"
+	}
+	tier = 5
+	cost = @tier6cost2
+	is_rare = yes
+	weight = @tier5weight3
+	is_reverse_engineerable = no
+	potential = {
+		has_ascension_perk = ap_azur_2
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_3
+		}
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+	}
+}
+
+tech_azur_army_psionic = {
+	area = society
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_azur_army"
+		"tech_azur_military_academy"
+		"tech_telepathy"
+		"tech_azur_army_upgrade"
+	}
+	tier = 5
+	cost = @tier7cost1
+	is_rare = yes
+	weight = @tier5weight3
+	is_reverse_engineerable = no
+	potential = {
+		has_ascension_perk = ap_transcendence
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+	}
+}
+
+tech_azur_army_gene = {
+	area = society
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_azur_army"
+		"tech_azur_military_academy"
+		"tech_gene_seed_purification"
+		"tech_morphogenetic_field_mastery"
+	}
+	tier = 5
+	cost = @tier6cost2
+	is_rare = yes
+	weight = @tier5weight3
+	is_reverse_engineerable = no
+	potential = {
+		has_ascension_perk = ap_evolutionary_mastery
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_3
+		}
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+	}
+}
+
+tech_auto_army = {
+	area = society
+	category = {
+		military_theory
+	}
+	tier = 5
+	cost = @tier6cost3
+	prerequisites = {
+		"tech_mind_club_control"
+		"tech_combat_computers_3"
+		"tech_synthetic_workers"
+		"tech_auto_machine_army"
+	}
+	weight = @tier5weight3
+	is_rare = yes
+	is_reverse_engineerable = no
+	potential = {
+		has_ascension_perk = ap_azur_3
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+	}
+}
+
+tech_auto_machine_army = {
+	area = society
+	category = {
+		military_theory
+	}
+	tier = 4
+	cost = @tier4cost1
+	prerequisites = {
+		"tech_mind_club_4"
+	}
+	weight = @tier4weight3
+	is_rare = yes
+	is_reverse_engineerable = no
+	potential = {
+		has_ascension_perk = ap_azur_1
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+	}
+}

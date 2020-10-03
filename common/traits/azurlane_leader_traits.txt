@@ -1,0 +1,291 @@
+leader_trait_azur_ruler = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_mind_club_weakup.dds"
+	immortal_leaders = yes
+	modifier = {
+		country_admin_cap_mult = 0.33
+		country_unity_produces_mult = 0.33
+		country_edict_cap_add = 3
+		country_naval_cap_mult = 0.33
+	}
+	leader_trait = {
+		ruler
+	}
+	leader_class = {
+		ruler
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_governor = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_mind_club_weakup.dds"
+	immortal_leaders = yes
+	modifier = {
+		planet_army_build_speed_mult = 0.25
+		starbase_shipyard_build_speed_mult = 0.25
+		planet_building_build_speed_mult = 0.25
+		planet_buildings_upkeep_mult = -0.1
+	}
+	leader_trait = {
+		governor
+	}
+	leader_class = {
+		governor
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_scientist = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_mind_club_weakup.dds"
+	immortal_leaders = yes
+	modifier = {
+		all_technology_research_speed = 0.2
+		science_ship_survey_speed = 0.5
+		ship_archeaological_site_clues_add = 3
+	}
+	leader_trait = {
+		scientist
+	}
+	leader_class = {
+		scientist
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_admiral = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_mind_club_weakup.dds"
+	immortal_leaders = yes
+	modifier = {
+		ship_weapon_damage = 0.2
+		ship_weapon_range_mult = 0.2
+		ship_evasion_mult = 0.2
+		ship_speed_mult = 0.5
+	}
+	leader_trait = {
+		admiral
+	}
+	leader_class = {
+		admiral
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_great_admiral = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_mind_club_weakup.dds"
+	immortal_leaders = yes
+	modifier = {
+		ship_weapon_damage = 0.3
+		ship_evasion_mult = 0.5
+		ship_accuracy_mult = 0.5
+		ship_weapon_range_mult = 0.33
+		ship_speed_mult = 0.75
+		ship_hull_mult = 0.25
+		ship_armor_mult = 0.25
+		ship_shield_mult = 0.25
+	}
+	leader_trait = {
+		admiral
+	}
+	leader_class = {
+		admiral
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_general = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_mind_club_weakup.dds"
+	immortal_leaders = yes
+	modifier = {
+		army_disengage_chance_mult = 0.75
+		army_morale = 0.75
+		army_damage_mult = 0.25
+	}
+	leader_trait = {
+		general
+	}
+	leader_class = {
+		general
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_general_mod_1 = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_general_mod_1.dds"
+	modifier = {
+		army_collateral_damage_mult = 3
+		army_morale_damage_mult = 0.5
+		army_damage_mult = 1
+		armies_upkeep_mult = 0.5
+	}
+	leader_trait = {
+		general
+	}
+	leader_class = {
+		general
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_general_mod_2 = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_general_mod_2.dds"
+	modifier = {
+		army_disengage_chance_mult = 1
+		army_collateral_damage_mult = -1
+		army_damage_mult = -0.25
+		army_morale_damage_mult = -0.5
+	}
+	leader_trait = {
+		general
+	}
+	leader_class = {
+		general
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_general_mod_3 = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_general_mod_3.dds"
+	modifier = {
+		armies_upkeep_mult = -0.5
+		army_morale = -0.5
+	}
+	leader_trait = {
+		general
+	}
+	leader_class = {
+		general
+	}
+	initial = no
+	randomized = no
+}
+
+#######仿生人领袖########
+leader_trait_azur_robot_ruler = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_robot_core.dds"
+	immortal_leaders = yes
+	modifier = {
+		trade_value_mult = 0.25
+		all_technology_research_speed = 0.1
+		country_naval_cap_mult = 0.25
+	}
+	leader_trait = {
+		ruler
+	}
+	leader_class = {
+		ruler
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_robot_governor = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_robot_core.dds"
+	immortal_leaders = yes
+	modifier = {
+		armies_cost_mult = -0.25
+		starbase_shipyard_build_cost_mult = -0.15
+		planet_buildings_cost_mult = -0.15
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+	}
+	leader_trait = {
+		governor
+	}
+	leader_class = {
+		governor
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_robot_scientist = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_robot_core.dds"
+	immortal_leaders = yes
+	modifier = {
+		all_technology_research_speed = 0.2
+		ship_anomaly_fail_risk = -0.2
+		ship_anomaly_research_speed_mult = 0.4
+	}
+	leader_trait = {
+		scientist
+	}
+	leader_class = {
+		scientist
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_robot_admiral = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_robot_core.dds"
+	immortal_leaders = yes
+	modifier = {
+		ships_upkeep_mult = -0.2
+		ship_hull_regen_add_perc = 0.75
+		ship_armor_regen_add_perc = 0.75
+		ship_weapon_range_mult = 0.25
+		ship_evasion_mult = 0.1
+	}
+	leader_trait = {
+		admiral
+	}
+	leader_class = {
+		admiral
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_azur_robot_general = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_robot_core.dds"
+	immortal_leaders = yes
+	modifier = {
+		army_damage_mult = 0.15
+		army_morale_damage_mult = 0.15
+		armies_upkeep_mult = -0.2
+	}
+	leader_trait = {
+		general
+	}
+	leader_class = {
+		general
+	}
+	initial = no
+	randomized = no
+}

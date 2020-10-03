@@ -1,0 +1,42 @@
+#另一个立绘mod
+"舰娘" = {
+	archetype = KANSEN
+	randomized = no				#随机
+	
+	gender = no					#性别
+	
+	portrait_modding = no		#人像是否可以通过基因修饰/修饰来修饰？？？
+
+	portraits = {
+		"sakura"	
+		"ironblood"
+		"vichya"
+		"sardegna"		
+		"union"
+		"royalnavy"		
+		"eastern"
+		"northunion"
+		"iris"
+		"redaxis_all"
+		"azurlane_all"
+		"azur_red_all"
+	}
+	
+	non_randomized_portraits = {
+		"sakura"	
+		"ironblood"
+		"vichya"
+		"sardegna"		
+		"union"
+		"royalnavy"		
+		"eastern"
+		"northunion"
+		"iris"
+		"redaxis_all"
+		"azurlane_all"
+		"azur_red_all"	
+    }
+
+	graphical_culture = humanoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}

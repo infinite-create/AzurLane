@@ -1,0 +1,23 @@
+part = {#自定义起始文本
+	location = 0
+	localization = "START_SCREEN_MESSAGES_AZURLANE_1" #测试文本，暂时没想到应该填充什么
+
+	trigger = {
+		has_country_flag = custom_start_screen
+		# OR = {
+		# 	has_government = gov_azur_00
+		# 	has_government = gov_azur_01
+		# 	has_government = gov_azur_02
+		# }
+		has_authority = auth_azur_lane_0
+	}
+}
+part = {
+	location = 1
+	localization = "START_SCREEN_MESSAGES_AZURLANE_2"
+
+	trigger = {
+		has_country_flag = custom_start_screen
+		has_authority = auth_azur_lane_0
+	}
+}

@@ -1,0 +1,28 @@
+﻿l_english:
+ mind_club:0"mind cube"
+ mind_club_desc:0"Azurlane girls were born from the mind cube."
+
+ mind_club:0"Mind cube"
+ mind_club_desc:0"Blue line girls exist in the original mind Cube."
+ star_trek_armour:0 "Star ship loading"
+ star_trek_armour_desc:0 ""
+ FLAG_CATEGORY_azurlane_flags_sp:0"Azur Flag SP"
+ auth_azur_lane_0:0"Port secretary system"
+ auth_azur_lane_0_desc:0"The system of secretary ship in the port area of blue line, every ship can serve as secretary ship."
+ gov_azur_00:0"The port is the government"
+ RT_MISHUJIAN:0"Secretary of the ship"
+ azur_city1:0"The port is planet"
+ azur_city1_desc:0"The unique star planning of the port area, specialized management for the mind cube."
+ mod_country_mind_club_produces_mult:0"National Mind Cube production"
+ mod_planet_jobs_mind_club_produces_mult:0"Produce the mind cube"
+ mod_planet_buildings_mind_club_upkeep_mult:0"Construction mind Cube maintenance"
+ mod_planet_buildings_mind_club_cost_mult:0"Construction mind Cube cost"
+ bombardment_azur_armageddon:0"The ultimate end"
+ bombardment_azur_armageddon_desc:0"The fleet unlocks all weapons, bombards everything in sight, and completely destroys the planet."
+ bombardment_azur_pox:0"Mental impact"
+ bombardment_azur_pox_desc:0"The release of mind cube energy has a strong impact on the surface of the earth, all organic intelligent individuals will be affected by the nervous system and then commit suicide."
+
+ azur_1_system_initializer_NAME:0"Azur Lane galaxy"
+ azur_1_system_initializer_DESC:0"Where the Mind cube was born, the star system where the Azur Lane originated."
+ azur_star_1:0"The Azur Lane of stars"
+

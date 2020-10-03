@@ -1,0 +1,104 @@
+namespace = azur_eggs
+
+country_event = {
+	id = azur_eggs.0
+	title = azur_eggs.0.name
+	desc = azur_eggs.0.desc
+
+	is_triggered_only = yes
+	picture = GFX_Stellaris_Modder_Association
+
+	immediate = {
+		random_owned_leader = {
+			set_leader_flag = azur_eggs_selected_leader
+			save_global_event_target_as = azur_eggs_selected_leader_target
+		}
+	}
+
+	option = {
+		name = azur_eggs.0.aa
+	}
+}
+
+fleet_event = {
+	id = azur_eggs.1
+	title = azur_eggs.1.name
+	desc = azur_eggs.1.desc
+
+	archaeology = yes
+	is_triggered_only = yes
+	picture = ""
+
+	option = {
+		name = azur_eggs.1.aa
+		hidden_effect = {
+			small_artifact_reward = yes
+		}
+	}
+}
+fleet_event = {
+	id = azur_eggs.2
+	title = azur_eggs.2.name
+	desc = azur_eggs.2.desc
+
+	archaeology = yes
+	is_triggered_only = yes
+	picture = ""
+
+	option = {
+		name = azur_eggs.2.aa
+		hidden_effect = {
+			small_artifact_reward = yes
+			leader = {
+				save_event_target_as = azur_eggs_exile_leader
+				exile_leader_as = this
+			}
+		}
+	}
+}
+fleet_event = {
+	id = azur_eggs.3
+	title = azur_eggs.3.name
+	desc = azur_eggs.3.desc
+
+	archaeology = yes
+	is_triggered_only = yes
+	picture = ""
+
+	immediate = {
+		set_leader = event_target:azur_eggs_exile_leader
+		event_target:azur_eggs_exile_leader = {
+			set_leader_flag = selected_leader
+		}
+	}
+
+	option = {
+		name = azur_eggs.3.aa
+		hidden_effect = {
+			small_artifact_reward = yes
+		}
+	}
+}
+
+country_event = {
+	id = azur_eggs.100
+	title = azur_eggs.100.name
+	desc = azur_eggs.100.desc
+
+	is_triggered_only = yes
+	picture = GFX_Stellaris_Modder_Association
+
+	trigger = {
+		NOT = {
+			has_country_flag = start_Stellaris_Modder_Association
+		}
+	}
+
+	after = {
+		set_country_flag = start_Stellaris_Modder_Association
+	}
+
+	option = {
+		name = azur_eggs.100.aa
+	}
+}

@@ -1,0 +1,316 @@
+@club1Cost = 100
+@club2Cost = 300
+@club3Cost = 500
+@clubDuration = 3600
+@campaignCost = 1000
+@campaign2Cost = 3000
+@campaignDuration = 3600
+@Edict1Cost = 100
+@Edict2Cost = 200
+@Edict3Cost = 300
+@Edict4Cost = 500
+@EdictDuration = 3600
+azur_energy_edicts = {
+	length = @clubDuration
+	icon = GFX_edict_type_policy
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict1Cost
+			mind_club = @club2Cost
+		}
+	}
+	modifier = {
+		country_energy_produces_mult = 0.2
+	}
+	prerequisites = {
+		"tech_azur_club_station"
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+azur_minerals_edicts = {
+	length = @clubDuration
+	icon = GFX_edict_type_policy
+	resources = {
+		category = edicts
+		cost = {
+			energy = @campaign2Cost
+			mind_club = @club1Cost
+		}
+	}
+	modifier = {
+		country_minerals_produces_mult = 0.2
+	}
+	prerequisites = {
+		"tech_azur_mineral_purification"
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+azur_research_edicts = {
+	length = @clubDuration
+	icon = GFX_edict_type_policy
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict1Cost
+			mind_club = @club3Cost
+		}
+	}
+	show_tech_unlock_if = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+	}
+	modifier = {
+		all_technology_research_speed = 0.1
+	}
+	prerequisites = {
+		"tech_azur_scientific_archives"
+	}
+	potential = {
+		NOT = {
+			has_authority = auth_machine_intelligence
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+azur_club_edicts = {
+	length = @EdictPerpetual
+	icon = GFX_edict_type_policy
+	edict_cap_usage = 1
+	resources = {
+		category = campaigns
+		cost = {
+			influence = @Edict1Cost
+			energy = @campaignCost
+		}
+	}
+	modifier = {
+		planet_jobs_mind_club_produces_mult = 0.25
+	}
+	prerequisites = {
+		"tech_mind_club_0"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_mind_net_edict = {
+	length = 0
+	icon = GFX_edict_type_policy
+	resources = {
+		category = campaigns
+		cost = {
+			influence = @Edict4Cost
+		}
+	}
+	prerequisites = {
+		"tech_mind_net_3"
+	}
+	potential = {
+		is_ai = no
+		NOT = {
+			has_modifier = mind_net_done
+		}
+	}
+	effect = {
+		country_event = {
+			id = azur.1150
+		}
+	}
+}
+
+azur_fortify_the_border = {
+	length = @clubDuration
+	icon = GFX_edict_type_policy
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict1Cost
+			mind_club = @club1Cost
+			energy = @campaignCost
+		}
+	}
+	modifier = {
+		starbase_upgrade_speed_mult = 1
+		starbase_building_build_speed_mult = 1
+		starbase_module_build_speed_mult = 1
+	}
+	prerequisites = {
+		"tech_mind_club_4"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_starbase_add = {
+	length = @EdictPerpetual
+	icon = GFX_edict_type_policy
+	edict_cap_usage = 1
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict3Cost
+			mind_club = @club2Cost
+		}
+	}
+	modifier = {
+		country_starbase_capacity_add = 8
+	}
+	prerequisites = {
+		"tech_azur_starbase_add"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_nutritional_plenitude = {
+	length = @EdictPerpetual
+	icon = GFX_edict_type_policy
+	edict_cap_usage = 1
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict1Cost
+			mind_club = @club1Cost
+			energy = @campaignCost
+		}
+	}
+	modifier = {
+		pop_growth_speed = 0.3
+		biological_pop_happiness = 0.05
+		planet_pops_organics_food_upkeep_mult = 0.25
+	}
+	potential = {
+		is_gestalt = no
+	}
+	prerequisites = {
+		"tech_azur_nutrition"
+	}
+	show_tech_unlock_if = {
+		is_gestalt = no
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_great_fleet_supremacy = {
+	length = @EdictPerpetual
+	icon = GFX_edict_type_policy
+	edict_cap_usage = 1
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict4Cost
+		}
+	}
+	prerequisites = {
+		"tech_great_fleet_supremacy"
+	}
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.75
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_robot_boost = {
+	length = @clubDuration
+	icon = GFX_edict_type_policy
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict1Cost
+			mind_club = @club3Cost
+			energy = @campaign2Cost
+		}
+	}
+	prerequisites = {
+		"tech_robot_boost"
+	}
+	modifier = {
+		planet_pop_assembly_mult = 0.5
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_people_edicts = {
+	length = @EdictPerpetual
+	icon = GFX_edict_type_policy
+	edict_cap_usage = 0
+	prerequisites = {
+		"tech_azur_colony_types"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_auto_tech_research = {
+	length = -1
+	icon = GFX_edict_type_policy
+	edict_cap_usage = 0
+	prerequisites = {
+		tech_mind_sy_4
+	}
+	resources = {
+		category = edicts
+		cost = {
+			influence = 500
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = azur_auto_tech.0
+			}
+			country_event = {
+				id = azur_auto_tech.100
+				days = 30
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_auto_tech_research_configuration = {
+	length = 0
+	icon = GFX_edict_type_policy
+	edict_cap_usage = 0
+	resources = {
+		category = edicts
+		cost = {
+		}
+	}
+	prerequisites = {
+		tech_mind_sy_4
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = azur_auto_tech.0
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

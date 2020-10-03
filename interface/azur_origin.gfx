@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_origin_azurlane_01"
+		textureFile = "gfx/event_pictures/origins/azurlane_origin_01.dds"
+	}
+
+}

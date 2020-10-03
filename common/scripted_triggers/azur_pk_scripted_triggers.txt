@@ -1,0 +1,7 @@
+can_destroy_planet_with_gaia_wave_gun = {
+	custom_tooltip = {
+		fail_text = is_not_a_habitable_planet_or_megastructure
+		is_a_habitable_planet_megastructure = yes
+	}
+	is_star = no
+}

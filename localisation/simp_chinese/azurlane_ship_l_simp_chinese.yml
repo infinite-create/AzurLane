@@ -1,0 +1,21 @@
+﻿l_simp_chinese: 
+###科技
+ tech_azur_shipyard:0 "新式星际船坞设计"
+ tech_azur_shipyard_desc:0 "设计开发新式船坞，能同时允许多个栏位同时开工，并且工作人员之间能相互协作。"
+ tech_azur_anchorage:0 "超级舰队锚地计划"
+ tech_azur_anchorage_desc:0 "设计容量更大，船位更多，功能更全的新式星舰锚地。"
+ tech_azur_naval_headquarters:0 "星港联合指挥节点"
+ tech_azur_naval_headquarters_desc:0 "我们庞大的星际海军需要更多的管理和调动能力，我们将在恒星基地上面设置指挥节点。"
+ tech_azur_cube_station_computer:0 "恒星堡垒心智链接超算"
+ tech_azur_cube_station_computer_desc:0 "旧有的堡垒防御已不能满足我们的需求，设计新式星港专用心智超算来加强恒星堡垒的防御能力。"
+###星港部件
+ azur_sshipyard:0 "Azur船坞"
+ azur_sanchorage:0 "Azur锚地"
+ sm_azur_shipyard:0 "Azur星际船坞"
+ sm_azur_shipyard_desc:0 "根据心智魔方科技设计的新式船坞，能同时有三个栏位同时进行舰船建造，高效的通信链接使大规模造船成为可能。"
+ sm_azur_anchorage:0 "Azur舰队锚地"
+ sm_azur_anchorage_desc:0 "使用新式材料与结构设计的新式锚地，能同时停泊大量舰船，并配有小型警卫队，增加贸易保护。"
+ sm_azur_naval_headquarters:0 "Azur舰队指挥枢纽"
+ sm_azur_naval_headquarters_desc:0 "设立在恒星基地的大型指挥中心，配置有心智链接超算辅助指挥。\n 能增加舰船建造速度，Azur星际船坞数量越多效果越高。\n 为每个Azur舰队锚地增加5海军容量，并且根据数量增加贸易收集范围与贸易额。"
+ sm_azur_cube_station_computer:0 "恒星堡垒超算"
+ sm_azur_cube_station_computer_desc:0 "为星港防御设计的超级计算机，能协调指挥更多防御平台。通过计算攻击落点来凝聚护盾能量进行防御，大大提高了护盾能量的效率。"

@@ -1,0 +1,50 @@
+###76 魔法炮
+weapon_component_template = {
+	key = "76cm_mix_gun"
+	icon = GFX_76cm_mix_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "adv_kinetic_artillery"
+	power = -20
+	prerequisites = { tech_76cm_mix_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			mind_club = 0.1
+		}
+	}
+	tags = { 
+		weapon_type_energy
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 80
+		max = 80
+	}
+	windup = {
+		max = 20
+		min = 20
+	}
+	total_fire_time = 1
+
+	hull_damage = 3
+
+	armor_penetration = 0.8
+	shield_penetration = 0.8
+
+	range = 60
+
+	tracking = 0.8
+	accuracy = 0.9
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "76MM_MIX_GUN"
+}

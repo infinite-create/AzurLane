@@ -1,0 +1,376 @@
+#############
+####基础特性
+##############
+trait_azurlanegirls = {
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_azurlanegirls.dds"
+	potential_crossbreeding_chance = 0
+	randomized = no
+	modification = no
+	advanced_trait = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		army_damage_mult = 0.2
+		planet_jobs_produces_mult = 0.05
+		pop_government_ethic_attraction = 0.5
+		pop_housing_usage_mult = -0.2
+		species_empire_size_mult = -0.1
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+}
+
+trait_mind_club_weakup = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_mind_club_weakup.dds"
+	potential_crossbreeding_chance = 0
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	modification = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		leader_skill_levels = 5
+		species_leader_exp_gain = 2
+		planet_jobs_produces_mult = 0.2
+		pop_growth_speed = 0.5
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+}
+
+trait_mind_roform = {
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_mind_roform.dds"
+	potential_crossbreeding_chance = 0
+	initial = no
+	randomized = no
+	advanced_trait = no
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.03
+		pop_government_ethic_attraction = 1
+		pop_housing_usage_mult = -0.2
+		species_empire_size_mult = -0.1
+	}
+	prerequisites = {
+		tech_mind_club_alien
+	}
+	opposites = {
+		"trait_azurlanegirls"
+	}
+}
+
+trait_azur_robot_structure = {
+	cost = 3
+	icon = "gfx/interface/icons/traits/trait_azur_robot_structure.dds"
+	initial = no
+	randomized = no
+	advanced_trait = no
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	modifier = {
+		army_health = 0.5
+		planet_jobs_minerals_produces_mult = 0.5
+		pop_housing_usage_mult = -0.5
+		planet_pops_robotics_upkeep_mult = -0.2
+		planet_pop_assemblers_upkeep_mult = 0.25
+	}
+	prerequisites = {
+		tech_mind_robot
+	}
+}
+
+trait_azur_robot_core = {
+	cost = 3
+	icon = "gfx/interface/icons/traits/trait_azur_robot_core.dds"
+	initial = no
+	randomized = no
+	advanced_trait = no
+	improves_leaders = yes
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	modifier = {
+		army_damage_mult = 0.25
+		planet_jobs_produces_mult = 0.05
+		pop_government_ethic_attraction = 1
+		leader_skill_levels = 5
+		species_leader_exp_gain = 1
+	}
+	prerequisites = {
+		tech_mind_robot
+	}
+}
+
+trait_robot_mind_link_core = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_robot_mind_link_core.dds"
+	potential_crossbreeding_chance = 0
+	initial = no
+	randomized = no
+	advanced_trait = no
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.2
+		planet_researchers_produces_mult = 0.2
+		species_empire_size_mult = -0.1
+	}
+	prerequisites = {
+		tech_mind_link_core
+	}
+}
+
+trait_azur_biology_gene = {
+	cost = 4
+	icon = "gfx/interface/icons/traits/trait_azur_biology_gene.dds"
+	potential_crossbreeding_chance = 0
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	modifier = {
+		pop_environment_tolerance = 0.5
+		army_health = 0.5
+		planet_jobs_worker_produces_mult = 0.25
+		planet_researchers_produces_mult = 0.1
+	}
+	prerequisites = {
+		tech_mind_club_biology
+	}
+}
+
+#############
+####模块化功能
+##############
+trait_azurlanegirls_1 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_1.dds"
+	potential_crossbreeding_chance = 0
+	initial = yes
+	advanced_trait = no
+	randomized = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		army_damage_mult = 0.5
+		pop_growth_speed = -0.03
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+	# prerequisites = {
+	# 	tech_mind_club_1
+	# }
+}
+
+trait_azurlanegirls_2 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_2.dds"
+	potential_crossbreeding_chance = 0
+	initial = yes
+	advanced_trait = no
+	randomized = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.15
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15
+		pop_growth_speed = -0.03
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+	# prerequisites = {
+	# 	tech_mind_club_1
+	# }
+}
+
+trait_azurlanegirls_3 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_3.dds"
+	potential_crossbreeding_chance = 0
+	initial = yes
+	advanced_trait = no
+	randomized = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		leader_skill_levels = 3
+		species_leader_exp_gain = 0.5
+		pop_growth_speed = -0.03
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+	# prerequisites = {
+	# 	tech_mind_club_1
+	# }
+}
+
+trait_azurlanegirls_4 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_4.dds"
+	potential_crossbreeding_chance = 0
+	initial = yes
+	advanced_trait = no
+	randomized = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		leader_age = 100
+		pop_growth_speed = -0.03
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+	# prerequisites = {
+	# 	tech_mind_club_1
+	# }
+}
+
+trait_azurlanegirls_5 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_5.dds"
+	potential_crossbreeding_chance = 0
+	initial = yes
+	advanced_trait = no
+	randomized = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		planet_jobs_food_produces_mult = 0.3
+		pop_growth_speed = -0.03
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+	# prerequisites = {
+	# 	tech_mind_club_1
+	# }
+}
+
+trait_azurlanegirls_6 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_7.dds"
+	potential_crossbreeding_chance = 0
+	initial = yes
+	advanced_trait = no
+	randomized = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.3
+		pop_growth_speed = -0.03
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+	# prerequisites = {
+	# 	tech_mind_club_1
+	# }
+}
+
+trait_azurlanegirls_7 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_6.dds"
+	potential_crossbreeding_chance = 0
+	initial = yes
+	advanced_trait = no
+	randomized = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.3
+		pop_growth_speed = -0.03
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+	# prerequisites = {
+	# 	tech_mind_club_1
+	# }
+}
+
+trait_azurlanegirls_8 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_8.dds"
+	potential_crossbreeding_chance = 0
+	initial = yes
+	advanced_trait = no
+	randomized = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		pop_environment_tolerance = 0.5
+		pop_growth_from_immigration = 0.1
+		pop_growth_speed = -0.03
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+	prerequisites = {
+		tech_mind_club_1
+	}
+}
+
+trait_azurlanegirls_9 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_9.dds"
+	potential_crossbreeding_chance = 0
+	initial = yes
+	advanced_trait = no
+	randomized = no
+	allowed_archetypes = {
+		#BIOLOGICAL
+		KANSEN
+	}
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.1
+		planet_jobs_consumer_goods_produces_mult = 0.1
+		pop_growth_speed = -0.03
+	}
+	opposites = {
+		"trait_mind_roform"
+	}
+	# prerequisites = {
+	# 	tech_mind_club_1
+	# }
+}

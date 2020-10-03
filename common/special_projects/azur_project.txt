@@ -1,0 +1,54 @@
+
+special_project = {
+	key = "MIND_NET_PROJECT"
+	cost = 100000
+	tech_department = physics_technology
+	picture = GFX_evt_board_meeting
+	location = no
+	icon = "gfx/interface/icons/situation_log/situation_log_physics.dds"
+	timelimit = -1
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+                owner = {
+		country_event = { id = azur.1100 }
+                }
+	}
+	
+	on_fail = {
+	}
+	
+	on_start = {
+	}
+}
+
+special_project = {
+	key = "MIND_NET_DONE"
+	cost = 500000
+	tech_department = society_technology
+	picture = GFX_evt_board_meeting
+	location = no
+	icon = "gfx/interface/icons/situation_log/situation_log_ai.dds"
+	timelimit = 360
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+                owner = {
+		country_event = { id = azur.1200 }
+                }
+	}
+	
+	on_fail = {
+	}
+	
+	on_start = {
+	}
+}

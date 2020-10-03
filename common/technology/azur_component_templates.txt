@@ -1,0 +1,380 @@
+tech_138.6cm_single_pack_laser_gun = {#138炮
+	tier = 2
+	cost = 5000
+	area = engineering
+	category = { particles }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_310cm_trigeminy_pack_naval_gun = {#310炮
+	tier = 3
+	cost = 10000
+	area = engineering
+	category = { materials }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { tech_152cm_trigeminy_pack_Mark17_naval_gun }
+}
+
+tech_extremity_jump_drive = {#极限跃迁引擎
+	tier = 5
+	cost = 300000
+	area = engineering
+	category = { propulsion }
+	is_rare = yes
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+
+tech_mind_excursive_shield = {#心智偏移护盾
+	tier = 3
+	cost = 50000
+	area = physics
+	category = { field_manipulation }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+
+tech_406cm_trigeminy_pack_50_laser_gun = {#406 50炮
+	tier = 5
+	cost = 500000
+	area = physics
+	category = { particles }
+	is_rare = yes
+
+	potential = {
+		has_authority = auth_azur_lane_0
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { tech_203cm_trigeminy_pack_SKC_laser_gun }
+}
+tech_406cm_trigeminy_pack_MK6_naval_gun = {#406 MK6炮
+	tier = 4
+	cost = 100000
+	area = engineering
+	category = { materials }
+	is_rare = yes
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { tech_381cm_trigeminy_pack_naval_gun }
+}
+tech_457cm_duplex_pack_MKA_laser_gun = {#457炮
+	tier = 5
+	cost = 350000
+	area = physics
+	category = { particles }
+	is_rare = yes
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { tech_406cm_trigeminy_pack_50_laser_gun }
+}
+tech_76cm_mix_gun = {#76炮
+	tier = 3
+	cost = 12000
+	area = engineering
+	category = { particles }
+	is_rare = yes
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_138.6cm_single_pack_laser_gun" "tech_310cm_trigeminy_pack_naval_gun"}
+}
+tech_114cm_duplex_pack_MarkIV_usual_gun = {#114 炮
+	tier = 2
+	cost = 8000
+	area = engineering
+	category = { materials }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_152cm_trigeminy_pack_Mark17_naval_gun = {#152 Mark17 炮
+	tier = 2
+	cost = 8000
+	area = engineering
+	category = { particles }
+	is_rare = yes
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_152cm_trigeminy_pack_laser_gun = {#152 Mark17 炮
+	tier = 3
+	cost = 16000
+	area = physics
+	category = { particles }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { tech_138.6cm_single_pack_laser_gun }
+}
+tech_203cm_trigeminy_pack_SKC_laser_gun = {#203 炮
+	tier = 4
+	cost = 25000
+	area = physics
+	category = { particles }
+	is_rare = yes
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { tech_152cm_trigeminy_pack_laser_gun }
+}
+tech_130cm_duplex_pack_B-2LMT3_usual_gun = {#130 炮
+	tier = 4
+	cost = 25000
+	area = engineering
+	category = { materials }
+	is_rare = yes
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { tech_114cm_duplex_pack_MarkIV_usual_gun }
+}
+tech_381cm_trigeminy_pack_naval_gun = {#381 炮
+	tier = 4
+	cost = 25000
+	area = physics
+	category = { particles }
+	is_rare = yes
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { tech_310cm_trigeminy_pack_naval_gun }
+}
+tech_234cm_trigeminy_pack_usual_gun = {#234 炮
+	tier = 3
+	cost = 15000
+	area = engineering
+	category = { materials }
+	is_rare = yes
+
+	weight = 25
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { tech_130cm_duplex_pack_B-2LMT3_usual_gun }
+}
+tech_VF_17_viking_squadrons = {#海盗
+	tier = 3
+	cost = 14500
+	area = engineering
+	category = { materials }
+
+	potential = {
+		has_authority = auth_azur_lane_0
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_SB2C_hell_swoop = {#地狱俯冲者
+	tier = 3
+	cost = 14500
+	area = engineering
+	category = { materials }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_mind_navigation_array = {#心智导航列阵
+	tier = 5
+	cost = 50000
+	area = physics
+	category = { particles }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_mind_armours = {#心智反应装甲
+	tier = 3
+	cost = 10000
+	area = engineering
+	category = { materials }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_proficient_in_acmunition = {#弹药精通
+	tier = 3
+	cost = 14000
+	area = engineering
+	category = { materials }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_mind_reactor = {#心智反应堆
+	tier = 3
+	cost = 15000
+	area = physics
+	category = { materials }
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_high_performance_steering_gear = {#高性能舵机
+	tier = 3
+	cost = 15000
+	area = engineering
+	category = { propulsion }
+	is_rare = yes
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_mind_network = {
+	tier = 3
+	cost = 15000
+	area = physics
+	category = { particles }
+	is_rare = yes
+
+	potential = {
+		azurlane_default_component_trigger = yes
+	}
+
+	weight = 25
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}
+tech_gaia_wave_gun = {
+	tier = 5
+	cost = 50000
+	area = society
+	category = { military_theory }
+	potential = {
+		azurlane_default_component_trigger = yes
+		has_technology = tech_colossus
+	}
+	is_rare = yes
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}

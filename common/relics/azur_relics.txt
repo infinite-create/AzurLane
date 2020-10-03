@@ -1,0 +1,116 @@
+colorful_rubik's_cube = {
+	activation_duration = 1800
+	portrait = "GFX_relic_colorful_rubik's_cube"
+	sound = "relic_activation_ether_drake_trophy"
+
+	resources = {
+		category = relics
+		cost = {
+			influence = 100
+			energy = 100000
+			mind_club = 100
+		}
+	}
+
+	triggered_country_modifier = {
+		custom_tooltip = "colorful_rubik's_cube_tooltip"
+		planet_jobs_mind_club_produces_mult = 0.2
+		potential = {
+			always = yes
+		}
+	}
+
+	score = 500
+
+	active_effect = {
+		custom_tooltip = "colorful_rubik's_cube_effect_tooltip"
+		hidden_effect = {
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = colorful_rubik's_cube_start
+					}
+				}
+				add_modifier = {
+					modifier = colorful_rubik's_cube_charge
+					days = 180
+				}
+				country_event = {
+					id = azur_relic.0
+					days = 180
+				}
+			}
+			else = {
+				remove_country_flag = colorful_rubik's_cube_start
+				add_modifier = {
+					modifier = colorful_rubik's_cube_activate
+					years = 3
+				}
+				add_modifier = {
+					modifier = colorful_rubik's_cube_cooldown
+					years = 3
+				}
+				country_event = {
+					id = azur_relic.1
+				}
+			}
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "colorful_rubik's_cube_no_cooldown"
+			NOT = {
+				has_modifier = colorful_rubik's_cube_cooldown
+			}
+		}
+		custom_tooltip = {
+			fail_text = "colorful_rubik's_cube_chargding"
+			NOT = {
+				has_modifier = colorful_rubik's_cube_charge
+			}
+		}
+	}
+}
+
+Stellaris_Modder_Association = {#徽标
+	activation_duration = 1800
+	portrait = "GFX_relic_Stellaris_Modder_Association"
+	sound = "relic_activation_ether_drake_trophy"
+
+	resources = {
+		category = relics
+		cost = {
+			influence = 100
+		}
+	}
+
+	score = 1000
+
+	triggered_country_modifier = {
+		country_society_research_produces_mult = 0.2
+		potential = {
+			hidden_trigger = {
+				is_ai = no
+			}
+		}
+	}
+
+	active_effect = {
+		hidden_effect = {
+			country_event = {
+				id = azur_eggs.100
+			}
+			set_country_flag = research_Stellaris_Modder_Association
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "research_Stellaris_Modder_Association"
+			NOT = {
+				has_country_flag = research_Stellaris_Modder_Association
+			}
+		}
+	}
+}

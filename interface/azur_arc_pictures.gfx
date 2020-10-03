@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_azur_pioneer_begin"
+		textureFile = "gfx/event_pictures/azur_pioneer_begin.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_azur_eggs_event_1"
+		textureFile = "gfx/event_pictures/eggs/azur_eggs_event_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+}

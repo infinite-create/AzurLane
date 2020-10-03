@@ -1,0 +1,18 @@
+#########################################
+#
+# on_action_events
+#
+#########################################
+
+namespace = azur
+
+#Azur Lane
+event = {
+	id = azur.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = azur_awakened_activated
+	}
+}

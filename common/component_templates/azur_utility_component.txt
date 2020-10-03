@@ -1,0 +1,243 @@
+utility_component_template = {#极限跃迁引擎
+	key = "extremity_jump_drive"
+	size = small
+	icon = GFX_extremity_jump_drive
+	icon_frame = 1
+	power = -100
+	prerequisites = { tech_extremity_jump_drive }
+	should_ai_use = no
+	resources = {
+		category = ship_components
+		cost = {
+			mind_club = 20
+			alloys = 30
+		}
+		upkeep = {
+			mind_club = 0.1
+			alloys = 0.1
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+	}
+
+	ship_modifier = {
+		ship_windup_mult = -0.5
+		ship_winddown_mult = -0.5
+		ship_ftl_jumpdrive_range_mult = 0.8
+	}
+
+	component_set = ftl_components
+}
+utility_component_template = {#心智扭曲引擎
+	key = "mind_distortion_drive"
+	size = small
+	icon = GFX_mind_distortion_drive
+	icon_frame = 1
+	power = -100
+	prerequisites = { tech_extremity_jump_drive }
+	should_ai_use = no
+	resources = {
+		category = ship_components
+		cost = {
+			star_trek_armour = 3
+			alloys = 30
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+
+	class_restriction = {
+		shipclass_military 
+		shipclass_constructor 
+		shipclass_colonizer 
+		shipclass_science_ship 
+		shipclass_transport 
+		shipclass_military_special 
+	}
+
+	ship_modifier = {
+		ship_windup_mult = -0.8
+		ship_winddown_mult = -0.8
+		ship_ftl_jumpdrive_range_mult = 1.0
+	}
+
+	component_set = ftl_components
+}
+utility_component_template = {#超重弹
+	key = "heavy_shells"
+	size = aux
+	icon = GFX_heavy_shells
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.2
+	}
+	prerequisites = {
+		tech_proficient_in_acmunition
+	}
+	component_set = "HEAVY_SHELLS"
+
+}
+utility_component_template = {#一式穿甲弹
+	key = "one_style_armor-piercing_projectile"
+	size = aux
+	icon = GFX_one_style_armor-piercing_projectile
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+
+	modifier = {
+		ship_armor_penetration_mult = 0.1
+	}
+
+	prerequisites = { tech_proficient_in_acmunition }
+	component_set = "ONE_STYLE_ARMOR_PIERCING_PROJECTILE"
+}
+utility_component_template = {#空间导航列阵
+	key = "mind_navigation_array"
+	size = aux
+	icon = GFX_mind_navigation_array
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			mind_club = 2
+		}
+	}
+
+	sensor_range = 12
+	hyperlane_range = 8
+
+	modifier = {
+		ship_ftl_jumpdrive_range_mult = 0.1
+	}
+
+	prerequisites = { tech_mind_navigation_array }
+	component_set = "sensor_components"
+}
+utility_component_template = {#心智反应堆
+	key = "mind_reactor"
+	size = large
+	icon = GFX_mind_reactor
+	icon_frame = 1
+	power = 5000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			mind_club = 2
+		}
+	}
+
+	prerequisites = { tech_mind_reactor }
+	component_set = "power_core"
+}
+utility_component_template = {#高性能舵机
+	key = "high_performance_steering_gear"
+	size = small
+	icon = GFX_high_performance_steering_gear
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			mind_club = 2
+		}
+	}
+	
+	modifier = {
+		ship_base_speed_mult = 3
+		ship_evasion_mult = 0.5
+	}
+		
+	prerequisites = { tech_high_performance_steering_gear }
+	component_set = "thruster_components"
+}
+utility_component_template = {#心智网络：集群
+	key = "mind_network_swarm"
+	size = small
+	icon = GFX_mind_network
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			mind_club = 1
+		}
+	}
+	ship_behavior = swarm
+	ship_modifier = {
+		ship_speed_mult = 0.5
+		ship_evasion_mult = 20
+	}
+	prerequisites = { tech_mind_network }
+	component_set = "combat_computers"
+}
+utility_component_template = {#心智网络：炮击
+	key = "mind_network_artillery"
+	size = small
+	icon = GFX_mind_network
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			mind_club = 1
+		}
+	}
+	ship_behavior = artillery
+	ship_modifier = {
+		ship_fire_rate_mult = 2.0
+		ship_tracking_mult = 0.2
+	}
+	prerequisites = { tech_mind_network }
+	component_set = "combat_computers"
+
+}
+utility_component_template = {#心智网络：哨卫
+	key = "mind_network_picket"
+	size = small
+	icon = GFX_mind_network
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			mind_club = 1
+		}
+	}
+	ship_modifier = {
+		ship_tracking_mult = 0.5
+	}
+	
+	ship_behavior = "picket"
+	prerequisites = { tech_mind_network }
+	component_set = "combat_computers"
+}

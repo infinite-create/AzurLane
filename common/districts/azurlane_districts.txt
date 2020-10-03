@@ -1,0 +1,128 @@
+district_azur_harbour_city = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	show_on_uncolonized = { 
+		uses_district_set = azur_harbour
+	}
+	potential = { 
+		uses_district_set = azur_harbour
+	}
+	resources = { 
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 500
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_max_districts_add = 1
+		job_nutrition_expert_add = 1
+		job_mind_club_nurse_add = 3
+	}
+}
+district_azur_harbour_plant = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	show_on_uncolonized = { 
+		uses_district_set = azur_harbour
+	}
+	potential = { 
+		uses_district_set = azur_harbour
+	}
+	resources = { 
+		category = planet_districts
+		cost = {
+			minerals = 3000
+			alloys = 1000
+		}
+		upkeep = {
+			energy = 15
+			minerals = 10
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining
+	}
+
+	planet_modifier = {
+		job_azur_manufacturing_technician_add = 5
+		job_alloy_expert_add = 10
+		job_club_artist_add = 10
+	}
+}
+district_azur_harbour_mind_plant = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	show_on_uncolonized = { 
+		uses_district_set = azur_harbour
+	}
+	potential = { 
+		uses_district_set = azur_harbour
+	}
+	resources = { 
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			alloys = 2000
+		}
+		upkeep = {
+			energy = 20
+			minerals = 10
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_generator
+	}
+
+	planet_modifier = {
+		job_club_worker_add = 5
+		job_club_expert_add = 1
+	}
+}
+district_azur_harbour_graduate = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	show_on_uncolonized = { 
+		uses_district_set = azur_harbour
+	}
+	potential = { 
+		uses_district_set = azur_harbour
+	}
+	resources = { 
+		category = planet_districts
+		cost = {
+			minerals = 3000
+			alloys = 1000
+			mind_club = 200
+		}
+		upkeep = {
+			energy = 20
+			minerals = 20
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining
+	}
+
+	planet_modifier = {
+		job_azur_researcher_add = 5
+		job_azur_roboticist_add = 3
+		job_azur_roboticist_ruler_add = 1
+	}
+}

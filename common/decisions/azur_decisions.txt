@@ -1,0 +1,224 @@
+
+decision_mind_capital = {
+	owned_planets_only = yes
+	icon = event_administrative_work
+	
+	enactment_time = 1080
+	prerequisites = {
+		"tech_azur_mind_capital"
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 150
+			minerals = 3000
+                        energy = 3000
+			mind_club = 500
+		}	
+	}
+	
+	potential = {
+		NOT = { has_modifier = penal_colony }
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = resort_colony }
+		owner = { 
+			is_regular_empire = yes 
+		}
+		NOT = { 
+			has_building = azur_building_mind_capital
+		}
+	}
+	
+	allow = {
+		num_pops >= 80
+                has_building = building_system_capital
+	}
+	
+	effect = {
+                add_modifier = {
+			modifier = mind_upgrade_city
+			days = -1
+		}	
+		hidden_effect = {
+			if = {
+				limit = {
+					has_building = building_system_capital
+				 }
+				 remove_building = building_system_capital
+				 add_building = azur_building_mind_capital			
+			}
+		}
+
+
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+decision_mind_net_capital = {
+	owned_planets_only = yes
+	icon = event_administrative_work
+	
+	enactment_time = 360
+	prerequisites = {
+		"tech_mind_net_done"
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+                        energy = 3000
+			mind_club = 300
+		}	
+	}
+	
+	potential = {
+		NOT = { has_modifier = penal_colony }
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = resort_colony }
+		owner = { 
+			is_regular_empire = yes 
+		}
+		NOT = { 
+			has_building = azur_building_mind_net_capital
+		}
+	}
+	
+	allow = {
+		num_pops >= 80
+                has_building = azur_building_mind_capital
+	}
+	
+	effect = {
+                add_modifier = {
+			modifier = mind_net_connect_city
+			days = -1
+		}	
+		hidden_effect = {
+			if = {
+				limit = {
+					has_building = azur_building_mind_capital
+				 }
+				 remove_building = azur_building_mind_capital
+				 add_building = azur_building_mind_net_capital			
+			}
+		}
+
+
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_planet_club_boost = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+        prerequisites = {
+		"tech_mind_cube_maintain"
+	}
+	
+	resources = {
+		category = decisions
+		cost = {
+			mind_club = 100
+                                                energy = 1000
+		}
+	}
+	
+	potential = {
+		owner = { is_regular_empire = yes }
+		NOR = {
+			has_modifier = planet_club_boost
+		}
+	}
+	
+	allow = {
+		NOT = { has_modifier = planet_club_boost }
+	}	
+	
+	effect = {
+		add_modifier = { modifier = "planet_club_boost" days = -1 }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_planet_mind_rinse = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+        prerequisites = {
+		"tech_decision_mind_rinse"
+	}
+	
+	resources = {
+		category = decisions
+		cost = {
+			mind_club = 100
+		}
+	}
+	
+	potential = {
+		owner = { is_regular_empire = yes }
+		NOR = {
+			has_modifier = planet_mind_rinse
+		}
+	}
+	
+	allow = {
+		NOT = { has_modifier = planet_mind_rinse }
+	}	
+	
+	effect = {
+		add_modifier = { modifier = "planet_mind_rinse" days = 1800 }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_planet_ruler_welfare = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+        prerequisites = {
+		"tech_azur_service_center"
+	}
+	
+	resources = {
+		category = decisions
+		cost = {
+			consumer_goods = 1000
+		}
+	}
+	
+	potential = {
+		owner = { is_regular_empire = yes }
+		NOR = {
+			has_modifier = planet_ruler_welfare
+		}
+	}
+	
+	allow = {
+		NOT = { has_modifier = planet_ruler_welfare }
+	}	
+	
+	effect = {
+		add_modifier = { modifier = "planet_ruler_welfare" days = 10800 }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

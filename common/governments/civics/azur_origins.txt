@@ -1,0 +1,28 @@
+origin_azur_1 = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_azur_1.dds"
+	picture = GFX_origin_azurlane_01
+	max_once_global = yes
+
+	initializers = { azur_1_system_initializer }
+
+	possible = {
+		species = {
+			value = Azur_Lane
+		}
+	}
+
+	description = "origin_tooltip_azur_1_effects"
+
+	traits = {
+		trait = trait_azurlanegirls
+	}
+
+	flags = { custom_start_screen }
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 0
+	}
+}

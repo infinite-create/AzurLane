@@ -1,0 +1,30 @@
+azur_read_auto_tech_time = {
+	name = GetAutoTechTime
+	text = {
+		localization_key = auto_tech_time_1
+		trigger = {
+			check_variable = {
+				which = auto_tech_time
+				value = 1
+			}
+		}
+	}
+	text = {
+		localization_key = auto_tech_time_2
+		trigger = {
+			check_variable = {
+				which = auto_tech_time
+				value = 2
+			}
+		}
+	}
+	text = {
+		localization_key = auto_tech_time_3
+		trigger = {
+			check_variable = {
+				which = auto_tech_time
+				value = 3
+			}
+		}
+	}
+}

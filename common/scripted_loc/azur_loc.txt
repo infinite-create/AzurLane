@@ -1,0 +1,215 @@
+azur_tech_dynamic_loc_title = {
+	name = GetAzurTechTitle
+	text = {
+		localization_key = research_tech_mind_club_0_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_0
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_1_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_1
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_2_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_2
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_3_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_3
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_4_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_4
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_5_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_5
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_net_1_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_net_1
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_net_2_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_net_2
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_net_3_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_net_3
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_sy_1_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_sy_1
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_sy_2_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_sy_2
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_sy_3_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_sy_3
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_sy_4_title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_sy_4
+			}
+		}
+	}
+	
+}
+azur_tech_dynamic_loc_desc = {
+	name = GetAzurTechDesc
+	text = {
+		localization_key = research_tech_mind_club_0_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_0
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_1_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_1
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_2_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_2
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_3_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_3
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_4_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_4
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_club_5_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_club_5
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_net_1_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_net_1
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_net_2_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_net_2
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_net_3_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_net_3
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_sy_1_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_sy_1
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_sy_2_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_sy_2
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_sy_3_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_sy_3
+			}
+		}
+	}
+	text = {
+		localization_key = research_tech_mind_sy_4_desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_mind_sy_4
+			}
+		}
+	}
+}

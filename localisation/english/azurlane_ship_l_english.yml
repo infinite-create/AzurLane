@@ -1,0 +1,21 @@
+﻿l_english: 
+###科技
+ tech_azur_shipyard:0 "New Interplanetary Dock design"
+ tech_azur_shipyard_desc:0 "To design and develop a new dock that allows multiple columns to be started at the same time, and allows for collaboration between staff."
+ tech_azur_anchorage:0 "Superfleet Anchorage program"
+ tech_azur_anchorage_desc:0 "The new starship anchorage with larger capacity, more ship positions and more complete functions is designed."
+ tech_azur_naval_headquarters:0 "Starport joint Command node"
+ tech_azur_naval_headquarters_desc:0 "Our large star Navy will require more management and mobilization capabilities, and we will have command nodes on star bases."
+ tech_azur_cube_station_computer:0 "Star Fortress Mental Link supercomputing"
+ tech_azur_cube_station_computer_desc:0 "The old fortifications can no longer meet our needs. The new starport psychic Supercomputing is designed to strengthen the fortifications."
+###星港部件
+ azur_sshipyard:0 "Azur Dock"
+ azur_sanchorage:0 "Azur Anchorage"
+ sm_azur_shipyard:0 "Azur Star Dock"
+ sm_azur_shipyard_desc:0 "The new dock, designed by mind Cube Technology, can have three compartments and build ships at the same time, making it possible to build ships on a large scale with efficient communications links."
+ sm_azur_anchorage:0 "Azur fleet anchorage"
+ sm_azur_anchorage_desc:0 "The new anchorage, designed with new materials and structures, can accommodate large Numbers of ships at the same time and is equipped with a small guard to increase trade protection."
+ sm_azur_naval_headquarters:0 "Azur fleet command hub"
+ sm_azur_naval_headquarters_desc:0 "A large command center set up in a stellar base with mental link supercomputer auxiliary command.\n can increase ship build speed, the more Azur stardock the better.\n add 5 naval capacity per Azur fleet anchorage and increase trade collection range and trade volume by volume."
+ sm_azur_cube_station_computer:0 "Stellar Fortress supercomputer"
+ sm_azur_cube_station_computer_desc:0 "The supercomputer designed for Starport defense can coordinate and command more defense platforms.The efficiency of shield energy is greatly improved by calculating the attack drop point to condense shield energy for defense."

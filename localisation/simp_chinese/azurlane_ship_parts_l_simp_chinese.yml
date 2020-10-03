@@ -1,0 +1,158 @@
+﻿l_simp_chinese:
+ 138.6MM_SINGLE_PACK_LASER_GUN:0 "138.6cm单装舰载激光炮"
+ 138.6MM_SINGLE_PACK_LASER_GUN_DESC:0 ""
+ 138.6cm_single_pack_laser_gun_1:0 "小型138.6cm单装舰载激光炮"
+ 138.6cm_single_pack_laser_gun_2:0 "中型138.6cm单装舰载激光炮"
+ 138.6cm_single_pack_laser_gun_3:0 "大型138.6cm单装舰载激光炮"
+
+  152MM_TRIGEMINY_PACK_LASER_GUN:0 "152cm三联装激光炮"
+ 152MM_TRIGEMINY_PACK_LASER_GUN_DESC:0 ""
+ 152cm_trigeminy_pack_laser_gun_1:0 "小型152cm三联装激光炮"
+ 152cm_trigeminy_pack_laser_gun_2:0 "中型152cm三联装激光炮"
+ 152cm_trigeminy_pack_laser_gun_3:0 "大型152cm三联装激光炮"
+
+ 203MM_TRIGEMINY_PACK_SKC_LASER_GUN:0 "203cm三联装SKC激光炮"
+ 203MM_TRIGEMINY_PACK_SKC_LASER_GUN_DESC:0 ""
+ 203cm_trigeminy_pack_SKC_laser_gun_1:0 "小型203cm三联装SKC激光炮"
+ 203cm_trigeminy_pack_SKC_laser_gun_2:0 "中型203cm三联装SKC激光炮"
+ 203cm_trigeminy_pack_SKC_laser_gun_3:0 "大型203cm三联装SKC激光炮"
+
+ 406MM_TRIGEMINY_PACK_50_LASER_GUN:0 "406cm三联装50激光炮"
+ 406MM_TRIGEMINY_PACK_50_LASER_GUN_DESC:0 ""
+ 406cm_trigeminy_pack_50_laser_gun_1:0 "406cm三联装50激光炮"
+ 406MM_TRIGEMINY_PACK_50_LASER_GUN_X:0 "歼灭型406cm三联装50激光炮"
+ 406MM_TRIGEMINY_PACK_50_LASER_GUN_X_DESC:0 ""
+ 406cm_trigeminy_pack_50_laser_gun_2:0 "歼灭型406cm三联装50激光炮"
+
+ 457MM_DUPLEX_PACK_MKA_LASER_GUN:0 "457cm双联装MKA激光炮"
+ 457MM_DUPLEX_PACK_MKA_LASER_GUN_DESC:0 ""
+ 457cm_duplex_pack_MKA_laser_gun_1:0 "457cm双联装MKA激光炮"
+ 457MM_DUPLEX_PACK_MKA_LASER_GUN_T:0 "湮灭型457cm双联装MKA激光炮"
+ 457MM_DUPLEX_PACK_MKA_LASER_GUN_T_DESC:0 "§R这可不是开玩笑的！§!"
+ 457cm_duplex_pack_MKA_laser_gun_2:0 "湮灭型457cm双联装MKA激光炮"
+
+
+
+
+
+
+ 152MM_TRIGEMINY_PACK_MARK17_NAVAL_GUN:0 "152cm三联装Mk17舰炮"
+ 152MM_TRIGEMINY_PACK_MARK17_NAVAL_GUN_DESC:0 ""
+ 152cm_trigeminy_pack_Mark17_naval_gun_1:0 "小型152cm三联装Mk17舰炮"
+ 152cm_trigeminy_pack_Mark17_naval_gun_2:0 "中型152cm三联装Mk17舰炮"
+ 152cm_trigeminy_pack_Mark17_naval_gun_3:0 "大型152cm三联装Mk17舰炮"
+
+ 310MM_TRIGEMINY_PACK_NAVAL_GUN:0 "310cm三联装舰炮"
+ 310MM_TRIGEMINY_PACK_NAVAL_GUN_DESC:0 ""
+ 310cm_trigeminy_pack_naval_gun_1:0 "小型310cm三联装舰炮"
+ 310cm_trigeminy_pack_naval_gun_2:0 "中型310cm三联装舰炮"
+ 310cm_trigeminy_pack_naval_gun_3:0 "大型310cm三联装舰炮"
+
+ 381MM_TRIGEMINY_PACK_NAVAL_GUN:0 "381cm三联装舰炮"
+ 381MM_TRIGEMINY_PACK_NAVAL_GUN_DESC:0 ""
+ 381cm_trigeminy_pack_naval_gun_1:0 "小型381cm三联装舰炮"
+ 381cm_trigeminy_pack_naval_gun_2:0 "中型381cm三联装舰炮"
+ 381cm_trigeminy_pack_naval_gun_3:0 "大型381cm三联装舰炮"
+ 381MM_TRIGEMINY_PACK_NAVAL_GUN_X:0 "歼灭型381cm三联装舰炮"
+ 381MM_TRIGEMINY_PACK_NAVAL_GUN_X_DESC:0 ""
+ 381cm_trigeminy_pack_naval_gun_4:0 "歼灭型381cm三联装舰炮"
+
+ 406MM_TRIGEMINY_PACK_MK6_NAVAL_GUN:0 "406cm三联装MK6舰炮"
+ 406MM_TRIGEMINY_PACK_MK6_NAVAL_GUN_DESC:0 "我们只需要三个字来形容MK6：稳，准，狠！"
+ 406cm_trigeminy_pack_MK6_naval_gun_1:0 "406cm三联装MK6舰炮"
+ 406MM_TRIGEMINY_PACK_MK6_NAVAL_GUN_X:0 "歼灭型406cm三联装MK6舰炮"
+ 406MM_TRIGEMINY_PACK_MK6_NAVAL_GUN_X_DESC:0 "某些武器放大之后总是会给予我们更多的惊喜，不是吗？"
+ 406cm_trigeminy_pack_MK6_naval_gun_2:0 "歼灭型406cm三联装MK6舰炮"
+
+
+
+
+
+
+ 114MM_DUPLEX_PACK_MARKIV_USUAL_GUN:0 "114cm双联MarkIV通常炮"
+ 114MM_DUPLEX_PACK_MARKIV_USUAL_GUN_DESC:0 ""
+ 114cm_duplex_pack_markIV_usual_gun_1:0 "小型114cm双联MarkIV通常炮"
+ 114cm_duplex_pack_markIV_usual_gun_2:0 "中型114cm双联MarkIV通常炮"
+ 114cm_duplex_pack_markIV_usual_gun_3:0 "大型114cm双联MarkIV通常炮"
+
+ 130MM_DUPLEX_PACK_B-2LMT3_USUAL_GUN:0 "130cm双联装B-2LMT3通常炮"
+ 130MM_DUPLEX_PACK_B-2LMT3_USUAL_GUN_DESC:0 ""
+ 130cm_duplex_pack_B-2LMT3_usual_gun_1:0 "小型130cm双联装B-2LMT3通常炮"
+ 130cm_duplex_pack_B-2LMT3_usual_gun_2:0 "中型130cm双联装B-2LMT3通常炮"
+ 130cm_duplex_pack_B-2LMT3_usual_gun_3:0 "大型130cm双联装B-2LMT3通常炮"
+
+ 234MM_TRIGEMINY_PACK_USUAL_GUN:0 "234cm三联装通常炮"
+ 234MM_TRIGEMINY_PACK_USUAL_GUN_DESC:0 ""
+ 234cm_trigeminy_pack_usual_gun_1:0 "小型234cm三联装通常炮"
+ 234cm_trigeminy_pack_usual_gun_2:0 "中型234cm三联装通常炮"
+ 234cm_trigeminy_pack_usual_gun_3:0 "大型234cm三联装通常炮"
+
+
+
+
+
+ 76MM_MIX_GUN:0 "76cm混合炮"
+ 76MM_MIX_GUN_DESC:0 "你见过既有动能标签也有能量标签的武器么？那么现在你见到了。§R它能够得到动能以及能量武器的双循环§!，将会撕碎一切进入它射程的舰船——不过前提是你能够接近敌人"
+ 76cm_mix_gun:0 "76cm混合炮"
+
+ VF_17_VIKING_SQUADRONS:0 "VF-17海盗中队"
+ VF_17_VIKING_SQUADRONS_DESC:0 ""
+ VF_17_viking_squadrons:0 "VF-17海盗中队"
+
+ SB2C_HELL_SWOOP:0 "SB2C地狱俯冲者"
+ SB2C_HELL_SWOOP_DESC:0 ""
+ SB2C_hell_swoop:0 "SB2C地狱俯冲者"
+
+ MIND_EXCURSIVE_SHIELD:0 "心智偏移护盾"
+ MIND_EXCURSIVE_SHIELD_DESC:0 "它的深层次运行机制我们还不了解，不过总之能用就行了呀！"
+ mind_excursive_shield_1:0 "小型心智偏移护盾"
+ mind_excursive_shield_2:0 "中型心智偏移护盾"
+ mind_excursive_shield_3:0 "大型心智偏移护盾"
+ MIND_DISTORTION_SHIELD:0 "心智扭曲护盾"
+ MIND_DISTORTION_SHIELD_DESC:0 ""
+ mind_distortion_shield_1:0 "小型心智扭曲护盾"
+ mind_distortion_shield_2:0 "中型心智扭曲护盾"
+ mind_distortion_shield_3:0 "大型心智扭曲护盾"
+
+ MIND_ARMOURS:0 "心智反应装甲"
+ MIND_ARMOURS_DESC:0 ""
+ mind_armours_1:0 "小型心智反应装甲"
+ mind_armours_2:0 "中型心智反应装甲"
+ mind_armours_3:0 "大型心智反应装甲"
+ MIND_DISTORTION_INTEGRATED_ARMOR:0 "心智扭曲复合装甲"
+ MIND_DISTORTION_INTEGRATED_ARMOR_DESC:0 ""
+ mind_distortion_Integrated_armor_1:0 "小型心智扭曲复合装甲"
+ mind_distortion_Integrated_armor_2:0 "中型心智扭曲复合装甲"
+ mind_distortion_Integrated_armor_3:0 "大型心智扭曲复合装甲"
+
+ MIND_NAVIGATION_ARRAY:0 "心智导航列阵"
+ MIND_NAVIGATION_ARRAY_DESC:0 ""
+ mind_navigation_array:0 "心智导航列阵"
+
+ extremity_jump_drive:0 "极限跃迁引擎"
+ mind_distortion_drive:0 "心智扭曲引擎"
+
+ mind_reactor:0 "心智反应堆"
+
+ high_performance_steering_gear:0 "高性能舵机"
+
+ mind_network_swarm:0 "心智网络：集群"
+ mind_network_artillery:0 "心智网络：炮击"
+ mind_network_picket:0 "心智网络：哨卫"
+
+ HEAVY_SHELLS:0 "超重弹"
+ HEAVY_SHELLS_DESC:0 ""
+ heavy_shells:0 "超重弹"
+
+ ONE_STYLE_ARMOR_PIERCING_PROJECTILE:0 "一式穿甲弹"
+ ONE_STYLE_ARMOR_PIERCING_PROJECTILE_DESC:0 ""
+ one_style_armor-piercing_projectile:0 "一式穿甲弹"
+
+
+ GAIA_WAVE_GUN:0 "§M盖亚波动炮§!"
+ GAIA_WAVE_GUN_DESC:0 "虽然看上去十分的扯淡，根据§YKuRUMiiii§!的指示，我们仍然制作出了这个武器\n\n这个武器如何运作我们无从得知，也许是通过各种乱七八糟的操作进行运转的，不过我们无需在意它是如何进行运作的，毕竟我们仅仅只是需要它的效果不是吗？"
+ gaia_wave_gun:0 "§M盖亚波动炮§!"
+ gaia_wave_gun_ACTION:0 "§R净化§!"
+ gaia_wave_gun_DESC:0 ""
+ FLEETORDER_DESTROY_PLANET_WITH_gaia_wave_gun:0 "§M波动炮充能中！§!"
+ MESSAGE_DESC_FOR_gaia_wave_gun:0 "改造完毕！"

@@ -1,0 +1,109 @@
+###VF-17海盗中队
+strike_craft_component_template = {
+	key = "VF_17_viking_squadrons"
+
+	size = LARGE
+	entity = "fighter_entity"
+	projectile_gfx = "strike_craft_laser_1"
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			mind_club = 5
+		}
+	}
+
+	should_ai_use = no
+
+	count = 16
+	regeneration_per_day = 10
+	launch_time = 1
+
+	damage = { 
+		min = 20 
+		max = 30 
+	}
+	cooldown = 5
+	range = 200
+	engagement_range = 100
+	accuracy = 0.7
+	tracking = 0.5
+
+	health = 100
+	armor = 20
+	shield = 20
+	evasion = 2.0
+
+	speed = 500
+	rotation_speed = 0.8
+	acceleration = 1
+
+	shield_penetration = 1
+	armor_damage = 1.5
+
+	ship_behavior = fighters_behavior
+
+	weapon_type = instant 
+
+	component_set = "VF_17_VIKING_SQUADRONS"
+	prerequisites = { tech_VF_17_viking_squadrons }
+
+	icon = "GFX_VF_17_viking_squadrons"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+}
+###SB2C 地狱俯冲者
+strike_craft_component_template = {
+	key = "SB2C_hell_swoop"
+
+	size = LARGE
+	entity = "bomber_entity"
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			mind_club = 5
+		}
+	}
+
+	should_ai_use = no
+
+	count = 8
+	regeneration_per_day = 20
+	launch_time = 3
+
+	damage = { 
+		min = 200
+		max = 500
+	}
+	cooldown = 10
+	range = 300
+	engagement_range = 50
+	accuracy = 0.5
+	tracking = 1
+
+	health = 250
+	armor = 50
+	shield = 50
+	evasion = 0.5
+
+	speed = 400
+	rotation_speed = 0.5
+	acceleration = 0.5
+
+	shield_penetration = 1
+	armor_damage = 1.5
+
+	ship_behavior = fighters_behavior
+
+	weapon_type = instant 
+
+	component_set = "SB2C_HELL_SWOOP"
+	prerequisites = { tech_SB2C_hell_swoop }
+
+	icon = "GFX_SB2C_hell_swoop"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+}

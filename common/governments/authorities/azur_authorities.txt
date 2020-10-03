@@ -1,0 +1,25 @@
+auth_azur_lane_0 = {
+	election_term_years = 30
+	election_type = oligarchic
+	can_have_emergency_elections = yes
+	emergency_election_cost = 100
+	max_election_candidates = 30
+	can_reform = yes
+	has_agendas = yes
+	random_weight = {
+		base = 0
+	}
+	country_modifier = {
+		country_command_limit_add = 50
+		leaders_upkeep_mult = -0.6
+		pop_happiness = 0.1
+		colony_start_num_pops_add = 3
+	}
+	possible = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+}

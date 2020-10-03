@@ -1,0 +1,266 @@
+azur_naval_headquarters = {
+	icon = "GFX_azur_naval_headquarters"
+	construction_days = 360
+	initial = no
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_azur_naval_headquarters }
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 250
+                                                energy = 500
+                                                mind_club = 50         
+		}
+
+		upkeep = {
+			energy = 10
+                                                mind_club = 2   
+		}
+	}
+
+	country_modifier = {
+		country_command_limit_add = 5
+	}
+
+	orbit_modifier = {
+		ship_orbit_upkeep_mult = -0.50
+	}
+
+	ship_modifier = {
+		ship_starting_experience_add = 1000
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_shipyard
+				count >= 1
+			}
+			count_starbase_modules = {
+				type = azur_shipyard
+				count < 2
+			}
+		}
+
+		starbase_shipyard_build_speed_mult = 0.02
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_shipyard
+				count >= 2
+			}
+			count_starbase_modules = {
+				type = azur_shipyard
+				count < 3
+			}
+		}
+
+		starbase_shipyard_build_speed_mult = 0.06
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_shipyard
+				count >= 3
+			}
+			count_starbase_modules = {
+				type = azur_shipyard
+				count < 4
+			}
+		}
+
+		starbase_shipyard_build_speed_mult = 0.12
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_shipyard
+				count >= 4
+			}
+			count_starbase_modules = {
+				type = azur_shipyard
+				count < 5
+			}
+		}
+
+		starbase_shipyard_build_speed_mult = 0.20
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_shipyard
+				count >= 5
+			}
+			count_starbase_modules = {
+				type = azur_shipyard
+				count < 6
+			}
+		}
+
+		starbase_shipyard_build_speed_mult = 0.30
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_shipyard
+				count >= 6
+			}
+		}
+
+		starbase_shipyard_build_speed_mult = 0.42
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_anchorage
+				count >= 1
+			}
+			count_starbase_modules = {
+				type = azur_anchorage
+				count < 2
+			}
+		}
+
+		starbase_trade_collection_range_add = 1
+		trade_value_add = 5
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_anchorage
+				count >= 2
+			}
+			count_starbase_modules = {
+				type = azur_anchorage
+				count < 3
+			}
+		}
+
+		starbase_trade_collection_range_add = 2
+		trade_value_add = 10
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_anchorage
+				count >= 3
+			}
+			count_starbase_modules = {
+				type = azur_anchorage
+				count < 4
+			}
+		}
+
+		starbase_trade_collection_range_add = 3
+		trade_value_add = 15
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_anchorage
+				count >= 4
+			}
+			count_starbase_modules = {
+				type = azur_anchorage
+				count < 5
+			}
+		}
+
+		starbase_trade_collection_range_add = 4
+		trade_value_add = 20
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_anchorage
+				count >= 5
+			}
+			count_starbase_modules = {
+				type = azur_anchorage
+				count < 6
+			}
+		}
+
+		starbase_trade_collection_range_add = 5
+		trade_value_add = 25
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = azur_anchorage
+				count >= 6
+			}
+		}
+
+		starbase_trade_collection_range_add = 6
+		trade_value_add = 30
+	}
+
+	show_in_tech = "tech_azur_naval_headquarters"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_cube_station_computer = {
+	icon = "GFX_azur_cube_station_computer"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_azur_cube_station_computer }
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 250
+                                                mind_club = 20         
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	station_modifier = {
+		ship_hull_mult = 1.00
+		ship_shield_mult = 5.00
+		starbase_defense_platform_capacity_add = 20
+	}
+
+	show_in_tech = "tech_azur_cube_station_computer"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = no
+	ai_weight = {
+		weight = 0
+	}
+}

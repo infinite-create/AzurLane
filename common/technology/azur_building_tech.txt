@@ -1,0 +1,668 @@
+
+@tier6cost1 = 30000
+@tier6cost2 = 40000
+@tier6cost3 = 50000
+
+@tier7cost1 = 100000
+@tier7cost2 = 125000
+@tier7cost3 = 150000
+
+tech_azur_club_maintenance_center = {
+	area = society
+	category = { biology }
+	tier = 3
+	cost = @tier3cost3
+	prerequisites = { "tech_mind_club_0" "tech_mind_cube_maintain" "tech_frontier_hospital" }
+	weight = @tier3weight3
+
+                is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 50
+		}
+	}
+}
+
+tech_azur_mind_square = {
+	area = society
+	category = { statecraft }
+	tier = 3
+	cost = @tier4cost1
+	prerequisites = { "tech_mind_club_0" "tech_galactic_administration" }
+	weight = @tier4weight1
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 50
+		}
+	}
+}
+
+tech_azur_planet_fortress = {
+	area = physics
+	category = { field_manipulation }
+	tier = 5
+	cost = @tier6cost1
+	prerequisites = { "tech_mind_club_control" "tech_global_defense_grid" "tech_planetary_shield_generator" }
+	weight = @tier5weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 100
+		}
+	}
+}
+
+tech_azur_building_mind_club_factory = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @tier5cost2
+	prerequisites = { "tech_mind_club_control" "tech_mind_club_0" }
+	weight = @tier5weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+	}
+}
+
+tech_azur_trade_megaplex = {
+	area = society
+	category = { statecraft }
+	tier = 3
+	cost = @tier4cost1
+	prerequisites = { "tech_mind_club_0" "tech_interstellar_economics" "tech_mind_link_core" }
+	weight = @tier3weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 50
+		}
+	}
+}
+
+tech_azur_scientific_archives = {
+	area = physics
+	category = { computing }
+	tier = 3
+	cost = @tier4cost1
+	prerequisites = { "tech_mind_club_3" "tech_mind_link_core" "tech_physics_2" "tech_society_2" "tech_engineering_2" }
+	weight = @tier4weight1
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+	}
+}
+
+tech_azur_club_station = {
+	area = physics
+	category = { particles }
+	tier = 4
+	cost = @tier4cost1
+	prerequisites = { "tech_mind_club_0" "tech_power_plant_3" "tech_power_hub_1" }
+	weight = @tier4weight1
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 50
+		}
+	}
+}
+
+tech_azur_club_control_center = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier6cost1
+	prerequisites = { "tech_mind_club_control" "tech_galactic_bureaucracy" }
+	weight = @tier5weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+	}
+}
+
+tech_azur_alloy_furnace = {
+	area = engineering
+	category = { industry }
+	tier = 4
+	cost = @tier4cost1
+	prerequisites = { "tech_mind_club_4" "tech_alloys_2" }
+	weight = @tier4weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+	}
+}
+
+tech_azur_artwork_factory = {
+	area = engineering
+	category = { industry }
+	tier = 4
+	cost = @tier4cost1
+	prerequisites = { "tech_mind_club_4" "tech_luxuries_2" }
+	weight = @tier4weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+	}
+}
+
+tech_azur_refinery = {
+	area = engineering
+	category = { industry }
+	tier = 3
+	cost = @tier3cost1
+	prerequisites = { "tech_mind_club_0" "tech_exotic_gases" }
+	weight = @tier3weight1
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 40
+		}
+	}
+}
+
+tech_azur_chemical_plant = {
+	area = engineering
+	category = { industry }
+	tier = 3
+	cost = @tier3cost1
+	prerequisites = { "tech_mind_club_0" "tech_volatile_motes" }
+	weight = @tier3weight1
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 40
+		}
+	}
+}
+
+tech_azur_crystal_plant = {
+	area = engineering
+	category = { industry }
+	tier = 3
+	cost = @tier3cost1
+	prerequisites = { "tech_mind_club_0" "tech_rare_crystals" }
+	weight = @tier3weight1
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 40
+		}
+	}
+}
+
+tech_azur_synthesis_center = {
+	area = engineering
+	category = { industry }
+	tier = 4
+	cost = @tier4cost1
+	prerequisites = { "tech_mind_club_4" "tech_azur_crystal_plant" "tech_azur_chemical_plant" "tech_azur_chemical_plant" }
+	weight = @tier4weight1
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 40
+		}
+	}
+}
+
+tech_azur_food_center = {
+	area = society
+	category = { biology }
+	tier = 3
+	cost = @tier3cost3
+	prerequisites = { "tech_mind_club_0" "tech_food_processing_1" "tech_azur_nutrition" }
+	weight = @tier3weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 40
+		}
+	}
+}
+
+tech_azur_mineral_purification = {
+	area = engineering
+	category = { materials }
+	tier =3
+	cost = @tier3cost3
+	prerequisites = { "tech_mind_club_0" "tech_mineral_purification_1" }
+	weight = @tier3weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 40
+		}
+	}
+}
+
+tech_azur_hall_judgment = {
+	area = society
+	category = { military_theory }
+	tier = 4
+	cost = @tier5cost1
+	prerequisites = { "tech_mind_club_4" "tech_galactic_administration" }
+	weight = @tier5weight1
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+	}
+}
+
+tech_azur_robot_assembly = {
+	area = physics
+	category = { computing }
+	tier = 4
+	cost = @tier4cost2
+	prerequisites = { "tech_mind_club_4" "tech_droid_workers" "tech_mind_link_core" }
+	weight = @tier4weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+	}
+}
+
+tech_azur_pure_land = {
+	area = society
+	category = { biology }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = { "tech_mind_club_5" "tech_paradise_dome" }
+	weight = @tier5weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+	}
+}
+
+tech_azur_service_center = {
+	area = society
+	category = { statecraft }
+	tier = 4
+	cost = @tier5cost1
+	prerequisites = { "tech_mind_club_5" }
+	weight = @tier5weight1
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+	}
+}
+
+tech_azur_mind_capital = {
+	area = society
+	category = { psionics }
+	tier = 5
+	cost = @tier7cost3
+        is_rare = yes
+	weight = 0
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_2
+	}
+
+}
+
+tech_azur_unity_to_energy = {
+	area = society
+	category = { psionics }
+	tier = 5
+	cost = @tier7cost2
+        is_rare = yes
+	prerequisites = { "tech_mind_net_done" }
+	weight = @tier5weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_2
+		}
+		modifier = {
+			factor = 2
+			years_passed > 120
+		}
+	}
+}
+
+tech_azur_bureaucratic = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost3
+        is_rare = yes
+	prerequisites = { "tech_mind_club_5" "tech_colonial_bureaucracy" }
+	weight = @tier5weight3
+        is_reverse_engineerable = no
+	
+	potential = {
+                has_ascension_perk = ap_azur_1
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 3
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+	}
+}

@@ -1,0 +1,121 @@
+component_set = {
+	key = "138.6MM_SINGLE_PACK_LASER_GUN"
+
+	icon = GFX_138.6cm_single_pack_laser_gun
+	icon_frame = 1
+}
+
+component_set = {
+	key = "310MM_TRIGEMINY_PACK_NAVAL_GUN"
+
+	icon = GFX_310cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "406MM_TRIGEMINY_PACK_50_LASER_GUN"
+
+	icon = GFX_406cm_trigeminy_pack_50_laser_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "406MM_TRIGEMINY_PACK_50_LASER_GUN_X"
+
+	icon = GFX_406cm_trigeminy_pack_50_laser_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "406MM_TRIGEMINY_PACK_MK6_NAVAL_GUN"
+
+	icon = GFX_406cm_trigeminy_pack_MK6_naval_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "406MM_TRIGEMINY_PACK_MK6_NAVAL_GUN_X"
+
+	icon = GFX_406cm_trigeminy_pack_MK6_naval_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "457MM_DUPLEX_PACK_MKA_LASER_GUN"
+
+	icon = GFX_457cm_duplex_pack_MKA_laser_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "457MM_DUPLEX_PACK_MKA_LASER_GUN_T"
+
+	icon = GFX_457cm_duplex_pack_MKA_laser_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "76MM_MIX_GUN"
+
+	icon = GFX_76cm_mix_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "114MM_DUPLEX_PACK_MARKIV_USUAL_GUN"
+
+	icon = GFX_114cm_duplex_pack_MarkIV_usual_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "152MM_TRIGEMINY_PACK_MARK17_NAVAL_GUN"
+
+	icon = GFX_152cm_trigeminy_pack_Mark17_naval_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "152MM_TRIGEMINY_PACK_LASER_GUN"
+
+	icon = GFX_152cm_trigeminy_pack_laser_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "203MM_TRIGEMINY_PACK_SKC_LASER_GUN"
+
+	icon = GFX_203cm_trigeminy_pack_SKC_laser_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "234MM_TRIGEMINY_PACK_USUAL_GUN"
+
+	icon = GFX_234cm_trigeminy_pack_usual_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "130MM_DUPLEX_PACK_B-2LMT3_USUAL_GUN"
+
+	icon = GFX_130cm_duplex_pack_B-2LMT3_usual_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "234MM_TRIGEMINY_PACK_USUAL_GUN"
+
+	icon = GFX_234cm_trigeminy_pack_usual_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "381MM_TRIGEMINY_PACK_NAVAL_GUN"
+
+	icon = GFX_381cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "381MM_TRIGEMINY_PACK_NAVAL_GUN_X"
+
+	icon = GFX_381cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+}
+component_set = {
+	key = "VF_17_VIKING_SQUADRONS"
+
+	icon = GFX_VF_17_viking_squadrons
+	icon_frame = 1
+}
+component_set = {
+	key = "SB2C_HELL_SWOOP"
+
+	icon = GFX_SB2C_hell_swoop
+	icon_frame = 1
+}

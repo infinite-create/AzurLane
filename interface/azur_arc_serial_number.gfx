@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_azur_serial_number_1"
+		textureFile = "gfx/interface/archaeology/runes/azur_serial_number_1.dds"
+	}
+	spriteType = {
+		name = "GFX_azur_serial_number_2"
+		textureFile = "gfx/interface/archaeology/runes/azur_serial_number_2.dds"
+	}
+	spriteType = {
+		name = "GFX_azur_serial_number_3"
+		textureFile = "gfx/interface/archaeology/runes/azur_serial_number_3.dds"
+	}
+	spriteType = {
+		name = "GFX_azur_serial_number_4"
+		textureFile = "gfx/interface/archaeology/runes/azur_serial_number_4.dds"
+	}
+	spriteType = {
+		name = "GFX_azur_serial_number_5"
+		textureFile = "gfx/interface/archaeology/runes/azur_serial_number_5.dds"
+	}
+}

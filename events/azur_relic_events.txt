@@ -1,0 +1,163 @@
+namespace = azur_relic
+
+country_event = {#全能心智魔方
+	id = azur_relic.0
+	is_triggered_only = yes
+	title = azur_relic.0.name
+	desc = azur_relic.0.desc
+
+	immediate = {
+		set_country_flag = colorful_rubik's_cube_start
+	}
+
+	option = {
+		name = azur_relic.0.aa
+	}
+}
+
+country_event = {
+	id = azur_relic.1
+	is_triggered_only = yes
+	title = azur_relic.1.name
+	desc = azur_relic.1.desc
+
+	immediate = {
+		country_event = {
+			id = azur_relic.2
+		}
+	}
+
+	option = {
+		name = azur_relic.1.aa
+	}
+}
+
+country_event = {
+	id = azur_relic.2
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_modifier = colorful_rubik's_cube_activate
+	}
+
+	immediate = {
+		while = {
+			count = 3
+			random_country = {
+				limit = {
+					NOT = {
+						is_same_empire = root
+					}
+					is_country_type = default
+					is_country_type = awakened_fallen_empire
+					NOT = {
+						has_country_flag = colorful_rubik's_cube_flag
+					}
+				}
+				set_country_flag = colorful_rubik's_cube_flag
+				random_list = {
+					1 = {
+						random_owned_fleet = {
+							limit = {
+								OR = {
+									is_ship_class = shipclass_military
+									is_ship_class = shipclass_military_special
+								}
+							}
+							destroy_fleet = this
+						}
+					}
+					10 = {
+						while = {
+							random_owned_ship = {
+								limit = {
+									NOR = {
+										is_ship_class = shipclass_mining_station
+										is_ship_class = shipclass_observation_station
+										is_ship_class = shipclass_research_station
+									}
+								}
+								destroy_ship = this
+							}
+						}
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							any_owned_planet = {
+								any_owned_pop = {
+									is_robot_pop = no
+								}
+							}
+						}
+						random_owned_planet = {
+							limit = {
+								count_owned_pop = {
+									count >= 5
+								}
+							}
+							while = {
+								count = 3
+								random_owned_pop = {
+									limit = {
+										is_robot_pop = yes
+									}
+									kill_pop = yes
+								}
+							}
+						}
+					}
+					10 = {
+						add_modifier = {
+							modifier = colorful_rubik's_cube_disturb
+							days = 360
+						}
+					}
+					1 = {
+						modifier = {
+							factor = 0
+							NOT = {
+								is_at_war_with = root
+							}
+						}
+						random_list = {
+							1 = {
+								random_owned_fleet = {
+									limit = {
+										OR = {
+											is_ship_class = shipclass_military
+											is_ship_class = shipclass_military_special
+										}
+									}
+									set_owner = root
+								}
+							}
+							10 = {
+								random_owned_planet = {
+									random_list = {
+										10 = {
+											remove_all_districts = yes
+										}
+										10 = {
+											remove_all_buildings = yes
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		country_event = {
+			id = azur_relic.2
+			days = 60
+			random = 180
+		}
+	}
+
+	after = {
+		remove_country_flag = colorful_rubik's_cube_flag
+	}
+}

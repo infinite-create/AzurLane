@@ -1,0 +1,33 @@
+spriteTypes = {
+
+	### mind club
+	spriteType = {
+		name = "GFX_mind_club"
+		textureFile = "gfx/interface/icons/resources/mind_club.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mind_club_large"
+		textureFile = "gfx/interface/icons/resources/mind_club_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mind_club_grey"
+		textureFile = "gfx/interface/icons/resources/mind_club_grey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_star_trek_armour"
+		textureFile = "gfx/interface/icons/resources/star_trek_armour.dds"
+	}
+
+	spriteType = {
+		name = "GFX_star_trek_armour_grey"
+		textureFile = "gfx/interface/icons/resources/star_trek_armour_grey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sstar_trek_armour_large"
+		textureFile = "gfx/interface/icons/resources/star_trek_armour_large.dds"
+	}
+}

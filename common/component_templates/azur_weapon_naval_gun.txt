@@ -1,0 +1,574 @@
+###152 Mark17 炮
+weapon_component_template = {
+	key = "152cm_trigeminy_pack_Mark17_naval_gun_1"
+	icon = GFX_152cm_trigeminy_pack_Mark17_naval_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "coilgun_s"
+	power = -20
+	prerequisites = { tech_152cm_trigeminy_pack_Mark17_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+			mind_club = 0.1
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 200
+		max = 340
+	}
+	windup = {
+		max = 50
+		min = 50
+	}
+	total_fire_time = 1
+
+	shield_damage = 2
+
+	armor_penetration = 0.3
+	shield_penetration = 0.5
+
+	range = 80
+	tracking = 0.6
+	accuracy = 0.8
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 310cm_trigeminy_pack_naval_gun_1
+	component_set = "152MM_TRIGEMINY_PACK_MARK17_NAVAL_GUN"
+}
+weapon_component_template = {
+	key = "152cm_trigeminy_pack_Mark17_naval_gun_2"
+	icon = GFX_152cm_trigeminy_pack_Mark17_naval_gun
+	icon_frame = 1
+	type = instant
+	size = medium
+	projectile_gfx = "coilgun_m"
+	power = -30
+	prerequisites = { tech_152cm_trigeminy_pack_Mark17_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			mind_club = 0.3
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 400
+		max = 560
+	}
+	windup = {
+		max = 50
+		min = 50
+	}
+	total_fire_time = 1
+
+	shield_damage = 2
+
+	armor_penetration = 0.3
+	shield_penetration = 0.5
+
+	range = 100
+	tracking = 0.6
+	accuracy = 0.8
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 310cm_trigeminy_pack_naval_gun_2
+	component_set = "152MM_TRIGEMINY_PACK_MARK17_NAVAL_GUN"
+}
+weapon_component_template = {
+	key = "152cm_trigeminy_pack_Mark17_naval_gun_3"
+	icon = GFX_152cm_trigeminy_pack_Mark17_naval_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "coilgun_l"
+	power = -40
+	prerequisites = { tech_152cm_trigeminy_pack_Mark17_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			mind_club = 0.5
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 700
+		max = 900
+	}
+	windup = {
+		max = 50
+		min = 50
+	}
+	total_fire_time = 1
+
+	shield_damage = 2
+
+	armor_penetration = 0.3
+	shield_penetration = 0.5
+
+	range = 110
+	tracking = 0.6
+	accuracy = 0.8
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 310cm_trigeminy_pack_naval_gun_3
+	component_set = "152MM_TRIGEMINY_PACK_MARK17_NAVAL_GUN"
+}
+###310炮
+weapon_component_template = {
+	key = "310cm_trigeminy_pack_naval_gun_1"
+	icon = GFX_310cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "coilgun_s"
+	power = -20
+	prerequisites = { tech_310cm_trigeminy_pack_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			mind_club = 0.5
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 200
+		max = 340
+	}
+	windup = {
+		max = 50
+		min = 50
+	}
+	total_fire_time = 1
+
+	shield_damage = 2
+
+	armor_penetration = 0.3
+	shield_penetration = 0.5
+
+	range = 80
+	tracking = 0.6
+	accuracy = 0.8
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 381cm_trigeminy_pack_naval_gun_1
+	component_set = "310MM_TRIGEMINY_PACK_NAVAL_GUN"
+}
+weapon_component_template = {
+	key = "310cm_trigeminy_pack_naval_gun_2"
+	icon = GFX_310cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+	type = instant
+	size = medium
+	projectile_gfx = "coilgun_m"
+	power = -30
+	prerequisites = { tech_310cm_trigeminy_pack_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			mind_club = 1.0
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 400
+		max = 560
+	}
+	windup = {
+		max = 50
+		min = 50
+	}
+	total_fire_time = 1
+
+	shield_damage = 2
+
+	armor_penetration = 0.3
+	shield_penetration = 0.5
+
+	range = 100
+	tracking = 0.6
+	accuracy = 0.8
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 381cm_trigeminy_pack_naval_gun_2
+	component_set = "310MM_TRIGEMINY_PACK_NAVAL_GUN"
+}
+weapon_component_template = {
+	key = "310cm_trigeminy_pack_naval_gun_3"
+	icon = GFX_310cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "coilgun_l"
+	power = -40
+	prerequisites = { tech_310cm_trigeminy_pack_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			mind_club = 1.5
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 900
+		max = 1000
+	}
+	windup = {
+		max = 50
+		min = 50
+	}
+	total_fire_time = 1
+
+	shield_damage = 2
+
+	armor_penetration = 0.3
+	shield_penetration = 0.5
+
+	range = 110
+	tracking = 0.6
+	accuracy = 0.8
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 381cm_trigeminy_pack_naval_gun_3
+	component_set = "310MM_TRIGEMINY_PACK_NAVAL_GUN"
+}
+###381 炮
+weapon_component_template = {
+	key = "381cm_trigeminy_pack_naval_gun_1"
+	icon = GFX_381cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "small_missile"
+	power = -60
+	prerequisites = { tech_381cm_trigeminy_pack_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 200
+		max = 250
+	}
+	windup = {
+		max = 60
+		min = 20
+	}
+	total_fire_time = 1
+
+	armor_damage = 0.8
+
+	shield_penetration = 0.6
+
+	range = 80
+
+	tracking = 0.3
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "381MM_TRIGEMINY_PACK_NAVAL_GUN"
+}
+weapon_component_template = {
+	key = "381cm_trigeminy_pack_naval_gun_2"
+	icon = GFX_381cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+	type = instant
+	size = medium
+	projectile_gfx = "small_missile"
+	power = -80
+	prerequisites = { tech_381cm_trigeminy_pack_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 350
+		max = 500
+	}
+	windup = {
+		max = 60
+		min = 20
+	}
+	total_fire_time = 1
+
+	armor_damage = 0.8
+
+	shield_penetration = 0.6
+
+	range = 100
+
+	tracking = 0.3
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "381MM_TRIGEMINY_PACK_NAVAL_GUN"
+}
+weapon_component_template = {
+	key = "381cm_trigeminy_pack_naval_gun_3"
+	icon = GFX_381cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "small_missile"
+	power = -200
+	prerequisites = { tech_381cm_trigeminy_pack_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 750
+		max = 1000
+	}
+	windup = {
+		max = 60
+		min = 20
+	}
+	total_fire_time = 1
+
+	armor_damage = 0.8
+
+	armor_penetration = 0.6
+
+	range = 120
+
+	tracking = 0.3
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "381MM_TRIGEMINY_PACK_NAVAL_GUN"
+}
+weapon_component_template = {
+	key = "381cm_trigeminy_pack_naval_gun_4"
+	icon = GFX_381cm_trigeminy_pack_naval_gun
+	icon_frame = 1
+	type = instant
+	size = extra_large
+	projectile_gfx = "small_missile"
+	power = -240
+	prerequisites = { tech_381cm_trigeminy_pack_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			mind_club = 1
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 900
+		max = 2000
+	}
+	windup = {
+		max = 80
+		min = 60
+	}
+	total_fire_time = 3
+
+	armor_damage = 1
+	hull_damage = 0.5
+
+	armor_penetration = 0.6
+
+	range = 240
+	min_range = 40
+
+	accuracy = 0.8
+
+	use_ship_kill_target = no
+	static_rotation = yes
+	upgrades_to = 406cm_trigeminy_pack_MK6_naval_gun_2
+	component_set = "381MM_TRIGEMINY_PACK_NAVAL_GUN_X"
+}
+###406 MK6
+weapon_component_template = {
+	key = "406cm_trigeminy_pack_MK6_naval_gun_1"
+	icon = GFX_406cm_trigeminy_pack_MK6_naval_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "kinetic_artillery"
+	power = -80
+	prerequisites = { tech_406cm_trigeminy_pack_MK6_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			mind_club = 1.5
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 800
+		max = 1000
+	}
+	windup = {
+		max = 50
+		min = 50
+	}
+	total_fire_time = 2
+	
+	armor_damage = 2
+
+	armor_penetration = 0.2
+	shield_penetration = 1
+
+	range = 160
+
+	tracking = 0.6
+	accuracy = 0.6
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "406MM_TRIGEMINY_PACK_MK6_NAVAL_GUN"
+}
+weapon_component_template = {
+	key = "406cm_trigeminy_pack_MK6_naval_gun_2"
+	icon = GFX_406cm_trigeminy_pack_MK6_naval_gun
+	icon_frame = 1
+	type = instant
+	size = extra_large
+	projectile_gfx = "adv_kinetic_artillery"
+	power = -80
+	prerequisites = { tech_406cm_trigeminy_pack_MK6_naval_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			mind_club = 2.5
+		}
+	}
+	tags = { 
+		weapon_type_explosive
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 1000
+		max = 2200
+	}
+	windup = {
+		max = 80
+		min = 20
+	}
+	total_fire_time = 2
+
+	armor_damage = 3
+
+	armor_penetration = 0.3
+	shield_penetration = 1
+
+	range = 200
+	min_range = 80
+	firing_arc = 30
+
+	tracking = 0.4
+	accuracy = 0.6
+
+	use_ship_kill_target = no
+	static_rotation = yes
+	component_set = "406MM_TRIGEMINY_PACK_MK6_NAVAL_GUN_X"
+}

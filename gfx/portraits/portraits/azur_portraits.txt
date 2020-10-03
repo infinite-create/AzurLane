@@ -1,0 +1,3086 @@
+portraits = {
+	#领袖头像
+	22 = {textureFile = "gfx/models/portraits/kansen_k/22.dds"}
+	33 = {textureFile = "gfx/models/portraits/kansen_k/33.dds"}
+	500 = {textureFile = "gfx/models/portraits/kansen_k/500.dds"}
+	500改 = {textureFile = "gfx/models/portraits/kansen_k/500改.dds"}
+	abeikelongbi = {textureFile = "gfx/models/portraits/kansen_k/abeikelongbi.dds"}
+	aerjiliya = {textureFile = "gfx/models/portraits/kansen_k/aerjiliya.dds"}
+	afuleer = {textureFile = "gfx/models/portraits/kansen_k/afuleer.dds"}
+	aheye = {textureFile = "gfx/models/portraits/kansen_k/aheye.dds"}
+	aidang = {textureFile = "gfx/models/portraits/kansen_k/aidang.dds"}
+	aidingbao = {textureFile = "gfx/models/portraits/kansen_k/aidingbao.dds"}
+	aierdeliqi = {textureFile = "gfx/models/portraits/kansen_k/aierdeliqi.dds"}
+	aierwen = {textureFile = "gfx/models/portraits/kansen_k/aierwen.dds"}
+	aijiangBB = {textureFile = "gfx/models/portraits/kansen_k/aijiangBB.dds"}
+	aijiangCL = {textureFile = "gfx/models/portraits/kansen_k/aijiangCL.dds"}
+	aijiangCV = {textureFile = "gfx/models/portraits/kansen_k/aijiangCV.dds"}
+	aijiangDD = {textureFile = "gfx/models/portraits/kansen_k/aijiangDD.dds"}
+	aikesaite = {textureFile = "gfx/models/portraits/kansen_k/aikesaite.dds"}
+	aikesaite_g = {textureFile = "gfx/models/portraits/kansen_k/aikesaite_g.dds"}
+	aimierbeierding = {textureFile = "gfx/models/portraits/kansen_k/aimierbeierding.dds"}
+	aimierbeierding_g = {textureFile = "gfx/models/portraits/kansen_k/aimierbeierding_g.dds"}
+	aisaikesi = {textureFile = "gfx/models/portraits/kansen_k/aisaikesi.dds"}
+	aisijimo = {textureFile = "gfx/models/portraits/kansen_k/aisijimo.dds"}
+	ajiakesi = {textureFile = "gfx/models/portraits/kansen_k/ajiakesi.dds"}
+	ajiakesi_g = {textureFile = "gfx/models/portraits/kansen_k/ajiakesi_g.dds"}
+	ajilisi = {textureFile = "gfx/models/portraits/kansen_k/ajilisi.dds"}
+	ajilisi_g = {textureFile = "gfx/models/portraits/kansen_k/ajilisi_g.dds"}
+	akasita = {textureFile = "gfx/models/portraits/kansen_k/akasita.dds"}
+	akasita_g = {textureFile = "gfx/models/portraits/kansen_k/akasita_g.dds"}
+	alabama = {textureFile = "gfx/models/portraits/kansen_k/alabama.dds"}
+	anshan = {textureFile = "gfx/models/portraits/kansen_k/anshan.dds"}
+	aoding = {textureFile = "gfx/models/portraits/kansen_k/aoding.dds"}
+	aolike = {textureFile = "gfx/models/portraits/kansen_k/aolike.dds"}
+	aomaha = {textureFile = "gfx/models/portraits/kansen_k/aomaha.dds"}
+	aosiben = {textureFile = "gfx/models/portraits/kansen_k/aosiben.dds"}
+	aruituosha = {textureFile = "gfx/models/portraits/kansen_k/aruituosha.dds"}
+	asituoliya = {textureFile = "gfx/models/portraits/kansen_k/asituoliya.dds"}
+	awuwei = {textureFile = "gfx/models/portraits/kansen_k/awuwei.dds"}
+	awuwei_g = {textureFile = "gfx/models/portraits/kansen_k/awuwei_g.dds"}
+	ayame = {textureFile = "gfx/models/portraits/kansen_k/ayame.dds"}
+	badan = {textureFile = "gfx/models/portraits/kansen_k/badan.dds"}
+	baerdimo = {textureFile = "gfx/models/portraits/kansen_k/baerdimo.dds"}
+	bailu = {textureFile = "gfx/models/portraits/kansen_k/bailu.dds"}
+	bangfeng = {textureFile = "gfx/models/portraits/kansen_k/bangfeng.dds"}
+	bangfeng_g = {textureFile = "gfx/models/portraits/kansen_k/bangfeng_g.dds"}
+	bangkeshan = {textureFile = "gfx/models/portraits/kansen_k/bangkeshan.dds"}
+	banrenma = {textureFile = "gfx/models/portraits/kansen_k/banrenma.dds"}
+	beianpudun = {textureFile = "gfx/models/portraits/kansen_k/beianpudun.dds"}
+	beierfasite = {textureFile = "gfx/models/portraits/kansen_k/beierfasite.dds"}
+	beierfasite_younv = {textureFile = "gfx/models/portraits/kansen_k/beierfasite_younv.dds"}
+	beifeng = {textureFile = "gfx/models/portraits/kansen_k/beifeng.dds"}
+	beikaluolaina = {textureFile = "gfx/models/portraits/kansen_k/beikaluolaina.dds"}
+	beili = {textureFile = "gfx/models/portraits/kansen_k/beili.dds"}
+	beili_g = {textureFile = "gfx/models/portraits/kansen_k/beili_g.dds"}
+	beiyaen = {textureFile = "gfx/models/portraits/kansen_k/beiyaen.dds"}
+	bensen = {textureFile = "gfx/models/portraits/kansen_k/bensen.dds"}
+	biaoqiang = {textureFile = "gfx/models/portraits/kansen_k/biaoqiang.dds"}
+	biaoqiang_g = {textureFile = "gfx/models/portraits/kansen_k/biaoqiang_g.dds"}
+	biaoyu = {textureFile = "gfx/models/portraits/kansen_k/biaoyu.dds"}
+	biaoyu_g = {textureFile = "gfx/models/portraits/kansen_k/biaoyu_g.dds"}
+	biluokexi = {textureFile = "gfx/models/portraits/kansen_k/biluokexi.dds"}
+	binxifaniya = {textureFile = "gfx/models/portraits/kansen_k/binxifaniya.dds"}
+	birui = {textureFile = "gfx/models/portraits/kansen_k/birui.dds"}
+	birui_younv = {textureFile = "gfx/models/portraits/kansen_k/birui_younv.dds"}
+	bisimai = {textureFile = "gfx/models/portraits/kansen_k/bisimai.dds"}
+	boge = {textureFile = "gfx/models/portraits/kansen_k/boge.dds"}
+	boge_g = {textureFile = "gfx/models/portraits/kansen_k/boge_g.dds"}
+	bola = {textureFile = "gfx/models/portraits/kansen_k/bola.dds"}
+	bolisi = {textureFile = "gfx/models/portraits/kansen_k/bolisi.dds"}
+	bominghan = {textureFile = "gfx/models/portraits/kansen_k/bominghan.dds"}
+	botelan = {textureFile = "gfx/models/portraits/kansen_k/botelan.dds"}
+	botelan_g = {textureFile = "gfx/models/portraits/kansen_k/botelan_g.dds"}
+	bulaimodun = {textureFile = "gfx/models/portraits/kansen_k/bulaimodun.dds"}
+	buli_super = {textureFile = "gfx/models/portraits/kansen_k/buli_super.dds"}
+	bulukelin = {textureFile = "gfx/models/portraits/kansen_k/bulukelin.dds"}
+	buzhihuo = {textureFile = "gfx/models/portraits/kansen_k/buzhihuo.dds"}
+	buzhihuo_g = {textureFile = "gfx/models/portraits/kansen_k/buzhihuo_g.dds"}
+	canglong = {textureFile = "gfx/models/portraits/kansen_k/canglong.dds"}
+	canglong_g = {textureFile = "gfx/models/portraits/kansen_k/canglong_g.dds"}
+	chaijun = {textureFile = "gfx/models/portraits/kansen_k/chaijun.dds"}
+	Champagne = {textureFile = "gfx/models/portraits/kansen_k/Champagne.dds"}
+	changbo = {textureFile = "gfx/models/portraits/kansen_k/changbo.dds"}
+	changchun = {textureFile = "gfx/models/portraits/kansen_k/changchun.dds"}
+	changdao = {textureFile = "gfx/models/portraits/kansen_k/changdao.dds"}
+	changdao_g = {textureFile = "gfx/models/portraits/kansen_k/changdao_g.dds"}
+	changliang = {textureFile = "gfx/models/portraits/kansen_k/changliang.dds"}
+	changmen_k = {textureFile = "gfx/models/portraits/kansen_k/changmen_k.dds"}
+	changyue = {textureFile = "gfx/models/portraits/kansen_k/changyue.dds"}
+	chicheng = {textureFile = "gfx/models/portraits/kansen_k/chicheng.dds"}
+	chicheng_younv = {textureFile = "gfx/models/portraits/kansen_k/chicheng_younv.dds"}
+	chuannei = {textureFile = "gfx/models/portraits/kansen_k/chuannei.dds"}
+	chuannei_g = {textureFile = "gfx/models/portraits/kansen_k/chuannei_g.dds"}
+	chuchun = {textureFile = "gfx/models/portraits/kansen_k/chuchun.dds"}
+	chuchun_g = {textureFile = "gfx/models/portraits/kansen_k/chuchun_g.dds"}
+	chuixue = {textureFile = "gfx/models/portraits/kansen_k/chuixue.dds"}
+	chunyue = {textureFile = "gfx/models/portraits/kansen_k/chunyue.dds"}
+	chushuang = {textureFile = "gfx/models/portraits/kansen_k/chushuang.dds"}
+	chushuang_g = {textureFile = "gfx/models/portraits/kansen_k/chushuang_g.dds"}
+	chuyun = {textureFile = "gfx/models/portraits/kansen_k/chuyun.dds"}
+	Columbia = {textureFile = "gfx/models/portraits/kansen_k/Columbia.dds"}
+	dachao = {textureFile = "gfx/models/portraits/kansen_k/dachao.dds"}
+	dadouquan = {textureFile = "gfx/models/portraits/kansen_k/dadouquan.dds"}
+	dafeng = {textureFile = "gfx/models/portraits/kansen_k/dafeng.dds"}
+	dahuangfeng = {textureFile = "gfx/models/portraits/kansen_k/dahuangfeng.dds"}
+	daiduo = {textureFile = "gfx/models/portraits/kansen_k/daiduo.dds"}
+	danfo = {textureFile = "gfx/models/portraits/kansen_k/danfo.dds"}
+	daqinghuayu = {textureFile = "gfx/models/portraits/kansen_k/daqinghuayu.dds"}
+	deleike = {textureFile = "gfx/models/portraits/kansen_k/deleike.dds"}
+	deyizhi = {textureFile = "gfx/models/portraits/kansen_k/deyizhi.dds"}
+	dian = {textureFile = "gfx/models/portraits/kansen_k/dian.dds"}
+	dujiaoshou = {textureFile = "gfx/models/portraits/kansen_k/dujiaoshou.dds"}
+	duli = {textureFile = "gfx/models/portraits/kansen_k/duli.dds"}
+	dunkeerke_k = {textureFile = "gfx/models/portraits/kansen_k/dunkeerke_k.dds"}
+	duosaitejun = {textureFile = "gfx/models/portraits/kansen_k/duosaitejun.dds"}
+	duwei = {textureFile = "gfx/models/portraits/kansen_k/duwei.dds"}
+	edu_k = {textureFile = "gfx/models/portraits/kansen_k/edu_k.dds"}
+	ekelahema = {textureFile = "gfx/models/portraits/kansen_k/ekelahema.dds"}
+	ekelahema_g = {textureFile = "gfx/models/portraits/kansen_k/ekelahema_g.dds"}
+	#empress = {textureFile = "gfx/models/portraits/kansen_k/empress.dds"}
+	fanji = {textureFile = "gfx/models/portraits/kansen_k/fanji.dds"}
+	feiji = {textureFile = "gfx/models/portraits/kansen_k/feiji.dds"}
+	feilong = {textureFile = "gfx/models/portraits/kansen_k/feilong.dds"}
+	feilong_g = {textureFile = "gfx/models/portraits/kansen_k/feilong_g.dds"}
+	feinikesi = {textureFile = "gfx/models/portraits/kansen_k/feinikesi.dds"}
+	feiteliedadi = {textureFile = "gfx/models/portraits/kansen_k/feiteliedadi.dds"}
+	feiying = {textureFile = "gfx/models/portraits/kansen_k/feiying.dds"}
+	fengxiang = {textureFile = "gfx/models/portraits/kansen_k/fengxiang.dds"}
+	fubuki = {textureFile = "gfx/models/portraits/kansen_k/fubuki.dds"}
+	fuerban = {textureFile = "gfx/models/portraits/kansen_k/fuerban.dds"}
+	fuerban_g = {textureFile = "gfx/models/portraits/kansen_k/fuerban_g.dds"}
+	fulaiche = {textureFile = "gfx/models/portraits/kansen_k/fulaiche.dds"}
+	fumilulu = {textureFile = "gfx/models/portraits/kansen_k/fumilulu.dds"}
+	fusang = {textureFile = "gfx/models/portraits/kansen_k/fusang.dds"}
+	fusang_g = {textureFile = "gfx/models/portraits/kansen_k/fusang_g.dds"}
+	fushun = {textureFile = "gfx/models/portraits/kansen_k/fushun.dds"}
+	fute = {textureFile = "gfx/models/portraits/kansen_k/fute.dds"}
+	gangute = {textureFile = "gfx/models/portraits/kansen_k/gangute.dds"}
+	gaoxiong = {textureFile = "gfx/models/portraits/kansen_k/gaoxiong.dds"}
+	gelasige = {textureFile = "gfx/models/portraits/kansen_k/gelasige.dds"}
+	gelideli = {textureFile = "gfx/models/portraits/kansen_k/gelideli.dds"}
+	gelunweier = {textureFile = "gfx/models/portraits/kansen_k/gelunweier.dds"}
+	geluosite = {textureFile = "gfx/models/portraits/kansen_k/geluosite.dds"}
+	genaisennao = {textureFile = "gfx/models/portraits/kansen_k/genaisennao.dds"}
+	gin = {textureFile = "gfx/models/portraits/kansen_k/gin.dds"}
+	guanghui = {textureFile = "gfx/models/portraits/kansen_k/guanghui.dds"}
+	guanghui_younv = {textureFile = "gfx/models/portraits/kansen_k/guanghui_younv.dds"}
+	guangrong = {textureFile = "gfx/models/portraits/kansen_k/guangrong.dds"}
+	gufeng = {textureFile = "gfx/models/portraits/kansen_k/gufeng.dds"}
+	gufeng_g = {textureFile = "gfx/models/portraits/kansen_k/gufeng_g.dds"}
+	guinu = {textureFile = "gfx/models/portraits/kansen_k/guinu.dds"}
+	guinu_g = {textureFile = "gfx/models/portraits/kansen_k/guinu_g.dds"}
+	guying = {textureFile = "gfx/models/portraits/kansen_k/guying.dds"}
+	guying_g = {textureFile = "gfx/models/portraits/kansen_k/guying_g.dds"}
+	hailunna = {textureFile = "gfx/models/portraits/kansen_k/hailunna.dds"}
+	hailunna_g = {textureFile = "gfx/models/portraits/kansen_k/hailunna_g.dds"}
+	haiwangxing = {textureFile = "gfx/models/portraits/kansen_k/haiwangxing.dds"}
+	haman = {textureFile = "gfx/models/portraits/kansen_k/haman.dds"}
+	haman_g = {textureFile = "gfx/models/portraits/kansen_k/haman_g.dds"}
+	hao = {textureFile = "gfx/models/portraits/kansen_k/hao.dds"}
+	HDN101 = {textureFile = "gfx/models/portraits/kansen_k/HDN101.dds"}
+	HDN102_1 = {textureFile = "gfx/models/portraits/kansen_k/HDN102_1.dds"}
+	HDN201 = {textureFile = "gfx/models/portraits/kansen_k/HDN201.dds"}
+	HDN202_1 = {textureFile = "gfx/models/portraits/kansen_k/HDN202_1.dds"}
+	HDN301 = {textureFile = "gfx/models/portraits/kansen_k/HDN301.dds"}
+	HDN302_1 = {textureFile = "gfx/models/portraits/kansen_k/HDN302_1.dds"}
+	HDN401 = {textureFile = "gfx/models/portraits/kansen_k/HDN401.dds"}
+	HDN402_1 = {textureFile = "gfx/models/portraits/kansen_k/HDN402_1.dds"}
+	heianjie = {textureFile = "gfx/models/portraits/kansen_k/heianjie.dds"}
+	heichao = {textureFile = "gfx/models/portraits/kansen_k/heichao.dds"}
+	heitaizi = {textureFile = "gfx/models/portraits/kansen_k/heitaizi.dds"}
+	heizewude = {textureFile = "gfx/models/portraits/kansen_k/heizewude.dds"}
+	hemin = {textureFile = "gfx/models/portraits/kansen_k/hemin.dds"}
+	huangchao = {textureFile = "gfx/models/portraits/kansen_k/huangchao.dds"}
+	huangjiafangzhou = {textureFile = "gfx/models/portraits/kansen_k/huangjiafangzhou.dds"}
+	huashengdun = {textureFile = "gfx/models/portraits/kansen_k/huashengdun.dds"}
+	huayue = {textureFile = "gfx/models/portraits/kansen_k/huayue.dds"}
+	hude = {textureFile = "gfx/models/portraits/kansen_k/hude.dds"}
+	hufeng = {textureFile = "gfx/models/portraits/kansen_k/hufeng.dds"}
+	huisheng = {textureFile = "gfx/models/portraits/kansen_k/huisheng.dds"}
+	huixing = {textureFile = "gfx/models/portraits/kansen_k/huixing.dds"}
+	huixing_g = {textureFile = "gfx/models/portraits/kansen_k/huixing_g.dds"}
+	huobi = {textureFile = "gfx/models/portraits/kansen_k/huobi.dds"}
+	huonululu = {textureFile = "gfx/models/portraits/kansen_k/huonululu.dds"}
+	huoqiangshou = {textureFile = "gfx/models/portraits/kansen_k/huoqiangshou.dds"}
+	huti = {textureFile = "gfx/models/portraits/kansen_k/huti.dds"}
+	huti_g = {textureFile = "gfx/models/portraits/kansen_k/huti_g.dds"}
+	I13 = {textureFile = "gfx/models/portraits/kansen_k/I13.dds"}
+	I168 = {textureFile = "gfx/models/portraits/kansen_k/I168.dds"}
+	i19 = {textureFile = "gfx/models/portraits/kansen_k/i19.dds"}
+	I25 = {textureFile = "gfx/models/portraits/kansen_k/I25.dds"}
+	i26 = {textureFile = "gfx/models/portraits/kansen_k/i26.dds"}
+	I56 = {textureFile = "gfx/models/portraits/kansen_k/I56.dds"}
+	i58 = {textureFile = "gfx/models/portraits/kansen_k/i58.dds"}
+	jiafuerbojue = {textureFile = "gfx/models/portraits/kansen_k/jiafuerbojue.dds"}
+	jiagu = {textureFile = "gfx/models/portraits/kansen_k/jiagu.dds"}
+	jiagu_g = {textureFile = "gfx/models/portraits/kansen_k/jiagu_g.dds"}
+	jiahe = {textureFile = "gfx/models/portraits/kansen_k/jiahe.dds"}
+	jiahezhanlie = {textureFile = "gfx/models/portraits/kansen_k/jiahezhanlie.dds"}
+	jialadiya = {textureFile = "gfx/models/portraits/kansen_k/jialadiya.dds"}
+	jialifuniya = {textureFile = "gfx/models/portraits/kansen_k/jialifuniya.dds"}
+	jialisuoniye = {textureFile = "gfx/models/portraits/kansen_k/jialisuoniye.dds"}
+	jiangfeng = {textureFile = "gfx/models/portraits/kansen_k/jiangfeng.dds"}
+	jianye = {textureFile = "gfx/models/portraits/kansen_k/jianye.dds"}
+	jiasikenie = {textureFile = "gfx/models/portraits/kansen_k/jiasikenie.dds"}
+	jiasikenie_idol = {textureFile = "gfx/models/portraits/kansen_k/jiasikenie_idol.dds"}
+	jiejinsi = {textureFile = "gfx/models/portraits/kansen_k/jiejinsi.dds"}
+	jifeng = {textureFile = "gfx/models/portraits/kansen_k/jifeng.dds"}
+	jiluofu = {textureFile = "gfx/models/portraits/kansen_k/jiluofu.dds"}
+	jinboli = {textureFile = "gfx/models/portraits/kansen_k/jinboli.dds"}
+	jingang = {textureFile = "gfx/models/portraits/kansen_k/jingang.dds"}
+	jingjishen = {textureFile = "gfx/models/portraits/kansen_k/jingjishen.dds"}
+	jingjishen_g = {textureFile = "gfx/models/portraits/kansen_k/jingjishen_g.dds"}
+	jiqi = {textureFile = "gfx/models/portraits/kansen_k/jiqi.dds"}
+	jiuyuan = {textureFile = "gfx/models/portraits/kansen_k/jiuyuan.dds"}
+	jiyi_n = {textureFile = "gfx/models/portraits/kansen_k/jiyi_n.dds"}
+	juanbo = {textureFile = "gfx/models/portraits/kansen_k/juanbo.dds"}
+	juejiang = {textureFile = "gfx/models/portraits/kansen_k/juejiang.dds"}
+	junhe = {textureFile = "gfx/models/portraits/kansen_k/junhe.dds"}
+	junzhu_k = {textureFile = "gfx/models/portraits/kansen_k/junzhu_k.dds"}
+	kaersilue = {textureFile = "gfx/models/portraits/kansen_k/kaersilue.dds"}
+	kaersilue_g = {textureFile = "gfx/models/portraits/kansen_k/kaersilue_g.dds"}
+	kaisa = {textureFile = "gfx/models/portraits/kansen_k/kaisa.dds"}
+	kaixuan = {textureFile = "gfx/models/portraits/kansen_k/kaixuan.dds"}
+	kangkede = {textureFile = "gfx/models/portraits/kansen_k/kangkede.dds"}
+	kasabulanka = {textureFile = "gfx/models/portraits/kansen_k/kasabulanka.dds"}
+	kaxin = {textureFile = "gfx/models/portraits/kansen_k/kaxin.dds"}
+	kaxin_g = {textureFile = "gfx/models/portraits/kansen_k/kaxin_g.dds"}
+	kebu = {textureFile = "gfx/models/portraits/kansen_k/kebu.dds"}
+	keerke = {textureFile = "gfx/models/portraits/kansen_k/keerke.dds"}
+	keleiwen = {textureFile = "gfx/models/portraits/kansen_k/keleiwen.dds"}
+	kelifulan = {textureFile = "gfx/models/portraits/kansen_k/kelifulan.dds"}
+	kelifulan_idol = {textureFile = "gfx/models/portraits/kansen_k/kelifulan_idol.dds"}
+	kelifulan_younv = {textureFile = "gfx/models/portraits/kansen_k/kelifulan_younv.dds"}
+	kelong = {textureFile = "gfx/models/portraits/kansen_k/kelong.dds"}
+	kelong_g = {textureFile = "gfx/models/portraits/kansen_k/kelong_g.dds"}
+	keluoladuo = {textureFile = "gfx/models/portraits/kansen_k/keluoladuo.dds"}
+	kenisibao = {textureFile = "gfx/models/portraits/kansen_k/kenisibao.dds"}
+	kente = {textureFile = "gfx/models/portraits/kansen_k/kente.dds"}
+	kewei = {textureFile = "gfx/models/portraits/kansen_k/kewei.dds"}
+	kin = {textureFile = "gfx/models/portraits/kansen_k/kin.dds"}
+	kongbu = {textureFile = "gfx/models/portraits/kansen_k/kongbu.dds"}
+	kubo = {textureFile = "gfx/models/portraits/kansen_k/kubo.dds"}
+	kulasuo = {textureFile = "gfx/models/portraits/kansen_k/kulasuo.dds"}
+	kulasuo_g = {textureFile = "gfx/models/portraits/kansen_k/kulasuo_g.dds"}
+	kunxi = {textureFile = "gfx/models/portraits/kansen_k/kunxi.dds"}
+	ladefute = {textureFile = "gfx/models/portraits/kansen_k/ladefute.dds"}
+	lafei = {textureFile = "gfx/models/portraits/kansen_k/lafei.dds"}
+	lafei_g = {textureFile = "gfx/models/portraits/kansen_k/lafei_g.dds"}
+	laibixi = {textureFile = "gfx/models/portraits/kansen_k/laibixi.dds"}
+	laibixi_g = {textureFile = "gfx/models/portraits/kansen_k/laibixi_g.dds"}
+	lanli = {textureFile = "gfx/models/portraits/kansen_k/lanli.dds"}
+	lansaiyu = {textureFile = "gfx/models/portraits/kansen_k/lansaiyu.dds"}
+	lei = {textureFile = "gfx/models/portraits/kansen_k/lei.dds"}
+	lemaer = {textureFile = "gfx/models/portraits/kansen_k/lemaer.dds"}
+	lemaer_g = {textureFile = "gfx/models/portraits/kansen_k/lemaer_g.dds"}
+	liande = {textureFile = "gfx/models/portraits/kansen_k/liande.dds"}
+	liande_g = {textureFile = "gfx/models/portraits/kansen_k/liande_g.dds"}
+	liangyue = {textureFile = "gfx/models/portraits/kansen_k/liangyue.dds"}
+	liekexingdun = {textureFile = "gfx/models/portraits/kansen_k/liekexingdun.dds"}
+	lieren = {textureFile = "gfx/models/portraits/kansen_k/lieren.dds"}
+	ligen = {textureFile = "gfx/models/portraits/kansen_k/ligen.dds"}
+	lingbo_g = {textureFile = "gfx/models/portraits/kansen_k/lingbo_g.dds"}
+	lingbo_k = {textureFile = "gfx/models/portraits/kansen_k/lingbo_k.dds"}
+	linggu = {textureFile = "gfx/models/portraits/kansen_k/linggu.dds"}
+	linuo = {textureFile = "gfx/models/portraits/kansen_k/linuo.dds"}
+	lisailiu_k = {textureFile = "gfx/models/portraits/kansen_k/lisailiu_k.dds"}
+	lishiman = {textureFile = "gfx/models/portraits/kansen_k/lishiman.dds"}
+	lituoliao_k = {textureFile = "gfx/models/portraits/kansen_k/lituoliao_k.dds"}
+	loli声望 = {textureFile = "gfx/models/portraits/kansen_k/loli声望.dds"}
+	loli金坷垃 = {textureFile = "gfx/models/portraits/kansen_k/loli金坷垃.dds"}
+	longfeng = {textureFile = "gfx/models/portraits/kansen_k/longfeng.dds"}
+	longqibing = {textureFile = "gfx/models/portraits/kansen_k/longqibing.dds"}
+	longxiang = {textureFile = "gfx/models/portraits/kansen_k/longxiang.dds"}
+	luao = {textureFile = "gfx/models/portraits/kansen_k/luao.dds"}
+	lulutiye = {textureFile = "gfx/models/portraits/kansen_k/lulutiye.dds"}
+	lumang = {textureFile = "gfx/models/portraits/kansen_k/lumang.dds"}
+	lundun = {textureFile = "gfx/models/portraits/kansen_k/lundun.dds"}
+	lundun_g = {textureFile = "gfx/models/portraits/kansen_k/lundun_g.dds"}
+	luodeni = {textureFile = "gfx/models/portraits/kansen_k/luodeni.dds"}
+	luoen = {textureFile = "gfx/models/portraits/kansen_k/luoen.dds"}
+	luoli = {textureFile = "gfx/models/portraits/kansen_k/luoli.dds"}
+	luyijiushi = {textureFile = "gfx/models/portraits/kansen_k/luyijiushi.dds"}
+	mabuerheide = {textureFile = "gfx/models/portraits/kansen_k/mabuerheide.dds"}
+	maikaoer = {textureFile = "gfx/models/portraits/kansen_k/maikaoer.dds"}
+	Mainz = {textureFile = "gfx/models/portraits/kansen_k/Mainz.dds"}
+	malani = {textureFile = "gfx/models/portraits/kansen_k/malani.dds"}
+	malilan = {textureFile = "gfx/models/portraits/kansen_k/malilan.dds"}
+	manchao = {textureFile = "gfx/models/portraits/kansen_k/manchao.dds"}
+	maoyin = {textureFile = "gfx/models/portraits/kansen_k/maoyin.dds"}
+	maoyue = {textureFile = "gfx/models/portraits/kansen_k/maoyue.dds"}
+	masazhusai = {textureFile = "gfx/models/portraits/kansen_k/masazhusai.dds"}
+	mengbiliai = {textureFile = "gfx/models/portraits/kansen_k/mengbiliai.dds"}
+	mengfeisi = {textureFile = "gfx/models/portraits/kansen_k/mengfeisi.dds"}
+	miaogao = {textureFile = "gfx/models/portraits/kansen_k/miaogao.dds"}
+	mingniabolisi = {textureFile = "gfx/models/portraits/kansen_k/mingniabolisi.dds"}
+	mingshi = {textureFile = "gfx/models/portraits/kansen_k/mingshi.dds"}
+	mingsike = {textureFile = "gfx/models/portraits/kansen_k/mingsike.dds"}
+	mingyunnvshen = {textureFile = "gfx/models/portraits/kansen_k/mingyunnvshen.dds"}
+	mingyunnvshen_g = {textureFile = "gfx/models/portraits/kansen_k/mingyunnvshen_g.dds"}
+	mio = {textureFile = "gfx/models/portraits/kansen_k/mio.dds"}
+	moli = {textureFile = "gfx/models/portraits/kansen_k/moli.dds"}
+	moye = {textureFile = "gfx/models/portraits/kansen_k/moye.dds"}
+	muyue = {textureFile = "gfx/models/portraits/kansen_k/muyue.dds"}
+	muyue_g = {textureFile = "gfx/models/portraits/kansen_k/muyue_g.dds"}
+	naerxun = {textureFile = "gfx/models/portraits/kansen_k/naerxun.dds"}
+	nake = {textureFile = "gfx/models/portraits/kansen_k/nake.dds"}
+	nananpudun = {textureFile = "gfx/models/portraits/kansen_k/nananpudun.dds"}
+	nandaketa = {textureFile = "gfx/models/portraits/kansen_k/nandaketa.dds"}
+	nazhi = {textureFile = "gfx/models/portraits/kansen_k/nazhi.dds"}
+	neihuada = {textureFile = "gfx/models/portraits/kansen_k/neihuada.dds"}
+	neihuada_g = {textureFile = "gfx/models/portraits/kansen_k/neihuada_g.dds"}
+	nengdai = {textureFile = "gfx/models/portraits/kansen_k/nengdai.dds"}
+	niaohai = {textureFile = "gfx/models/portraits/kansen_k/niaohai.dds"}
+	nigulasi = {textureFile = "gfx/models/portraits/kansen_k/nigulasi.dds"}
+	ninghai = {textureFile = "gfx/models/portraits/kansen_k/ninghai.dds"}
+	ninghai_g = {textureFile = "gfx/models/portraits/kansen_k/ninghai_g.dds"}
+	niukasier = {textureFile = "gfx/models/portraits/kansen_k/niukasier.dds"}
+	niukasier_g = {textureFile = "gfx/models/portraits/kansen_k/niukasier_g.dds"}
+	nuofuke = {textureFile = "gfx/models/portraits/kansen_k/nuofuke.dds"}
+	nvjiang = {textureFile = "gfx/models/portraits/kansen_k/nvjiang.dds"}
+	nvjiang_g = {textureFile = "gfx/models/portraits/kansen_k/nvjiang_g.dds"}
+	ougen = {textureFile = "gfx/models/portraits/kansen_k/ougen.dds"}
+	ouruola = {textureFile = "gfx/models/portraits/kansen_k/ouruola.dds"}
+	pengsakela = {textureFile = "gfx/models/portraits/kansen_k/pengsakela.dds"}
+	pinghai = {textureFile = "gfx/models/portraits/kansen_k/pinghai.dds"}
+	pinghai_g = {textureFile = "gfx/models/portraits/kansen_k/pinghai_g.dds"}
+	poi = {textureFile = "gfx/models/portraits/kansen_k/poi.dds"}
+	pubo = {textureFile = "gfx/models/portraits/kansen_k/pubo.dds"}
+	pufeng = {textureFile = "gfx/models/portraits/kansen_k/pufeng.dds"}
+	qiabayefu = {textureFile = "gfx/models/portraits/kansen_k/qiabayefu.dds"}
+	qiandaitian = {textureFile = "gfx/models/portraits/kansen_k/qiandaitian.dds"}
+	qiaozhiwushi = {textureFile = "gfx/models/portraits/kansen_k/qiaozhiwushi.dds"}
+	qibolin = {textureFile = "gfx/models/portraits/kansen_k/qibolin.dds"}
+	qibolin_younv = {textureFile = "gfx/models/portraits/kansen_k/qibolin_younv.dds"}
+	qinchao = {textureFile = "gfx/models/portraits/kansen_k/qinchao.dds"}
+	qingbo = {textureFile = "gfx/models/portraits/kansen_k/qingbo.dds"}
+	qingchuzhe = {textureFile = "gfx/models/portraits/kansen_k/qingchuzhe.dds"}
+	qingye = {textureFile = "gfx/models/portraits/kansen_k/qingye.dds"}
+	qiubite = {textureFile = "gfx/models/portraits/kansen_k/qiubite.dds"}
+	qiye_k = {textureFile = "gfx/models/portraits/kansen_k/qiye_k.dds"}
+	quejie = {textureFile = "gfx/models/portraits/kansen_k/quejie.dds"}
+	quin = {textureFile = "gfx/models/portraits/kansen_k/quin.dds"}
+	rangbaer = {textureFile = "gfx/models/portraits/kansen_k/rangbaer.dds"}
+	rexin = {textureFile = "gfx/models/portraits/kansen_k/rexin.dds"}
+	rexin_g = {textureFile = "gfx/models/portraits/kansen_k/rexin_g.dds"}
+	rixiang = {textureFile = "gfx/models/portraits/kansen_k/rixiang.dds"}
+	rixiang_g = {textureFile = "gfx/models/portraits/kansen_k/rixiang_g.dds"}
+	ruihe = {textureFile = "gfx/models/portraits/kansen_k/ruihe.dds"}
+	ruoye = {textureFile = "gfx/models/portraits/kansen_k/ruoye.dds"}
+	ruyue = {textureFile = "gfx/models/portraits/kansen_k/ruyue.dds"}
+	saber = {textureFile = "gfx/models/portraits/kansen_k/saber.dds"}
+	shion = {textureFile = "gfx/models/portraits/kansen_k/shion.dds"}
+	sora = {textureFile = "gfx/models/portraits/kansen_k/sora.dds"}
+	U101 = {textureFile = "gfx/models/portraits/kansen_k/U101.dds"}
+	U110 = {textureFile = "gfx/models/portraits/kansen_k/U110.dds"}
+	U47 = {textureFile = "gfx/models/portraits/kansen_k/U47.dds"}
+	U522 = {textureFile = "gfx/models/portraits/kansen_k/U522.dds"}
+	U556 = {textureFile = "gfx/models/portraits/kansen_k/U556.dds"}
+	U557 = {textureFile = "gfx/models/portraits/kansen_k/U557.dds"}
+	U73 = {textureFile = "gfx/models/portraits/kansen_k/U73.dds"}
+	U81 = {textureFile = "gfx/models/portraits/kansen_k/U81.dds"}
+	U96 = {textureFile = "gfx/models/portraits/kansen_k/U96.dds"}
+	Z1 = {textureFile = "gfx/models/portraits/kansen_k/Z1.dds"}
+	Z18 = {textureFile = "gfx/models/portraits/kansen_k/Z18.dds"}
+	Z19 = {textureFile = "gfx/models/portraits/kansen_k/Z19.dds"}
+	Z1改 = {textureFile = "gfx/models/portraits/kansen_k/Z1改.dds"}
+	Z2 = {textureFile = "gfx/models/portraits/kansen_k/Z2.dds"}
+	Z20 = {textureFile = "gfx/models/portraits/kansen_k/Z20.dds"}
+	Z21 = {textureFile = "gfx/models/portraits/kansen_k/Z21.dds"}
+	Z23 = {textureFile = "gfx/models/portraits/kansen_k/Z23.dds"}
+	Z23改 = {textureFile = "gfx/models/portraits/kansen_k/Z23改.dds"}
+	Z25 = {textureFile = "gfx/models/portraits/kansen_k/Z25.dds"}
+	Z26 = {textureFile = "gfx/models/portraits/kansen_k/Z26.dds"}
+	Z35 = {textureFile = "gfx/models/portraits/kansen_k/Z35.dds"}
+	Z36 = {textureFile = "gfx/models/portraits/kansen_k/Z36.dds"}
+	Z46 = {textureFile = "gfx/models/portraits/kansen_k/Z46.dds"}
+	三日月 = {textureFile = "gfx/models/portraits/kansen_k/三日月.dds"}
+	三笠 = {textureFile = "gfx/models/portraits/kansen_k/三笠.dds"}
+	三隈 = {textureFile = "gfx/models/portraits/kansen_k/三隈.dds"}
+	乌璐露 = {textureFile = "gfx/models/portraits/kansen_k/乌璐露.dds"}
+	亚利桑那 = {textureFile = "gfx/models/portraits/kansen_k/亚利桑那.dds"}
+	亚特兰大 = {textureFile = "gfx/models/portraits/kansen_k/亚特兰大.dds"}
+	什罗普郡 = {textureFile = "gfx/models/portraits/kansen_k/什罗普郡.dds"}
+	伊丽莎白 = {textureFile = "gfx/models/portraits/kansen_k/伊丽莎白.dds"}
+	伊势 = {textureFile = "gfx/models/portraits/kansen_k/伊势.dds"}
+	伊势改 = {textureFile = "gfx/models/portraits/kansen_k/伊势改.dds"}
+	伊卡洛斯 = {textureFile = "gfx/models/portraits/kansen_k/伊卡洛斯.dds"}
+	伊吹 = {textureFile = "gfx/models/portraits/kansen_k/伊吹.dds"}
+	休斯敦 = {textureFile = "gfx/models/portraits/kansen_k/休斯敦.dds"}
+	佐治亚 = {textureFile = "gfx/models/portraits/kansen_k/佐治亚.dds"}
+	信浓 = {textureFile = "gfx/models/portraits/kansen_k/信浓.dds"}
+	共产国际 = {textureFile = "gfx/models/portraits/kansen_k/共产国际.dds"}
+	勇敢 = {textureFile = "gfx/models/portraits/kansen_k/勇敢.dds"}
+	北宅 = {textureFile = "gfx/models/portraits/kansen_k/北宅.dds"}
+	厌战 = {textureFile = "gfx/models/portraits/kansen_k/厌战.dds"}
+	厌战改 = {textureFile = "gfx/models/portraits/kansen_k/厌战改.dds"}
+	吸血鬼 = {textureFile = "gfx/models/portraits/kansen_k/吸血鬼.dds"}
+	吾妻 = {textureFile = "gfx/models/portraits/kansen_k/吾妻.dds"}
+	响 = {textureFile = "gfx/models/portraits/kansen_k/响.dds"}
+	唐斯 = {textureFile = "gfx/models/portraits/kansen_k/唐斯.dds"}
+	唐斯改 = {textureFile = "gfx/models/portraits/kansen_k/唐斯改.dds"}
+	土佐 = {textureFile = "gfx/models/portraits/kansen_k/土佐.dds"}
+	圣胡安 = {textureFile = "gfx/models/portraits/kansen_k/圣胡安.dds"}
+	圣路易斯 = {textureFile = "gfx/models/portraits/kansen_k/圣路易斯.dds"}
+	塔什干 = {textureFile = "gfx/models/portraits/kansen_k/塔什干.dds"}
+	塔尔图 = {textureFile = "gfx/models/portraits/kansen_k/塔尔图.dds"}
+	声望 = {textureFile = "gfx/models/portraits/kansen_k/声望.dds"}
+	夕张 = {textureFile = "gfx/models/portraits/kansen_k/夕张.dds"}
+	夕张改 = {textureFile = "gfx/models/portraits/kansen_k/夕张改.dds"}
+	夕暮 = {textureFile = "gfx/models/portraits/kansen_k/夕暮.dds"}
+	夕暮改 = {textureFile = "gfx/models/portraits/kansen_k/夕暮改.dds"}
+	天后 = {textureFile = "gfx/models/portraits/kansen_k/天后.dds"}
+	天城 = {textureFile = "gfx/models/portraits/kansen_k/天城.dds"}
+	天狼星 = {textureFile = "gfx/models/portraits/kansen_k/天狼星.dds"}
+	太原 = {textureFile = "gfx/models/portraits/kansen_k/太原.dds"}
+	奈亚拉托提普 = {textureFile = "gfx/models/portraits/kansen_k/奈亚拉托提普.dds"}
+	女灶神 = {textureFile = "gfx/models/portraits/kansen_k/女灶神.dds"}
+	威严 = {textureFile = "gfx/models/portraits/kansen_k/威严.dds"}
+	威奇塔 = {textureFile = "gfx/models/portraits/kansen_k/威奇塔.dds"}
+	宵月 = {textureFile = "gfx/models/portraits/kansen_k/宵月.dds"}
+	小天鹅 = {textureFile = "gfx/models/portraits/kansen_k/小天鹅.dds"}
+	小天鹅改 = {textureFile = "gfx/models/portraits/kansen_k/小天鹅改.dds"}
+	小猎兔犬 = {textureFile = "gfx/models/portraits/kansen_k/小猎兔犬.dds"}
+	山城 = {textureFile = "gfx/models/portraits/kansen_k/山城.dds"}
+	山城改 = {textureFile = "gfx/models/portraits/kansen_k/山城改.dds"}
+	希佩尔 = {textureFile = "gfx/models/portraits/kansen_k/希佩尔.dds"}
+	扎拉 = {textureFile = "gfx/models/portraits/kansen_k/扎拉.dds"}
+	撒切尔 = {textureFile = "gfx/models/portraits/kansen_k/撒切尔.dds"}
+	文月 = {textureFile = "gfx/models/portraits/kansen_k/文月.dds"}
+	文森斯 = {textureFile = "gfx/models/portraits/kansen_k/文森斯.dds"}
+	斯佩伯爵 = {textureFile = "gfx/models/portraits/kansen_k/斯佩伯爵.dds"}
+	斯坦利 = {textureFile = "gfx/models/portraits/kansen_k/斯坦利.dds"}
+	斯彭斯 = {textureFile = "gfx/models/portraits/kansen_k/斯彭斯.dds"}
+	斯莫利 = {textureFile = "gfx/models/portraits/kansen_k/斯莫利.dds"}
+	新月 = {textureFile = "gfx/models/portraits/kansen_k/新月.dds"}
+	新月JP = {textureFile = "gfx/models/portraits/kansen_k/新月JP.dds"}
+	新月改 = {textureFile = "gfx/models/portraits/kansen_k/新月改.dds"}
+	无敌 = {textureFile = "gfx/models/portraits/kansen_k/无敌.dds"}
+	无畏 = {textureFile = "gfx/models/portraits/kansen_k/无畏.dds"}
+	时雨 = {textureFile = "gfx/models/portraits/kansen_k/时雨.dds"}
+	时雨改 = {textureFile = "gfx/models/portraits/kansen_k/时雨改.dds"}
+	晓 = {textureFile = "gfx/models/portraits/kansen_k/晓.dds"}
+	最上 = {textureFile = "gfx/models/portraits/kansen_k/最上.dds"}
+	最上改 = {textureFile = "gfx/models/portraits/kansen_k/最上改.dds"}
+	有明 = {textureFile = "gfx/models/portraits/kansen_k/有明.dds"}
+	朝潮 = {textureFile = "gfx/models/portraits/kansen_k/朝潮.dds"}
+	朱诺 = {textureFile = "gfx/models/portraits/kansen_k/朱诺.dds"}
+	松风 = {textureFile = "gfx/models/portraits/kansen_k/松风.dds"}
+	松风改 = {textureFile = "gfx/models/portraits/kansen_k/松风改.dds"}
+	榛名 = {textureFile = "gfx/models/portraits/kansen_k/榛名.dds"}
+	水无月 = {textureFile = "gfx/models/portraits/kansen_k/水无月.dds"}
+	沙恩霍斯特 = {textureFile = "gfx/models/portraits/kansen_k/沙恩霍斯特.dds"}
+	泽西 = {textureFile = "gfx/models/portraits/kansen_k/泽西.dds"}
+	熊野 = {textureFile = "gfx/models/portraits/kansen_k/熊野.dds"}
+	牙买加 = {textureFile = "gfx/models/portraits/kansen_k/牙买加.dds"}
+	特伦托 = {textureFile = "gfx/models/portraits/kansen_k/特伦托.dds"}
+	田纳西 = {textureFile = "gfx/models/portraits/kansen_k/田纳西.dds"}
+	盐湖城 = {textureFile = "gfx/models/portraits/kansen_k/盐湖城.dds"}
+	神通 = {textureFile = "gfx/models/portraits/kansen_k/神通.dds"}
+	神通改 = {textureFile = "gfx/models/portraits/kansen_k/神通改.dds"}
+	神风 = {textureFile = "gfx/models/portraits/kansen_k/神风.dds"}
+	神风改 = {textureFile = "gfx/models/portraits/kansen_k/神风改.dds"}
+	祥凤 = {textureFile = "gfx/models/portraits/kansen_k/祥凤.dds"}
+	祥凤改 = {textureFile = "gfx/models/portraits/kansen_k/祥凤改.dds"}
+	突击者 = {textureFile = "gfx/models/portraits/kansen_k/突击者.dds"}
+	突击者改 = {textureFile = "gfx/models/portraits/kansen_k/突击者改.dds"}
+	絮库夫 = {textureFile = "gfx/models/portraits/kansen_k/絮库夫.dds"}
+	约克 = {textureFile = "gfx/models/portraits/kansen_k/约克.dds"}
+	约克公爵 = {textureFile = "gfx/models/portraits/kansen_k/约克公爵.dds"}
+	约克城 = {textureFile = "gfx/models/portraits/kansen_k/约克城.dds"}
+	约克改 = {textureFile = "gfx/models/portraits/kansen_k/约克改.dds"}
+	维内托 = {textureFile = "gfx/models/portraits/kansen_k/维内托.dds"}
+	翔鹤 = {textureFile = "gfx/models/portraits/kansen_k/翔鹤.dds"}
+	胜利 = {textureFile = "gfx/models/portraits/kansen_k/胜利.dds"}
+	芝加哥 = {textureFile = "gfx/models/portraits/kansen_k/芝加哥.dds"}
+	苏塞克斯 = {textureFile = "gfx/models/portraits/kansen_k/苏塞克斯.dds"}
+	苏维埃罗西亚 = {textureFile = "gfx/models/portraits/kansen_k/苏维埃罗西亚.dds"}
+	英仙座 = {textureFile = "gfx/models/portraits/kansen_k/英仙座.dds"}
+	英勇 = {textureFile = "gfx/models/portraits/kansen_k/英勇.dds"}
+	萤火虫 = {textureFile = "gfx/models/portraits/kansen_k/萤火虫.dds"}
+	萨拉娜 = {textureFile = "gfx/models/portraits/kansen_k/萨拉娜.dds"}
+	萨拉托加 = {textureFile = "gfx/models/portraits/kansen_k/萨拉托加.dds"}
+	萨拉托加改 = {textureFile = "gfx/models/portraits/kansen_k/萨拉托加改.dds"}
+	萨福克 = {textureFile = "gfx/models/portraits/kansen_k/萨福克.dds"}
+	萨福克改 = {textureFile = "gfx/models/portraits/kansen_k/萨福克改.dds"}
+	衣笠 = {textureFile = "gfx/models/portraits/kansen_k/衣笠.dds"}
+	西姆斯 = {textureFile = "gfx/models/portraits/kansen_k/西姆斯.dds"}
+	西姆斯改 = {textureFile = "gfx/models/portraits/kansen_k/西姆斯改.dds"}
+	西弗吉尼亚 = {textureFile = "gfx/models/portraits/kansen_k/西弗吉尼亚.dds"}
+	西雅图 = {textureFile = "gfx/models/portraits/kansen_k/西雅图.dds"}
+	谢菲尔德 = {textureFile = "gfx/models/portraits/kansen_k/谢菲尔德.dds"}
+	谢菲尔德idol = {textureFile = "gfx/models/portraits/kansen_k/谢菲尔德idol.dds"}
+	足柄 = {textureFile = "gfx/models/portraits/kansen_k/足柄.dds"}
+	追赶者 = {textureFile = "gfx/models/portraits/kansen_k/追赶者.dds"}
+	逸仙_k = {textureFile = "gfx/models/portraits/kansen_k/逸仙_k.dds"}
+	野分 = {textureFile = "gfx/models/portraits/kansen_k/野分.dds"}
+	金坷垃 = {textureFile = "gfx/models/portraits/kansen_k/金坷垃.dds"}
+	金坷垃改 = {textureFile = "gfx/models/portraits/kansen_k/金坷垃改.dds"}
+	阳炎 = {textureFile = "gfx/models/portraits/kansen_k/阳炎.dds"}
+	阳炎改 = {textureFile = "gfx/models/portraits/kansen_k/阳炎改.dds"}
+	隼鹰 = {textureFile = "gfx/models/portraits/kansen_k/隼鹰.dds"}
+	雪风 = {textureFile = "gfx/models/portraits/kansen_k/雪风.dds"}
+	雾岛 = {textureFile = "gfx/models/portraits/kansen_k/雾岛.dds"}
+	霞 = {textureFile = "gfx/models/portraits/kansen_k/霞.dds"}
+	香格里拉 = {textureFile = "gfx/models/portraits/kansen_k/香格里拉.dds"}
+	马自立 = {textureFile = "gfx/models/portraits/kansen_k/马自立.dds"}
+	鲦鱼 = {textureFile = "gfx/models/portraits/kansen_k/鲦鱼.dds"}
+	鹰 = {textureFile = "gfx/models/portraits/kansen_k/鹰.dds"}
+}
+	
+	portrait_groups = {
+		"Azur_Lane_k" = {
+			default = 萨拉托加
+			game_setup = {
+				add = {
+					portraits = {
+						22
+						33
+						500
+						500改
+						abeikelongbi
+						aerjiliya
+						afuleer
+						aheye
+						aidang
+						aidingbao
+						aierdeliqi
+						aierwen
+						aijiangBB
+						aijiangCL
+						aijiangCV
+						aijiangDD
+						aikesaite
+						aikesaite_g
+						aimierbeierding
+						aimierbeierding_g
+						aisaikesi
+						aisijimo
+						ajiakesi
+						ajiakesi_g
+						ajilisi
+						ajilisi_g
+						akasita
+						akasita_g
+						alabama
+						anshan
+						aoding
+						aolike
+						aomaha
+						aosiben
+						aruituosha
+						asituoliya
+						awuwei
+						awuwei_g
+						ayame
+						badan
+						baerdimo
+						bailu
+						bangfeng
+						bangfeng_g
+						bangkeshan
+						banrenma
+						beianpudun
+						beierfasite
+						beierfasite_younv
+						beifeng
+						beikaluolaina
+						beili
+						beili_g
+						beiyaen
+						bensen
+						biaoqiang
+						biaoqiang_g
+						biaoyu
+						biaoyu_g
+						biluokexi
+						binxifaniya
+						birui
+						birui_younv
+						bisimai
+						boge
+						boge_g
+						bola
+						bolisi
+						bominghan
+						botelan
+						botelan_g
+						bulaimodun
+						buli_super
+						bulukelin
+						buzhihuo
+						buzhihuo_g
+						canglong
+						canglong_g
+						chaijun
+						Champagne
+						changbo
+						changchun
+						changdao
+						changdao_g
+						changliang
+						changmen_k
+						changyue
+						chicheng
+						chicheng_younv
+						chuannei
+						chuannei_g
+						chuchun
+						chuchun_g
+						chuixue
+						chunyue
+						chushuang
+						chushuang_g
+						chuyun
+						Columbia
+						dachao
+						dadouquan
+						dafeng
+						dahuangfeng
+						daiduo
+						danfo
+						daqinghuayu
+						deleike
+						deyizhi
+						dian
+						dujiaoshou
+						duli
+						dunkeerke_k
+						duosaitejun
+						duwei
+						edu_k
+						ekelahema
+						ekelahema_g
+						#empress
+						fanji
+						feiji
+						feilong
+						feilong_g
+						feinikesi
+						feiteliedadi
+						feiying
+						fengxiang
+						fubuki
+						fuerban
+						fuerban_g
+						fulaiche
+						fumilulu
+						fusang
+						fusang_g
+						fushun
+						fute
+						gangute
+						gaoxiong
+						gelasige
+						gelideli
+						gelunweier
+						geluosite
+						genaisennao
+						gin
+						guanghui
+						guanghui_younv
+						guangrong
+						gufeng
+						gufeng_g
+						guinu
+						guinu_g
+						guying
+						guying_g
+						hailunna
+						hailunna_g
+						haiwangxing
+						haman
+						haman_g
+						hao
+						HDN101
+						HDN102_1
+						HDN201
+						HDN202_1
+						HDN301
+						HDN302_1
+						HDN401
+						HDN402_1
+						heianjie
+						heichao
+						heitaizi
+						heizewude
+						hemin
+						huangchao
+						huangjiafangzhou
+						huashengdun
+						huayue
+						hude
+						hufeng
+						huisheng
+						huixing
+						huixing_g
+						huobi
+						huonululu
+						huoqiangshou
+						huti
+						huti_g
+						I13
+						I168
+						i19
+						I25
+						i26
+						I56
+						i58
+						jiafuerbojue
+						jiagu
+						jiagu_g
+						jiahe
+						jiahezhanlie
+						jialadiya
+						jialifuniya
+						jialisuoniye
+						jiangfeng
+						jianye
+						jiasikenie
+						jiasikenie_idol
+						jiejinsi
+						jifeng
+						jiluofu
+						jinboli
+						jingang
+						jingjishen
+						jingjishen_g
+						jiqi
+						jiuyuan
+						jiyi_n
+						juanbo
+						juejiang
+						junhe
+						junzhu_k
+						kaersilue
+						kaersilue_g
+						kaisa
+						kaixuan
+						kangkede
+						kasabulanka
+						kaxin
+						kaxin_g
+						kebu
+						keerke
+						keleiwen
+						kelifulan
+						kelifulan_idol
+						kelifulan_younv
+						kelong
+						kelong_g
+						keluoladuo
+						kenisibao
+						kente
+						kewei
+						kin
+						kongbu
+						kubo
+						kulasuo
+						kulasuo_g
+						kunxi
+						ladefute
+						lafei
+						lafei_g
+						laibixi
+						laibixi_g
+						lanli
+						lansaiyu
+						lei
+						lemaer
+						lemaer_g
+						liande
+						liande_g
+						liangyue
+						liekexingdun
+						lieren
+						ligen
+						lingbo_g
+						lingbo_k
+						linggu
+						linuo
+						lisailiu_k
+						lishiman
+						lituoliao_k
+						loli声望
+						loli金坷垃
+						longfeng
+						longqibing
+						longxiang
+						luao
+						lulutiye
+						lumang
+						lundun
+						lundun_g
+						luodeni
+						luoen
+						luoli
+						luyijiushi
+						mabuerheide
+						maikaoer
+						Mainz
+						malani
+						malilan
+						manchao
+						maoyin
+						maoyue
+						masazhusai
+						mengbiliai
+						mengfeisi
+						miaogao
+						mingniabolisi
+						mingshi
+						mingsike
+						mingyunnvshen
+						mingyunnvshen_g
+						mio
+						moli
+						moye
+						muyue
+						muyue_g
+						naerxun
+						nake
+						nananpudun
+						nandaketa
+						nazhi
+						neihuada
+						neihuada_g
+						nengdai
+						niaohai
+						nigulasi
+						ninghai
+						ninghai_g
+						niukasier
+						niukasier_g
+						nuofuke
+						nvjiang
+						nvjiang_g
+						ougen
+						ouruola
+						pengsakela
+						pinghai
+						pinghai_g
+						poi
+						pubo
+						pufeng
+						qiabayefu
+						qiandaitian
+						qiaozhiwushi
+						qibolin
+						qibolin_younv
+						qinchao
+						qingbo
+						qingchuzhe
+						qingye
+						qiubite
+						qiye_k
+						quejie
+						quin
+						rangbaer
+						rexin
+						rexin_g
+						rixiang
+						rixiang_g
+						ruihe
+						ruoye
+						ruyue
+						saber
+						shion
+						sora
+						U101
+						U110
+						U47
+						U522
+						U556
+						U557
+						U73
+						U81
+						U96
+						Z1
+						Z18
+						Z19
+						Z1改
+						Z2
+						Z20
+						Z21
+						Z23
+						Z23改
+						Z25
+						Z26
+						Z35
+						Z36
+						Z46
+						三日月
+						三笠
+						三隈
+						乌璐露
+						亚利桑那
+						亚特兰大
+						什罗普郡
+						伊丽莎白
+						伊势
+						伊势改
+						伊卡洛斯
+						伊吹
+						休斯敦
+						佐治亚
+						信浓
+						共产国际
+						勇敢
+						北宅
+						厌战
+						厌战改
+						吸血鬼
+						吾妻
+						响
+						唐斯
+						唐斯改
+						土佐
+						圣胡安
+						圣路易斯
+						塔什干
+						塔尔图
+						声望
+						夕张
+						夕张改
+						夕暮
+						夕暮改
+						天后
+						天城
+						天狼星
+						太原
+						奈亚拉托提普
+						女灶神
+						威严
+						威奇塔
+						宵月
+						小天鹅
+						小天鹅改
+						小猎兔犬
+						山城
+						山城改
+						希佩尔
+						扎拉
+						撒切尔
+						文月
+						文森斯
+						斯佩伯爵
+						斯坦利
+						斯彭斯
+						斯莫利
+						新月
+						新月JP
+						新月改
+						无敌
+						无畏
+						时雨
+						时雨改
+						晓
+						最上
+						最上改
+						有明
+						朝潮
+						朱诺
+						松风
+						松风改
+						榛名
+						水无月
+						沙恩霍斯特
+						泽西
+						熊野
+						牙买加
+						特伦托
+						田纳西
+						盐湖城
+						神通
+						神通改
+						神风
+						神风改
+						祥凤
+						祥凤改
+						突击者
+						突击者改
+						絮库夫
+						约克
+						约克公爵
+						约克城
+						约克改
+						维内托
+						翔鹤
+						胜利
+						芝加哥
+						苏塞克斯
+						苏维埃罗西亚
+						英仙座
+						英勇
+						萤火虫
+						萨拉娜
+						萨拉托加
+						萨拉托加改
+						萨福克
+						萨福克改
+						衣笠
+						西姆斯
+						西姆斯改
+						西弗吉尼亚
+						西雅图
+						谢菲尔德
+						谢菲尔德idol
+						足柄
+						追赶者
+						逸仙_k
+						野分
+						金坷垃
+						金坷垃改
+						阳炎
+						阳炎改
+						隼鹰
+						雪风
+						雾岛
+						霞
+						香格里拉
+						马自立
+						鲦鱼
+						鹰
+	
+					}
+				}
+			}
+			species = {
+				add = {
+					portraits = {
+						#立绘
+						22
+						33
+						500
+						500改
+						abeikelongbi
+						aerjiliya
+						afuleer
+						aheye
+						aidang
+						aidingbao
+						aierdeliqi
+						aierwen
+						aijiangBB
+						aijiangCL
+						aijiangCV
+						aijiangDD
+						aikesaite
+						aikesaite_g
+						aimierbeierding
+						aimierbeierding_g
+						aisaikesi
+						aisijimo
+						ajiakesi
+						ajiakesi_g
+						ajilisi
+						ajilisi_g
+						akasita
+						akasita_g
+						alabama
+						anshan
+						aoding
+						aolike
+						aomaha
+						aosiben
+						aruituosha
+						asituoliya
+						awuwei
+						awuwei_g
+						ayame
+						badan
+						baerdimo
+						bailu
+						bangfeng
+						bangfeng_g
+						bangkeshan
+						banrenma
+						beianpudun
+						beierfasite
+						beierfasite_younv
+						beifeng
+						beikaluolaina
+						beili
+						beili_g
+						beiyaen
+						bensen
+						biaoqiang
+						biaoqiang_g
+						biaoyu
+						biaoyu_g
+						biluokexi
+						binxifaniya
+						birui
+						birui_younv
+						bisimai
+						boge
+						boge_g
+						bola
+						bolisi
+						bominghan
+						botelan
+						botelan_g
+						bulaimodun
+						buli_super
+						bulukelin
+						buzhihuo
+						buzhihuo_g
+						canglong
+						canglong_g
+						chaijun
+						Champagne
+						changbo
+						changchun
+						changdao
+						changdao_g
+						changliang
+						changmen_k
+						changyue
+						chicheng
+						chicheng_younv
+						chuannei
+						chuannei_g
+						chuchun
+						chuchun_g
+						chuixue
+						chunyue
+						chushuang
+						chushuang_g
+						chuyun
+						Columbia
+						dachao
+						dadouquan
+						dafeng
+						dahuangfeng
+						daiduo
+						danfo
+						daqinghuayu
+						deleike
+						deyizhi
+						dian
+						dujiaoshou
+						duli
+						dunkeerke_k
+						duosaitejun
+						duwei
+						edu_k
+						ekelahema
+						ekelahema_g
+						#empress
+						fanji
+						feiji
+						feilong
+						feilong_g
+						feinikesi
+						feiteliedadi
+						feiying
+						fengxiang
+						fubuki
+						fuerban
+						fuerban_g
+						fulaiche
+						fumilulu
+						fusang
+						fusang_g
+						fushun
+						fute
+						gangute
+						gaoxiong
+						gelasige
+						gelideli
+						gelunweier
+						geluosite
+						genaisennao
+						gin
+						guanghui
+						guanghui_younv
+						guangrong
+						gufeng
+						gufeng_g
+						guinu
+						guinu_g
+						guying
+						guying_g
+						hailunna
+						hailunna_g
+						haiwangxing
+						haman
+						haman_g
+						hao
+						HDN101
+						HDN102_1
+						HDN201
+						HDN202_1
+						HDN301
+						HDN302_1
+						HDN401
+						HDN402_1
+						heianjie
+						heichao
+						heitaizi
+						heizewude
+						hemin
+						huangchao
+						huangjiafangzhou
+						huashengdun
+						huayue
+						hude
+						hufeng
+						huisheng
+						huixing
+						huixing_g
+						huobi
+						huonululu
+						huoqiangshou
+						huti
+						huti_g
+						I13
+						I168
+						i19
+						I25
+						i26
+						I56
+						i58
+						jiafuerbojue
+						jiagu
+						jiagu_g
+						jiahe
+						jiahezhanlie
+						jialadiya
+						jialifuniya
+						jialisuoniye
+						jiangfeng
+						jianye
+						jiasikenie
+						jiasikenie_idol
+						jiejinsi
+						jifeng
+						jiluofu
+						jinboli
+						jingang
+						jingjishen
+						jingjishen_g
+						jiqi
+						jiuyuan
+						jiyi_n
+						juanbo
+						juejiang
+						junhe
+						junzhu_k
+						kaersilue
+						kaersilue_g
+						kaisa
+						kaixuan
+						kangkede
+						kasabulanka
+						kaxin
+						kaxin_g
+						kebu
+						keerke
+						keleiwen
+						kelifulan
+						kelifulan_idol
+						kelifulan_younv
+						kelong
+						kelong_g
+						keluoladuo
+						kenisibao
+						kente
+						kewei
+						kin
+						kongbu
+						kubo
+						kulasuo
+						kulasuo_g
+						kunxi
+						ladefute
+						lafei
+						lafei_g
+						laibixi
+						laibixi_g
+						lanli
+						lansaiyu
+						lei
+						lemaer
+						lemaer_g
+						liande
+						liande_g
+						liangyue
+						liekexingdun
+						lieren
+						ligen
+						lingbo_g
+						lingbo_k
+						linggu
+						linuo
+						lisailiu_k
+						lishiman
+						lituoliao_k
+						loli声望
+						loli金坷垃
+						longfeng
+						longqibing
+						longxiang
+						luao
+						lulutiye
+						lumang
+						lundun
+						lundun_g
+						luodeni
+						luoen
+						luoli
+						luyijiushi
+						mabuerheide
+						maikaoer
+						Mainz
+						malani
+						malilan
+						manchao
+						maoyin
+						maoyue
+						masazhusai
+						mengbiliai
+						mengfeisi
+						miaogao
+						mingniabolisi
+						mingshi
+						mingsike
+						mingyunnvshen
+						mingyunnvshen_g
+						mio
+						moli
+						moye
+						muyue
+						muyue_g
+						naerxun
+						nake
+						nananpudun
+						nandaketa
+						nazhi
+						neihuada
+						neihuada_g
+						nengdai
+						niaohai
+						nigulasi
+						ninghai
+						ninghai_g
+						niukasier
+						niukasier_g
+						nuofuke
+						nvjiang
+						nvjiang_g
+						ougen
+						ouruola
+						pengsakela
+						pinghai
+						pinghai_g
+						poi
+						pubo
+						pufeng
+						qiabayefu
+						qiandaitian
+						qiaozhiwushi
+						qibolin
+						qibolin_younv
+						qinchao
+						qingbo
+						qingchuzhe
+						qingye
+						qiubite
+						qiye_k
+						quejie
+						quin
+						rangbaer
+						rexin
+						rexin_g
+						rixiang
+						rixiang_g
+						ruihe
+						ruoye
+						ruyue
+						saber
+						shion
+						sora
+						U101
+						U110
+						U47
+						U522
+						U556
+						U557
+						U73
+						U81
+						U96
+						Z1
+						Z18
+						Z19
+						Z1改
+						Z2
+						Z20
+						Z21
+						Z23
+						Z23改
+						Z25
+						Z26
+						Z35
+						Z36
+						Z46
+						三日月
+						三笠
+						三隈
+						乌璐露
+						亚利桑那
+						亚特兰大
+						什罗普郡
+						伊丽莎白
+						伊势
+						伊势改
+						伊卡洛斯
+						伊吹
+						休斯敦
+						佐治亚
+						信浓
+						共产国际
+						勇敢
+						北宅
+						厌战
+						厌战改
+						吸血鬼
+						吾妻
+						响
+						唐斯
+						唐斯改
+						土佐
+						圣胡安
+						圣路易斯
+						塔什干
+						塔尔图
+						声望
+						夕张
+						夕张改
+						夕暮
+						夕暮改
+						天后
+						天城
+						天狼星
+						太原
+						奈亚拉托提普
+						女灶神
+						威严
+						威奇塔
+						宵月
+						小天鹅
+						小天鹅改
+						小猎兔犬
+						山城
+						山城改
+						希佩尔
+						扎拉
+						撒切尔
+						文月
+						文森斯
+						斯佩伯爵
+						斯坦利
+						斯彭斯
+						斯莫利
+						新月
+						新月JP
+						新月改
+						无敌
+						无畏
+						时雨
+						时雨改
+						晓
+						最上
+						最上改
+						有明
+						朝潮
+						朱诺
+						松风
+						松风改
+						榛名
+						水无月
+						沙恩霍斯特
+						泽西
+						熊野
+						牙买加
+						特伦托
+						田纳西
+						盐湖城
+						神通
+						神通改
+						神风
+						神风改
+						祥凤
+						祥凤改
+						突击者
+						突击者改
+						絮库夫
+						约克
+						约克公爵
+						约克城
+						约克改
+						维内托
+						翔鹤
+						胜利
+						芝加哥
+						苏塞克斯
+						苏维埃罗西亚
+						英仙座
+						英勇
+						萤火虫
+						萨拉娜
+						萨拉托加
+						萨拉托加改
+						萨福克
+						萨福克改
+						衣笠
+						西姆斯
+						西姆斯改
+						西弗吉尼亚
+						西雅图
+						谢菲尔德
+						谢菲尔德idol
+						足柄
+						追赶者
+						逸仙_k
+						野分
+						金坷垃
+						金坷垃改
+						阳炎
+						阳炎改
+						隼鹰
+						雪风
+						雾岛
+						霞
+						香格里拉
+						马自立
+						鲦鱼
+						鹰
+	
+					}
+				}
+			}
+			pop = {
+				add = {
+					portraits = {
+						22
+						33
+						500
+						500改
+						abeikelongbi
+						aerjiliya
+						afuleer
+						aheye
+						aidang
+						aidingbao
+						aierdeliqi
+						aierwen
+						aijiangBB
+						aijiangCL
+						aijiangCV
+						aijiangDD
+						aikesaite
+						aikesaite_g
+						aimierbeierding
+						aimierbeierding_g
+						aisaikesi
+						aisijimo
+						ajiakesi
+						ajiakesi_g
+						ajilisi
+						ajilisi_g
+						akasita
+						akasita_g
+						alabama
+						anshan
+						aoding
+						aolike
+						aomaha
+						aosiben
+						aruituosha
+						asituoliya
+						awuwei
+						awuwei_g
+						ayame
+						badan
+						baerdimo
+						bailu
+						bangfeng
+						bangfeng_g
+						bangkeshan
+						banrenma
+						beianpudun
+						beierfasite
+						beierfasite_younv
+						beifeng
+						beikaluolaina
+						beili
+						beili_g
+						beiyaen
+						bensen
+						biaoqiang
+						biaoqiang_g
+						biaoyu
+						biaoyu_g
+						biluokexi
+						binxifaniya
+						birui
+						birui_younv
+						bisimai
+						boge
+						boge_g
+						bola
+						bolisi
+						bominghan
+						botelan
+						botelan_g
+						bulaimodun
+						buli_super
+						bulukelin
+						buzhihuo
+						buzhihuo_g
+						canglong
+						canglong_g
+						chaijun
+						Champagne
+						changbo
+						changchun
+						changdao
+						changdao_g
+						changliang
+						changmen_k
+						changyue
+						chicheng
+						chicheng_younv
+						chuannei
+						chuannei_g
+						chuchun
+						chuchun_g
+						chuixue
+						chunyue
+						chushuang
+						chushuang_g
+						chuyun
+						Columbia
+						dachao
+						dadouquan
+						dafeng
+						dahuangfeng
+						daiduo
+						danfo
+						daqinghuayu
+						deleike
+						deyizhi
+						dian
+						dujiaoshou
+						duli
+						dunkeerke_k
+						duosaitejun
+						duwei
+						edu_k
+						ekelahema
+						ekelahema_g
+						#empress
+						fanji
+						feiji
+						feilong
+						feilong_g
+						feinikesi
+						feiteliedadi
+						feiying
+						fengxiang
+						fubuki
+						fuerban
+						fuerban_g
+						fulaiche
+						fumilulu
+						fusang
+						fusang_g
+						fushun
+						fute
+						gangute
+						gaoxiong
+						gelasige
+						gelideli
+						gelunweier
+						geluosite
+						genaisennao
+						gin
+						guanghui
+						guanghui_younv
+						guangrong
+						gufeng
+						gufeng_g
+						guinu
+						guinu_g
+						guying
+						guying_g
+						hailunna
+						hailunna_g
+						haiwangxing
+						haman
+						haman_g
+						hao
+						HDN101
+						HDN102_1
+						HDN201
+						HDN202_1
+						HDN301
+						HDN302_1
+						HDN401
+						HDN402_1
+						heianjie
+						heichao
+						heitaizi
+						heizewude
+						hemin
+						huangchao
+						huangjiafangzhou
+						huashengdun
+						huayue
+						hude
+						hufeng
+						huisheng
+						huixing
+						huixing_g
+						huobi
+						huonululu
+						huoqiangshou
+						huti
+						huti_g
+						I13
+						I168
+						i19
+						I25
+						i26
+						I56
+						i58
+						jiafuerbojue
+						jiagu
+						jiagu_g
+						jiahe
+						jiahezhanlie
+						jialadiya
+						jialifuniya
+						jialisuoniye
+						jiangfeng
+						jianye
+						jiasikenie
+						jiasikenie_idol
+						jiejinsi
+						jifeng
+						jiluofu
+						jinboli
+						jingang
+						jingjishen
+						jingjishen_g
+						jiqi
+						jiuyuan
+						jiyi_n
+						juanbo
+						juejiang
+						junhe
+						junzhu_k
+						kaersilue
+						kaersilue_g
+						kaisa
+						kaixuan
+						kangkede
+						kasabulanka
+						kaxin
+						kaxin_g
+						kebu
+						keerke
+						keleiwen
+						kelifulan
+						kelifulan_idol
+						kelifulan_younv
+						kelong
+						kelong_g
+						keluoladuo
+						kenisibao
+						kente
+						kewei
+						kin
+						kongbu
+						kubo
+						kulasuo
+						kulasuo_g
+						kunxi
+						ladefute
+						lafei
+						lafei_g
+						laibixi
+						laibixi_g
+						lanli
+						lansaiyu
+						lei
+						lemaer
+						lemaer_g
+						liande
+						liande_g
+						liangyue
+						liekexingdun
+						lieren
+						ligen
+						lingbo_g
+						lingbo_k
+						linggu
+						linuo
+						lisailiu_k
+						lishiman
+						lituoliao_k
+						loli声望
+						loli金坷垃
+						longfeng
+						longqibing
+						longxiang
+						luao
+						lulutiye
+						lumang
+						lundun
+						lundun_g
+						luodeni
+						luoen
+						luoli
+						luyijiushi
+						mabuerheide
+						maikaoer
+						Mainz
+						malani
+						malilan
+						manchao
+						maoyin
+						maoyue
+						masazhusai
+						mengbiliai
+						mengfeisi
+						miaogao
+						mingniabolisi
+						mingshi
+						mingsike
+						mingyunnvshen
+						mingyunnvshen_g
+						mio
+						moli
+						moye
+						muyue
+						muyue_g
+						naerxun
+						nake
+						nananpudun
+						nandaketa
+						nazhi
+						neihuada
+						neihuada_g
+						nengdai
+						niaohai
+						nigulasi
+						ninghai
+						ninghai_g
+						niukasier
+						niukasier_g
+						nuofuke
+						nvjiang
+						nvjiang_g
+						ougen
+						ouruola
+						pengsakela
+						pinghai
+						pinghai_g
+						poi
+						pubo
+						pufeng
+						qiabayefu
+						qiandaitian
+						qiaozhiwushi
+						qibolin
+						qibolin_younv
+						qinchao
+						qingbo
+						qingchuzhe
+						qingye
+						qiubite
+						qiye_k
+						quejie
+						quin
+						rangbaer
+						rexin
+						rexin_g
+						rixiang
+						rixiang_g
+						ruihe
+						ruoye
+						ruyue
+						saber
+						shion
+						sora
+						U101
+						U110
+						U47
+						U522
+						U556
+						U557
+						U73
+						U81
+						U96
+						Z1
+						Z18
+						Z19
+						Z1改
+						Z2
+						Z20
+						Z21
+						Z23
+						Z23改
+						Z25
+						Z26
+						Z35
+						Z36
+						Z46
+						三日月
+						三笠
+						三隈
+						乌璐露
+						亚利桑那
+						亚特兰大
+						什罗普郡
+						伊丽莎白
+						伊势
+						伊势改
+						伊卡洛斯
+						伊吹
+						休斯敦
+						佐治亚
+						信浓
+						共产国际
+						勇敢
+						北宅
+						厌战
+						厌战改
+						吸血鬼
+						吾妻
+						响
+						唐斯
+						唐斯改
+						土佐
+						圣胡安
+						圣路易斯
+						塔什干
+						塔尔图
+						声望
+						夕张
+						夕张改
+						夕暮
+						夕暮改
+						天后
+						天城
+						天狼星
+						太原
+						奈亚拉托提普
+						女灶神
+						威严
+						威奇塔
+						宵月
+						小天鹅
+						小天鹅改
+						小猎兔犬
+						山城
+						山城改
+						希佩尔
+						扎拉
+						撒切尔
+						文月
+						文森斯
+						斯佩伯爵
+						斯坦利
+						斯彭斯
+						斯莫利
+						新月
+						新月JP
+						新月改
+						无敌
+						无畏
+						时雨
+						时雨改
+						晓
+						最上
+						最上改
+						有明
+						朝潮
+						朱诺
+						松风
+						松风改
+						榛名
+						水无月
+						沙恩霍斯特
+						泽西
+						熊野
+						牙买加
+						特伦托
+						田纳西
+						盐湖城
+						神通
+						神通改
+						神风
+						神风改
+						祥凤
+						祥凤改
+						突击者
+						突击者改
+						絮库夫
+						约克
+						约克公爵
+						约克城
+						约克改
+						维内托
+						翔鹤
+						胜利
+						芝加哥
+						苏塞克斯
+						苏维埃罗西亚
+						英仙座
+						英勇
+						萤火虫
+						萨拉娜
+						萨拉托加
+						萨拉托加改
+						萨福克
+						萨福克改
+						衣笠
+						西姆斯
+						西姆斯改
+						西弗吉尼亚
+						西雅图
+						谢菲尔德
+						谢菲尔德idol
+						足柄
+						追赶者
+						逸仙_k
+						野分
+						金坷垃
+						金坷垃改
+						阳炎
+						阳炎改
+						隼鹰
+						雪风
+						雾岛
+						霞
+						香格里拉
+						马自立
+						鲦鱼
+						鹰
+	
+					}
+				}
+			}
+			leader = {
+				add = {
+					portraits = {
+						22
+						33
+						500
+						500改
+						abeikelongbi
+						aerjiliya
+						afuleer
+						aheye
+						aidang
+						aidingbao
+						aierdeliqi
+						aierwen
+						aijiangBB
+						aijiangCL
+						aijiangCV
+						aijiangDD
+						aikesaite
+						aikesaite_g
+						aimierbeierding
+						aimierbeierding_g
+						aisaikesi
+						aisijimo
+						ajiakesi
+						ajiakesi_g
+						ajilisi
+						ajilisi_g
+						akasita
+						akasita_g
+						alabama
+						anshan
+						aoding
+						aolike
+						aomaha
+						aosiben
+						aruituosha
+						asituoliya
+						awuwei
+						awuwei_g
+						ayame
+						badan
+						baerdimo
+						bailu
+						bangfeng
+						bangfeng_g
+						bangkeshan
+						banrenma
+						beianpudun
+						beierfasite
+						beierfasite_younv
+						beifeng
+						beikaluolaina
+						beili
+						beili_g
+						beiyaen
+						bensen
+						biaoqiang
+						biaoqiang_g
+						biaoyu
+						biaoyu_g
+						biluokexi
+						binxifaniya
+						birui
+						birui_younv
+						bisimai
+						boge
+						boge_g
+						bola
+						bolisi
+						bominghan
+						botelan
+						botelan_g
+						bulaimodun
+						buli_super
+						bulukelin
+						buzhihuo
+						buzhihuo_g
+						canglong
+						canglong_g
+						chaijun
+						Champagne
+						changbo
+						changchun
+						changdao
+						changdao_g
+						changliang
+						changmen_k
+						changyue
+						chicheng
+						chicheng_younv
+						chuannei
+						chuannei_g
+						chuchun
+						chuchun_g
+						chuixue
+						chunyue
+						chushuang
+						chushuang_g
+						chuyun
+						Columbia
+						dachao
+						dadouquan
+						dafeng
+						dahuangfeng
+						daiduo
+						danfo
+						daqinghuayu
+						deleike
+						deyizhi
+						dian
+						dujiaoshou
+						duli
+						dunkeerke_k
+						duosaitejun
+						duwei
+						edu_k
+						ekelahema
+						ekelahema_g
+						#empress
+						fanji
+						feiji
+						feilong
+						feilong_g
+						feinikesi
+						feiteliedadi
+						feiying
+						fengxiang
+						fubuki
+						fuerban
+						fuerban_g
+						fulaiche
+						fumilulu
+						fusang
+						fusang_g
+						fushun
+						fute
+						gangute
+						gaoxiong
+						gelasige
+						gelideli
+						gelunweier
+						geluosite
+						genaisennao
+						gin
+						guanghui
+						guanghui_younv
+						guangrong
+						gufeng
+						gufeng_g
+						guinu
+						guinu_g
+						guying
+						guying_g
+						hailunna
+						hailunna_g
+						haiwangxing
+						haman
+						haman_g
+						hao
+						HDN101
+						HDN102_1
+						HDN201
+						HDN202_1
+						HDN301
+						HDN302_1
+						HDN401
+						HDN402_1
+						heianjie
+						heichao
+						heitaizi
+						heizewude
+						hemin
+						huangchao
+						huangjiafangzhou
+						huashengdun
+						huayue
+						hude
+						hufeng
+						huisheng
+						huixing
+						huixing_g
+						huobi
+						huonululu
+						huoqiangshou
+						huti
+						huti_g
+						I13
+						I168
+						i19
+						I25
+						i26
+						I56
+						i58
+						jiafuerbojue
+						jiagu
+						jiagu_g
+						jiahe
+						jiahezhanlie
+						jialadiya
+						jialifuniya
+						jialisuoniye
+						jiangfeng
+						jianye
+						jiasikenie
+						jiasikenie_idol
+						jiejinsi
+						jifeng
+						jiluofu
+						jinboli
+						jingang
+						jingjishen
+						jingjishen_g
+						jiqi
+						jiuyuan
+						jiyi_n
+						juanbo
+						juejiang
+						junhe
+						junzhu_k
+						kaersilue
+						kaersilue_g
+						kaisa
+						kaixuan
+						kangkede
+						kasabulanka
+						kaxin
+						kaxin_g
+						kebu
+						keerke
+						keleiwen
+						kelifulan
+						kelifulan_idol
+						kelifulan_younv
+						kelong
+						kelong_g
+						keluoladuo
+						kenisibao
+						kente
+						kewei
+						kin
+						kongbu
+						kubo
+						kulasuo
+						kulasuo_g
+						kunxi
+						ladefute
+						lafei
+						lafei_g
+						laibixi
+						laibixi_g
+						lanli
+						lansaiyu
+						lei
+						lemaer
+						lemaer_g
+						liande
+						liande_g
+						liangyue
+						liekexingdun
+						lieren
+						ligen
+						lingbo_g
+						lingbo_k
+						linggu
+						linuo
+						lisailiu_k
+						lishiman
+						lituoliao_k
+						loli声望
+						loli金坷垃
+						longfeng
+						longqibing
+						longxiang
+						luao
+						lulutiye
+						lumang
+						lundun
+						lundun_g
+						luodeni
+						luoen
+						luoli
+						luyijiushi
+						mabuerheide
+						maikaoer
+						Mainz
+						malani
+						malilan
+						manchao
+						maoyin
+						maoyue
+						masazhusai
+						mengbiliai
+						mengfeisi
+						miaogao
+						mingniabolisi
+						mingshi
+						mingsike
+						mingyunnvshen
+						mingyunnvshen_g
+						mio
+						moli
+						moye
+						muyue
+						muyue_g
+						naerxun
+						nake
+						nananpudun
+						nandaketa
+						nazhi
+						neihuada
+						neihuada_g
+						nengdai
+						niaohai
+						nigulasi
+						ninghai
+						ninghai_g
+						niukasier
+						niukasier_g
+						nuofuke
+						nvjiang
+						nvjiang_g
+						ougen
+						ouruola
+						pengsakela
+						pinghai
+						pinghai_g
+						poi
+						pubo
+						pufeng
+						qiabayefu
+						qiandaitian
+						qiaozhiwushi
+						qibolin
+						qibolin_younv
+						qinchao
+						qingbo
+						qingchuzhe
+						qingye
+						qiubite
+						qiye_k
+						quejie
+						quin
+						rangbaer
+						rexin
+						rexin_g
+						rixiang
+						rixiang_g
+						ruihe
+						ruoye
+						ruyue
+						saber
+						shion
+						sora
+						U101
+						U110
+						U47
+						U522
+						U556
+						U557
+						U73
+						U81
+						U96
+						Z1
+						Z18
+						Z19
+						Z1改
+						Z2
+						Z20
+						Z21
+						Z23
+						Z23改
+						Z25
+						Z26
+						Z35
+						Z36
+						Z46
+						三日月
+						三笠
+						三隈
+						乌璐露
+						亚利桑那
+						亚特兰大
+						什罗普郡
+						伊丽莎白
+						伊势
+						伊势改
+						伊卡洛斯
+						伊吹
+						休斯敦
+						佐治亚
+						信浓
+						共产国际
+						勇敢
+						北宅
+						厌战
+						厌战改
+						吸血鬼
+						吾妻
+						响
+						唐斯
+						唐斯改
+						土佐
+						圣胡安
+						圣路易斯
+						塔什干
+						塔尔图
+						声望
+						夕张
+						夕张改
+						夕暮
+						夕暮改
+						天后
+						天城
+						天狼星
+						太原
+						奈亚拉托提普
+						女灶神
+						威严
+						威奇塔
+						宵月
+						小天鹅
+						小天鹅改
+						小猎兔犬
+						山城
+						山城改
+						希佩尔
+						扎拉
+						撒切尔
+						文月
+						文森斯
+						斯佩伯爵
+						斯坦利
+						斯彭斯
+						斯莫利
+						新月
+						新月JP
+						新月改
+						无敌
+						无畏
+						时雨
+						时雨改
+						晓
+						最上
+						最上改
+						有明
+						朝潮
+						朱诺
+						松风
+						松风改
+						榛名
+						水无月
+						沙恩霍斯特
+						泽西
+						熊野
+						牙买加
+						特伦托
+						田纳西
+						盐湖城
+						神通
+						神通改
+						神风
+						神风改
+						祥凤
+						祥凤改
+						突击者
+						突击者改
+						絮库夫
+						约克
+						约克公爵
+						约克城
+						约克改
+						维内托
+						翔鹤
+						胜利
+						芝加哥
+						苏塞克斯
+						苏维埃罗西亚
+						英仙座
+						英勇
+						萤火虫
+						萨拉娜
+						萨拉托加
+						萨拉托加改
+						萨福克
+						萨福克改
+						衣笠
+						西姆斯
+						西姆斯改
+						西弗吉尼亚
+						西雅图
+						谢菲尔德
+						谢菲尔德idol
+						足柄
+						追赶者
+						逸仙_k
+						野分
+						金坷垃
+						金坷垃改
+						阳炎
+						阳炎改
+						隼鹰
+						雪风
+						雾岛
+						霞
+						香格里拉
+						马自立
+						鲦鱼
+						鹰
+	
+					}
+				}
+			}
+			ruler = {
+				add = {
+					portraits = {
+						22
+						33
+						500
+						500改
+						abeikelongbi
+						aerjiliya
+						afuleer
+						aheye
+						aidang
+						aidingbao
+						aierdeliqi
+						aierwen
+						aijiangBB
+						aijiangCL
+						aijiangCV
+						aijiangDD
+						aikesaite
+						aikesaite_g
+						aimierbeierding
+						aimierbeierding_g
+						aisaikesi
+						aisijimo
+						ajiakesi
+						ajiakesi_g
+						ajilisi
+						ajilisi_g
+						akasita
+						akasita_g
+						alabama
+						anshan
+						aoding
+						aolike
+						aomaha
+						aosiben
+						aruituosha
+						asituoliya
+						awuwei
+						awuwei_g
+						ayame
+						badan
+						baerdimo
+						bailu
+						bangfeng
+						bangfeng_g
+						bangkeshan
+						banrenma
+						beianpudun
+						beierfasite
+						beierfasite_younv
+						beifeng
+						beikaluolaina
+						beili
+						beili_g
+						beiyaen
+						bensen
+						biaoqiang
+						biaoqiang_g
+						biaoyu
+						biaoyu_g
+						biluokexi
+						binxifaniya
+						birui
+						birui_younv
+						bisimai
+						boge
+						boge_g
+						bola
+						bolisi
+						bominghan
+						botelan
+						botelan_g
+						bulaimodun
+						buli_super
+						bulukelin
+						buzhihuo
+						buzhihuo_g
+						canglong
+						canglong_g
+						chaijun
+						Champagne
+						changbo
+						changchun
+						changdao
+						changdao_g
+						changliang
+						changmen_k
+						changyue
+						chicheng
+						chicheng_younv
+						chuannei
+						chuannei_g
+						chuchun
+						chuchun_g
+						chuixue
+						chunyue
+						chushuang
+						chushuang_g
+						chuyun
+						Columbia
+						dachao
+						dadouquan
+						dafeng
+						dahuangfeng
+						daiduo
+						danfo
+						daqinghuayu
+						deleike
+						deyizhi
+						dian
+						dujiaoshou
+						duli
+						dunkeerke_k
+						duosaitejun
+						duwei
+						edu_k
+						ekelahema
+						ekelahema_g
+						#empress
+						fanji
+						feiji
+						feilong
+						feilong_g
+						feinikesi
+						feiteliedadi
+						feiying
+						fengxiang
+						fubuki
+						fuerban
+						fuerban_g
+						fulaiche
+						fumilulu
+						fusang
+						fusang_g
+						fushun
+						fute
+						gangute
+						gaoxiong
+						gelasige
+						gelideli
+						gelunweier
+						geluosite
+						genaisennao
+						gin
+						guanghui
+						guanghui_younv
+						guangrong
+						gufeng
+						gufeng_g
+						guinu
+						guinu_g
+						guying
+						guying_g
+						hailunna
+						hailunna_g
+						haiwangxing
+						haman
+						haman_g
+						hao
+						HDN101
+						HDN102_1
+						HDN201
+						HDN202_1
+						HDN301
+						HDN302_1
+						HDN401
+						HDN402_1
+						heianjie
+						heichao
+						heitaizi
+						heizewude
+						hemin
+						huangchao
+						huangjiafangzhou
+						huashengdun
+						huayue
+						hude
+						hufeng
+						huisheng
+						huixing
+						huixing_g
+						huobi
+						huonululu
+						huoqiangshou
+						huti
+						huti_g
+						I13
+						I168
+						i19
+						I25
+						i26
+						I56
+						i58
+						jiafuerbojue
+						jiagu
+						jiagu_g
+						jiahe
+						jiahezhanlie
+						jialadiya
+						jialifuniya
+						jialisuoniye
+						jiangfeng
+						jianye
+						jiasikenie
+						jiasikenie_idol
+						jiejinsi
+						jifeng
+						jiluofu
+						jinboli
+						jingang
+						jingjishen
+						jingjishen_g
+						jiqi
+						jiuyuan
+						jiyi_n
+						juanbo
+						juejiang
+						junhe
+						junzhu_k
+						kaersilue
+						kaersilue_g
+						kaisa
+						kaixuan
+						kangkede
+						kasabulanka
+						kaxin
+						kaxin_g
+						kebu
+						keerke
+						keleiwen
+						kelifulan
+						kelifulan_idol
+						kelifulan_younv
+						kelong
+						kelong_g
+						keluoladuo
+						kenisibao
+						kente
+						kewei
+						kin
+						kongbu
+						kubo
+						kulasuo
+						kulasuo_g
+						kunxi
+						ladefute
+						lafei
+						lafei_g
+						laibixi
+						laibixi_g
+						lanli
+						lansaiyu
+						lei
+						lemaer
+						lemaer_g
+						liande
+						liande_g
+						liangyue
+						liekexingdun
+						lieren
+						ligen
+						lingbo_g
+						lingbo_k
+						linggu
+						linuo
+						lisailiu_k
+						lishiman
+						lituoliao_k
+						loli声望
+						loli金坷垃
+						longfeng
+						longqibing
+						longxiang
+						luao
+						lulutiye
+						lumang
+						lundun
+						lundun_g
+						luodeni
+						luoen
+						luoli
+						luyijiushi
+						mabuerheide
+						maikaoer
+						Mainz
+						malani
+						malilan
+						manchao
+						maoyin
+						maoyue
+						masazhusai
+						mengbiliai
+						mengfeisi
+						miaogao
+						mingniabolisi
+						mingshi
+						mingsike
+						mingyunnvshen
+						mingyunnvshen_g
+						mio
+						moli
+						moye
+						muyue
+						muyue_g
+						naerxun
+						nake
+						nananpudun
+						nandaketa
+						nazhi
+						neihuada
+						neihuada_g
+						nengdai
+						niaohai
+						nigulasi
+						ninghai
+						ninghai_g
+						niukasier
+						niukasier_g
+						nuofuke
+						nvjiang
+						nvjiang_g
+						ougen
+						ouruola
+						pengsakela
+						pinghai
+						pinghai_g
+						poi
+						pubo
+						pufeng
+						qiabayefu
+						qiandaitian
+						qiaozhiwushi
+						qibolin
+						qibolin_younv
+						qinchao
+						qingbo
+						qingchuzhe
+						qingye
+						qiubite
+						qiye_k
+						quejie
+						quin
+						rangbaer
+						rexin
+						rexin_g
+						rixiang
+						rixiang_g
+						ruihe
+						ruoye
+						ruyue
+						saber
+						shion
+						sora
+						U101
+						U110
+						U47
+						U522
+						U556
+						U557
+						U73
+						U81
+						U96
+						Z1
+						Z18
+						Z19
+						Z1改
+						Z2
+						Z20
+						Z21
+						Z23
+						Z23改
+						Z25
+						Z26
+						Z35
+						Z36
+						Z46
+						三日月
+						三笠
+						三隈
+						乌璐露
+						亚利桑那
+						亚特兰大
+						什罗普郡
+						伊丽莎白
+						伊势
+						伊势改
+						伊卡洛斯
+						伊吹
+						休斯敦
+						佐治亚
+						信浓
+						共产国际
+						勇敢
+						北宅
+						厌战
+						厌战改
+						吸血鬼
+						吾妻
+						响
+						唐斯
+						唐斯改
+						土佐
+						圣胡安
+						圣路易斯
+						塔什干
+						塔尔图
+						声望
+						夕张
+						夕张改
+						夕暮
+						夕暮改
+						天后
+						天城
+						天狼星
+						太原
+						奈亚拉托提普
+						女灶神
+						威严
+						威奇塔
+						宵月
+						小天鹅
+						小天鹅改
+						小猎兔犬
+						山城
+						山城改
+						希佩尔
+						扎拉
+						撒切尔
+						文月
+						文森斯
+						斯佩伯爵
+						斯坦利
+						斯彭斯
+						斯莫利
+						新月
+						新月JP
+						新月改
+						无敌
+						无畏
+						时雨
+						时雨改
+						晓
+						最上
+						最上改
+						有明
+						朝潮
+						朱诺
+						松风
+						松风改
+						榛名
+						水无月
+						沙恩霍斯特
+						泽西
+						熊野
+						牙买加
+						特伦托
+						田纳西
+						盐湖城
+						神通
+						神通改
+						神风
+						神风改
+						祥凤
+						祥凤改
+						突击者
+						突击者改
+						絮库夫
+						约克
+						约克公爵
+						约克城
+						约克改
+						维内托
+						翔鹤
+						胜利
+						芝加哥
+						苏塞克斯
+						苏维埃罗西亚
+						英仙座
+						英勇
+						萤火虫
+						萨拉娜
+						萨拉托加
+						萨拉托加改
+						萨福克
+						萨福克改
+						衣笠
+						西姆斯
+						西姆斯改
+						西弗吉尼亚
+						西雅图
+						谢菲尔德
+						谢菲尔德idol
+						足柄
+						追赶者
+						逸仙_k
+						野分
+						金坷垃
+						金坷垃改
+						阳炎
+						阳炎改
+						隼鹰
+						雪风
+						雾岛
+						霞
+						香格里拉
+						马自立
+						鲦鱼
+						鹰
+					}
+				}
+			}
+		}
+	}

@@ -1,0 +1,27 @@
+###########################
+###    Rare Resources   ###
+###########################
+mind_club = {
+	tradable = no
+	max = 10000
+	prerequisites = {
+		"tech_mind_club_1"
+	}
+	visibility_prerequisite = {
+		always = yes
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+star_trek_armour = {
+	tradable = no
+	max = 10000
+	visibility_prerequisite = {
+		always = yes
+	}
+	ai_weight = {
+		weight = 100
+	}
+}

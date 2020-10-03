@@ -1,0 +1,115 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_138.6cm_single_pack_laser_gun"
+		textureFile = "gfx/interface/icons/ship_parts/138.6cm单装激光炮.dds"
+	}
+	spriteType = {#极限跃迁引擎
+		name = "GFX_extremity_jump_drive"
+		textureFile = "gfx/interface/icons/ship_parts/extremity_jump_drive.dds"
+	}
+	spriteType = {#心智偏移护盾
+		name = "GFX_mind_excursive_shield"
+		textureFile = "gfx/interface/icons/ship_parts/mind_excursive_shield.dds"
+	}
+	spriteType = {#心智导航列阵
+		name = "GFX_mind_navigation_array"
+		textureFile = "gfx/interface/icons/ship_parts/mind_navigation_array.dds"
+	}
+	spriteType = {#心智反应装甲
+		name = "GFX_mind_armours"
+		textureFile = "gfx/interface/icons/ship_parts/mind_armours.dds"
+	}
+	spriteType = {#心智反应堆
+		name = "GFX_mind_reactor"
+		textureFile = "gfx/interface/icons/ship_parts/mind_reactor.dds"
+	}
+	spriteType = {#高性能舵机
+		name = "GFX_high_performance_steering_gear"
+		textureFile = "gfx/interface/icons/ship_parts/high_performance_steering_gear.dds"
+	}
+	spriteType = {
+		name = "GFX_mind_network"
+		textureFile = "gfx/interface/icons/ship_parts/mind_network.dds"
+	}
+	spriteType = {
+		name = "GFX_310cm_trigeminy_pack_naval_gun"
+		textureFile = "gfx/interface/icons/ship_parts/310cm三联装舰炮.dds"
+	}
+	spriteType = {
+		name = "GFX_406cm_trigeminy_pack_50_laser_gun"
+		textureFile = "gfx/interface/icons/ship_parts/406cm三联装50激光炮.dds"
+	}
+	spriteType = {
+		name = "GFX_406cm_trigeminy_pack_MK6_naval_gun"
+		textureFile = "gfx/interface/icons/ship_parts/406cm三联装MK6舰炮.dds"
+	}
+	spriteType = {
+		name = "GFX_457cm_duplex_pack_MKA_laser_gun"
+		textureFile = "gfx/interface/icons/ship_parts/457cm双联装MKA激光炮.dds"
+	}
+	spriteType = {
+		name = "GFX_heavy_shells"
+		textureFile = "gfx/interface/icons/ship_parts/超重弹.dds"
+	}
+	spriteType = {
+		name = "GFX_one_style_armor-piercing_projectile"
+		textureFile = "gfx/interface/icons/ship_parts/一式穿甲弹.dds"
+	}
+	spriteType = {
+		name = "GFX_76cm_mix_gun"
+		textureFile = "gfx/interface/icons/ship_parts/76cm混合炮.dds"
+	}
+	spriteType = {
+		name = "GFX_114cm_duplex_pack_MarkIV_usual_gun"
+		textureFile = "gfx/interface/icons/ship_parts/114cm双联MarkIV通常炮.dds"
+	}
+	spriteType = {
+		name = "GFX_152cm_trigeminy_pack_Mark17_naval_gun"
+		textureFile = "gfx/interface/icons/ship_parts/152cm三联装Mk17舰炮.dds"
+	}
+	spriteType = {
+		name = "GFX_152cm_trigeminy_pack_laser_gun"
+		textureFile = "gfx/interface/icons/ship_parts/152cm三联装激光炮.dds"
+	}
+	spriteType = {
+		name = "GFX_203cm_trigeminy_pack_SKC_laser_gun"
+		textureFile = "gfx/interface/icons/ship_parts/203cm三联装SKC激光炮.dds"
+	}
+	spriteType = {
+		name = "GFX_234cm_trigeminy_pack_usual_gun"
+		textureFile = "gfx/interface/icons/ship_parts/234cm三联装通常炮.dds"
+	}
+	spriteType = {
+		name = "GFX_130cm_duplex_pack_B-2LMT3_usual_gun"
+		textureFile = "gfx/interface/icons/ship_parts/130cm双联装B-2LMT3通常炮.dds"
+	}
+	spriteType = {
+		name = "GFX_381cm_trigeminy_pack_naval_gun"
+		textureFile = "gfx/interface/icons/ship_parts/381cm三联装舰炮.dds"
+	}
+	spriteType = {
+		name = "GFX_VF_17_viking_squadrons"
+		textureFile = "gfx/interface/icons/ship_parts/VF-17海盗中队.dds"
+	}
+	spriteType = {
+		name = "GFX_SB2C_hell_swoop"
+		textureFile = "gfx/interface/icons/ship_parts/SB2C地狱俯冲者.dds"
+	}
+	spriteType = {
+		name = "GFX_gaia_wave_gun"
+		textureFile = "gfx/interface/icons/ship_parts/gaia_wave_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_mind_distortion_drive"
+		textureFile = "gfx/interface/icons/ship_parts/mind_distortion_drive.dds"
+	}
+	spriteType = {
+		name = "GFX_mind_distortion_integrated_armor"
+		textureFile = "gfx/interface/icons/ship_parts/mind_distortion_integrated_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_mind_distortion_shield"
+		textureFile = "gfx/interface/icons/ship_parts/mind_distortion_shield.dds"
+	}
+
+}

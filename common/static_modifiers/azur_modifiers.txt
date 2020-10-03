@@ -1,0 +1,91 @@
+planet_club_boost = {
+	icon = "gfx/interface/icons/planet_modifiers/club_boost.dds"
+	icon_frame = 1
+	pop_happiness = 0.05
+	pop_growth_speed = 0.15
+}
+
+planet_mind_rinse = {
+	icon = "gfx/interface/icons/planet_modifiers/mind_rinse.dds"
+	icon_frame = 1
+	pop_government_ethic_attraction = 10
+	pop_happiness = -0.33
+}
+
+planet_ruler_welfare = {
+	icon = "gfx/interface/icons/planet_modifiers/ruler_welfare.dds"
+	icon_frame = 1
+	planet_jobs_ruler_produces_mult = 0.25
+}
+
+mind_upgrade_city = {
+	icon = "gfx/interface/icons/planet_modifiers/mind_upgrade_city.dds"
+	icon_frame = 1
+	planet_buildings_upkeep_mult = -0.25
+	pop_government_ethic_attraction = 1
+	planet_pops_upkeep_mult = -0.2
+	planet_stability_add = 20
+}
+
+mind_net_connect_city = {
+	icon = "gfx/interface/icons/planet_modifiers/mind_net_connect_city.dds"
+	icon_frame = 1
+	trade_value_mult = 1
+	planet_jobs_unity_produces_mult = 0.5
+	pop_happiness = 0.5
+	planet_jobs_produces_mult = 0.2
+}
+
+mind_connect_1 = {
+	country_unity_produces_mult = 0.25
+	pop_happiness = -0.2
+}
+
+mind_connect_2 = {
+	trade_value_mult = 0.25
+	planet_stability_add = -30
+}
+
+azur_scientist_zealot = {
+	planet_researchers_produces_mult = 0.33
+}
+
+mind_net_plan = {
+	pop_government_ethic_attraction = 0.5
+}
+
+mind_net_done = {
+	country_admin_cap_mult = 1
+	country_naval_cap_mult = 0.5
+	country_command_limit_add = 200
+	pop_government_ethic_attraction = 10
+	country_starbase_capacity_mult = 0.5
+	country_megastructure_build_cap_add = 3
+	megastructure_build_speed_mult = 1
+}
+
+planet_azur_core_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/planet_azur_core_modifier.dds"
+	icon_frame = 1
+	pop_growth_speed = 0.4
+	trade_value_mult = 1
+	planet_jobs_specialist_produces_mult = 0.25
+}
+
+planet_azur_moon_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/planet_azur_moon_modifier.dds"
+	icon_frame = 1
+	pop_growth_speed = 0.2
+	planet_jobs_specialist_produces_mult = 0.1
+}
+
+planet_azur_city_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/planet_azur_city_modifier.dds"
+	icon_frame = 1
+	planet_building_build_speed_mult = 0.5
+}
+
+planet_azur_broken_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/planet_azur_broken_modifier.dds"
+	icon_frame = 1
+}

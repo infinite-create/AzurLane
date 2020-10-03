@@ -1,0 +1,38 @@
+spriteTypes = {
+	spritetype = {#全能心智魔方
+		name = "GFX_relic_colorful_rubik's_cube"
+		textureFile = "gfx/interface/icons/relics/colorful_rubik's_cube.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/effect.dds" #蒙版
+			animationtexturefile = "gfx/interface/icons/relics/arcane_effect.dds" #特效图片
+			animationrotation = 90 #特效图片旋转角度 - 顺时针 ，+ 逆时针
+			animationlooping = yes #特效是否循环
+			animationtime = 11 #特效持续时间
+			animationdelay = 0 #延迟？应该是两次循环播放之间的延迟时间
+			animationblendmode = "add" #特效和图片的叠加方式？有三种 add 增加, multiply 多层, overlay 覆盖
+			animationtype = "rotating" #特效类型：rotating 旋转 ， scrolling 滚动， pulsing 脉冲
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spritetype = {#徽标
+		name = "GFX_relic_Stellaris_Modder_Association"
+		textureFile = "gfx/interface/icons/relics/Stellaris_Modder_Association.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/Stellaris_Modder_Association_Effect.dds"
+			animationtexturefile = "gfx/interface/icons/relics/Stellaris_Modder_Association_Light_Effect.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 6
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

@@ -1,0 +1,12 @@
+component_set = {
+	key = "MIND_EXCURSIVE_SHIELD"
+
+	icon = GFX_mind_excursive_shield
+	icon_frame = 1
+}
+component_set = {
+	key = "MIND_DISTORTION_SHIELD"
+
+	icon = GFX_mind_distortion_shield
+	icon_frame = 1
+}

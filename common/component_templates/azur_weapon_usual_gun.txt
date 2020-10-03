@@ -1,0 +1,432 @@
+###114 炮
+weapon_component_template = {
+	key = "114cm_duplex_pack_markIV_usual_gun_1"
+	icon = GFX_114cm_duplex_pack_MarkIV_usual_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "gauss_cannon_s"
+	power = -60
+	prerequisites = { tech_114cm_duplex_pack_MarkIV_usual_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			mind_club = 0.2
+		}
+	}
+	tags = { 
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 180
+		max = 180
+	}
+	windup = {
+		max = 100
+		min = 20
+	}
+	total_fire_time = 1
+
+	shield_damage = 0.2
+
+	shield_penetration = 0.6
+
+	range = 80
+
+	tracking = 0.8
+	accuracy = 0.6
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 130cm_duplex_pack_B-2LMT3_usual_gun_1
+	component_set = "114MM_DUPLEX_PACK_MARKIV_USUAL_GUN"
+}
+weapon_component_template = {
+	key = "114cm_duplex_pack_markIV_usual_gun_2"
+	icon = GFX_114cm_duplex_pack_MarkIV_usual_gun
+	icon_frame = 1
+	type = instant
+	size = medium
+	projectile_gfx = "gauss_cannon_m"
+	power = -80
+	prerequisites = { tech_114cm_duplex_pack_MarkIV_usual_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 360
+		max = 360
+	}
+	windup = {
+		max = 100
+		min = 20
+	}
+	total_fire_time = 2
+
+	shield_damage = 0.2
+
+	shield_penetration = 0.6
+
+	range = 100
+
+	tracking = 0.8
+	accuracy = 0.6
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 130cm_duplex_pack_B-2LMT3_usual_gun_2
+	component_set = "114MM_DUPLEX_PACK_MARKIV_USUAL_GUN"
+}
+weapon_component_template = {
+	key = "114cm_duplex_pack_markIV_usual_gun_3"
+	icon = GFX_114cm_duplex_pack_MarkIV_usual_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "gauss_cannon_l"
+	power = -100
+	prerequisites = { tech_114cm_duplex_pack_MarkIV_usual_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			mind_club = 0.6
+		}
+	}
+	tags = { 
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 720
+		max = 720
+	}
+	windup = {
+		max = 100
+		min = 20
+	}
+	total_fire_time = 3
+
+	shield_damage = 0.2
+
+	shield_penetration = 0.6
+
+	range = 120
+
+	tracking = 0.8
+	accuracy = 0.6
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 130cm_duplex_pack_B-2LMT3_usual_gun_3
+	component_set = "114MM_DUPLEX_PACK_MARKIV_USUAL_GUN"
+}
+###130 炮
+weapon_component_template = {
+	key = "130cm_duplex_pack_B-2LMT3_usual_gun_1"
+	icon = GFX_130cm_duplex_pack_B-2LMT3_usual_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "kinetic_artillery"
+	power = -60
+	prerequisites = { tech_130cm_duplex_pack_B-2LMT3_usual_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 200
+		max = 250
+	}
+	windup = {
+		max = 60
+		min = 20
+	}
+	total_fire_time = 1
+
+	armor_damage = 0.8
+
+	shield_penetration = 0.6
+
+	range = 80
+
+	tracking = 0.3
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 234cm_trigeminy_pack_usual_gun_1
+	component_set = "130MM_DUPLEX_PACK_B-2LMT3_USUAL_GUN"
+}
+weapon_component_template = {
+	key = "130cm_duplex_pack_B-2LMT3_usual_gun_2"
+	icon = GFX_130cm_duplex_pack_B-2LMT3_usual_gun
+	icon_frame = 1
+	type = instant
+	size = medium
+	projectile_gfx = "kinetic_artillery"
+	power = -80
+	prerequisites = { tech_130cm_duplex_pack_B-2LMT3_usual_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 350
+		max = 500
+	}
+	windup = {
+		max = 60
+		min = 20
+	}
+	total_fire_time = 1
+
+	armor_damage = 0.8
+
+	shield_penetration = 0.6
+
+	range = 100
+
+	tracking = 0.3
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 234cm_trigeminy_pack_usual_gun_2
+	component_set = "130MM_DUPLEX_PACK_B-2LMT3_USUAL_GUN"
+}
+weapon_component_template = {
+	key = "130cm_duplex_pack_B-2LMT3_usual_gun_3"
+	icon = GFX_130cm_duplex_pack_B-2LMT3_usual_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "kinetic_artillery"
+	power = -200
+	prerequisites = { tech_130cm_duplex_pack_B-2LMT3_usual_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 750
+		max = 1000
+	}
+	windup = {
+		max = 60
+		min = 20
+	}
+	total_fire_time = 1
+
+	armor_damage = 0.8
+
+	armor_penetration = 0.6
+
+	range = 120
+
+	tracking = 0.3
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	upgrades_to = 234cm_trigeminy_pack_usual_gun_3
+	component_set = "130MM_DUPLEX_PACK_B-2LMT3_USUAL_GUN"
+}
+###234 炮
+weapon_component_template = {
+	key = "234cm_trigeminy_pack_usual_gun_1"
+	icon = GFX_234cm_trigeminy_pack_usual_gun
+	icon_frame = 1
+	type = instant
+	size = small
+	projectile_gfx = "adv_kinetic_artillery"
+	power = -60
+	prerequisites = { tech_234cm_trigeminy_pack_usual_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 400
+		max = 430
+	}
+	windup = {
+		max = 20
+		min = 20
+	}
+	total_fire_time = 1
+
+	armor_damage = 1
+
+	shield_penetration = 0.6
+
+	range = 80
+
+	tracking = 0.6
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "234MM_TRIGEMINY_PACK_USUAL_GUN"
+}
+weapon_component_template = {
+	key = "234cm_trigeminy_pack_usual_gun_2"
+	icon = GFX_234cm_trigeminy_pack_usual_gun
+	icon_frame = 1
+	type = instant
+	size = medium
+	projectile_gfx = "adv_kinetic_artillery"
+	power = -80
+	prerequisites = { tech_234cm_trigeminy_pack_usual_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 500
+		max = 650
+	}
+	windup = {
+		max = 20
+		min = 20
+	}
+	total_fire_time = 1
+
+	armor_damage = 1
+
+	shield_penetration = 0.6
+
+	range = 100
+
+	tracking = 0.6
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "234MM_TRIGEMINY_PACK_USUAL_GUN"
+}
+weapon_component_template = {
+	key = "234cm_trigeminy_pack_usual_gun_3"
+	icon = GFX_234cm_trigeminy_pack_usual_gun
+	icon_frame = 1
+	type = instant
+	size = large
+	projectile_gfx = "adv_kinetic_artillery"
+	power = -200
+	prerequisites = { tech_234cm_trigeminy_pack_usual_gun }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			mind_club = 0.4
+		}
+	}
+	tags = { 
+		weapon_type_kinetic
+	}
+	class_restriction = { 
+		shipclass_military 
+		shipclass_military_special 
+		shipclass_starbase
+	}
+	damage = {
+		min = 750
+		max = 1000
+	}
+	windup = {
+		max = 20
+		min = 20
+	}
+	total_fire_time = 1
+
+	armor_damage = 1
+
+	shield_penetration = 0.6
+
+	range = 120
+
+	tracking = 0.6
+	accuracy = 0.8
+
+	use_ship_kill_target = yes
+	static_rotation = no
+	component_set = "234MM_TRIGEMINY_PACK_USUAL_GUN"
+}

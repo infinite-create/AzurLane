@@ -1,0 +1,1509 @@
+#############
+# 机器人工厂
+#############
+azur_building_robot_assembly_plant = {
+	base_buildtime = 480
+	base_cap_amount = 2
+	can_be_ruined = no
+	can_be_disabled = no
+	category = pop_assembly
+	potential = {
+		owner = {
+			is_regular_empire = yes
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	planet_modifier = {
+		job_azur_roboticist_ruler_add = 1
+		job_azur_roboticist_add = 2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			mind_club = 75
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+	prerequisites = {
+		"tech_azur_robot_assembly"
+	}
+	triggered_desc = {
+		text = job_azur_roboticist_effect_desc
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#############
+# 法律堡垒
+#############
+azur_building_hall_judgment = {
+	base_buildtime = 600
+	base_cap_amount = 1
+	can_be_ruined = no
+	can_be_disabled = no
+	category = unity
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 40
+	}
+	planet_modifier = {
+		job_enforcer_add = 8
+		job_mind_enforcer_add = 1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			mind_club = 80
+			exotic_gases = 250
+		}
+		upkeep = {
+			energy = 10
+			exotic_gases = 2
+			mind_club = 2
+		}
+	}
+	prerequisites = {
+		"tech_azur_hall_judgment"
+	}
+	triggered_desc = {
+		text = job_enforcer_effect_desc
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			planet_crime > 15
+			NOR = {
+				AND = {
+					has_building = building_precinct_house
+					owner = {
+						has_technology = tech_colonial_centralization
+					}
+				}
+				has_building = building_hall_judgment
+				num_buildings = {
+					type = building_precinct_house
+					value = 3
+				}
+			}
+		}
+	}
+}
+
+#############
+# 营养中心
+#############
+azur_building_food_center = {
+	base_buildtime = 360
+	base_cap_amount = 4
+	can_be_ruined = no
+	can_be_disabled = no
+	category = resource
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_nutrition_expert_add = 2
+		job_farmer_add = 5
+		planet_jobs_food_produces_mult = 0.05
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 750
+			mind_club = 30
+		}
+		upkeep = {
+			energy = 5
+			mind_club = 1
+		}
+	}
+	triggered_desc = {
+		text = job_nutrition_expert_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_food_center"
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#############
+# 矿物中心
+#############
+azur_building_mineral_purification = {
+	base_buildtime = 360
+	base_cap_amount = 4
+	can_be_ruined = no
+	can_be_disabled = no
+	category = resource
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_mineral_expert_add = 2
+		job_miner_add = 5
+		planet_jobs_minerals_produces_mult = 0.05
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 750
+			mind_club = 30
+		}
+		upkeep = {
+			energy = 5
+			mind_club = 1
+		}
+	}
+	triggered_desc = {
+		text = job_mineral_expert_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_mineral_purification"
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#############
+# 魔方能源站
+#############
+azur_building_club_station = {
+	base_buildtime = 360
+	base_cap_amount = 4
+	can_be_ruined = no
+	can_be_disabled = no
+	category = resource
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	planet_modifier = {
+		job_club_operator_add = 2
+		job_technician_add = 5
+		planet_jobs_energy_produces_mult = 0.05
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+			mind_club = 75
+		}
+		produces = {
+			energy = 50
+		}
+		upkeep = {
+			mind_club = 2
+		}
+	}
+	triggered_desc = {
+		text = job_club_operator_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_club_station"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 合金工厂
+#############
+azur_building_alloy_furnace = {
+	base_buildtime = 540
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_alloy_expert_add = 6
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 750
+			mind_club = 100
+			volatile_motes = 300
+		}
+		upkeep = {
+			energy = 12
+			mind_club = 3
+			volatile_motes = 3
+		}
+	}
+	triggered_desc = {
+		text = job_alloy_expert_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_alloy_furnace"
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 400
+			NOR = {
+				has_building = building_foundry_1
+				has_building = building_foundry_2
+				has_building = building_foundry_3
+				has_building = azur_building_alloy_furnace
+			}
+			OR = {
+				NOT = {
+					has_building = building_foundry_1
+				}
+				AND = {
+					owner = {
+						OR = {
+							has_monthly_income = {
+								resource = consumer_goods
+								value > 0
+							}
+							country_uses_consumer_goods = no
+						}
+					}
+					owner = {
+						has_ai_personality_behaviour = conqueror
+						OR = {
+							has_ai_personality_behaviour = opportunist
+							has_ai_personality_behaviour = purger
+							has_ai_personality_behaviour = propagator
+						}
+					}
+					#Agressive empires but not robot liberators as they tend to be erudite explorers and the like.
+				}
+				#Give agressive empires 2 alloy factories on planets early on.
+			}
+		}
+		modifier = {
+			factor = 0.5
+			free_jobs > 3
+		}
+	}
+}
+
+#############
+# 艺术庭院
+#############
+azur_building_artwork_factory = {
+	base_buildtime = 540
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_club_artist_add = 6
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 750
+			mind_club = 100
+			rare_crystals = 300
+		}
+		upkeep = {
+			energy = 12
+			mind_club = 3
+			rare_crystals = 3
+		}
+	}
+	triggered_desc = {
+		text = job_club_artist_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_artwork_factory"
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 25
+			NOR = {
+				has_building = building_factory_1
+				has_building = building_factory_2
+				has_building = building_factory_3
+				has_building = azur_building_artwork_factory
+			}
+		}
+		modifier = {
+			weight = 100
+			jobs_work_minerals_goods = no
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value < 30
+				}
+				OR = {
+					country_uses_food = no
+					has_monthly_income = {
+						resource = food
+						value >= 0
+					}
+					has_resource = {
+						type = food
+						amount > 0
+					}
+				}
+				#Check to see if consumer goods shortage is being caused by a food shortage.
+			}
+		}
+		modifier = {
+			factor = 0
+			free_jobs > 3
+		}
+	}
+}
+
+#############
+# 气体工厂
+#############
+azur_building_refinery = {
+	base_buildtime = 360
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_gas_refiner_add = 3
+	}
+	upgrades = {
+		"azur_building_synthesis_center"
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			mind_club = 30
+		}
+		upkeep = {
+			energy = 6
+			mind_club = 1
+		}
+	}
+	triggered_desc = {
+		text = job_gas_refiner_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_refinery"
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 50
+			owner = {
+				has_monthly_income = {
+					resource = exotic_gases
+					value < 5
+				}
+			}
+			buildings_build_building = yes
+		}
+		modifier = {
+			weight = 200
+			owner = {
+				has_monthly_income = {
+					resource = exotic_gases
+					value < 1
+				}
+			}
+		}
+	}
+}
+
+#############
+# 化学工厂
+#############
+azur_building_chemical_plant = {
+	base_buildtime = 360
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_chemist_add = 3
+	}
+	upgrades = {
+		"azur_building_synthesis_center"
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			mind_club = 30
+		}
+		upkeep = {
+			energy = 6
+			mind_club = 1
+		}
+	}
+	triggered_desc = {
+		text = job_chemist_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_chemical_plant"
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+			buildings_build_building = no
+		}
+		modifier = {
+			weight = 30
+			owner = {
+				has_monthly_income = {
+					resource = volatile_motes
+					value < 3
+				}
+				#5 is too high since that means 2 extra buildings. Better to just go with 1 extra building
+			}
+		}
+		modifier = {
+			weight = 200
+			owner = {
+				has_monthly_income = {
+					resource = volatile_motes
+					value < 0
+				}
+				#5 is too high since that means 2 extra buildings. Better to just go with 1 extra building
+			}
+		}
+	}
+}
+
+#############
+# 水晶工厂
+#############
+azur_building_crystal_plant = {
+	base_buildtime = 360
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_translucer_add = 3
+	}
+	upgrades = {
+		"azur_building_synthesis_center"
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			mind_club = 30
+		}
+		upkeep = {
+			energy = 6
+			mind_club = 1
+		}
+	}
+	triggered_desc = {
+		text = job_translucer_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_crystal_plant"
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+			buildings_build_building = no
+		}
+		modifier = {
+			weight = 30
+			owner = {
+				has_monthly_income = {
+					resource = rare_crystals
+					value < 3
+				}
+				#5 is too high since that means 2 extra buildings. Better to just go with 1 extra building
+			}
+		}
+		modifier = {
+			weight = 200
+			owner = {
+				has_monthly_income = {
+					resource = rare_crystals
+					value < 0
+				}
+				#5 is too high since that means 2 extra buildings. Better to just go with 1 extra building
+			}
+		}
+	}
+}
+
+#############
+# 合成中心
+#############
+azur_building_synthesis_center = {
+	base_buildtime = 600
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_azur_manufacturing_technician_add = 6
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			mind_club = 75
+		}
+		upkeep = {
+			energy = 12
+			mind_club = 3
+		}
+	}
+	triggered_desc = {
+		text = job_azur_manufacturing_technician_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_synthesis_center"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 魔方中心
+#############
+azur_building_club_control_center = {
+	base_buildtime = 720
+	base_cap_amount = 1
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 75
+	}
+	planet_modifier = {
+		job_club_bishop_add = 1
+		planet_jobs_produces_mult = 0.25
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			influence = 100
+			minerals = 1200
+			energy = 3000
+			volatile_motes = 300
+			rare_crystals = 300
+			exotic_gases = 300
+		}
+		produces = {
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			energy = 30
+			volatile_motes = 2
+			rare_crystals = 2
+			exotic_gases = 2
+		}
+	}
+	triggered_desc = {
+		text = job_club_bishop_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_club_control_center"
+	}
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#############
+# 档案馆
+#############
+azur_building_scientific_archives = {
+	base_buildtime = 540
+	can_be_ruined = no
+	can_be_disabled = no
+	category = research
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_azur_researcher_add = 5
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			energy = 1000
+			mind_club = 150
+			exotic_gases = 250
+		}
+		upkeep = {
+			energy = 12
+			mind_club = 3
+			exotic_gases = 1
+		}
+	}
+	triggered_desc = {
+		text = job_azur_researcher_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_scientific_archives"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 贸易大楼
+#############
+azur_building_trade_megaplex = {
+	base_buildtime = 540
+	can_be_ruined = no
+	can_be_disabled = no
+	category = trade
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_clerk_add = 30
+		job_merchant_add = 3
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			mind_club = 50
+			rare_crystals = 250
+		}
+		upkeep = {
+			energy = 8
+			mind_club = 1
+			rare_crystals = 1
+		}
+	}
+	triggered_desc = {
+		text = job_clerk_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_trade_megaplex"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 行星要塞
+#############
+azur_building_planet_fortress = {
+	base_buildtime = 1080
+	base_cap_amount = 1
+	can_be_ruined = no
+	can_be_disabled = no
+	category = amenity
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+	}
+	allow = {
+		num_pops >= 75
+	}
+	planet_modifier = {
+		planet_orbital_bombardment_damage = -0.85
+		job_soldier_add = 25
+	}
+	army_modifier = {
+		army_defense_health_mult = 0.5
+		army_defense_damage_mult = 0.5
+		army_defense_morale_mult = 0.25
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			influence = 150
+			minerals = 5000
+			mind_club = 300
+			volatile_motes = 500
+		}
+		upkeep = {
+			energy = 40
+			food = 60
+			mind_club = 5
+		}
+	}
+	triggered_desc = {
+		text = job_soldier_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_planet_fortress"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 心智广场
+#############
+azur_building_mind_square = {
+	base_buildtime = 540
+	base_cap_amount = 1
+	can_be_ruined = no
+	can_be_disabled = no
+	category = unity
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		job_mind_doctor_add = 3
+		job_culture_worker_add = 12
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			mind_club = 80
+			rare_crystals = 250
+		}
+		upkeep = {
+			energy = 8
+			mind_club = 2
+			rare_crystals = 2
+		}
+	}
+	triggered_desc = {
+		text = job_mind_doctor_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_mind_square"
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#############
+# 舰队学院
+#############
+azur_building_military_academy = {
+	base_buildtime = 1080
+	base_cap_amount = 1
+	can_be_ruined = no
+	can_be_disabled = no
+	category = amenity
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 75
+	}
+	army_modifier = {
+		army_starting_experience_add = 10000
+		armies_cost_mult = 0.25
+		army_defense_morale_mult = 1
+	}
+	planet_modifier = {
+		job_azur_general_add = 1
+		job_soldier_add = 5
+		planet_army_build_speed_mult = -0.5
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			influence = 250
+			minerals = 800
+			mind_club = 500
+		}
+		upkeep = {
+			energy = 60
+			food = 20
+			mind_club = 5
+		}
+	}
+	triggered_desc = {
+		text = job_azur_general_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_military_academy"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 魔方仿造厂
+#############
+azur_building_club_factory = {
+	base_buildtime = 360
+	can_be_ruined = yes
+	can_be_disabled = yes
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 5
+	}
+	planet_modifier = {
+		job_club_worker_add = 3
+	}
+	upgrades = {
+		"azur_building_mind_club_factory"
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+			energy = 400
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	triggered_desc = {
+		text = job_club_worker_effect_desc
+	}
+	prerequisites = {
+		"tech_mind_club_0"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 魔方制造厂
+#############
+azur_building_mind_club_factory = {
+	base_buildtime = 540
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 5
+	}
+	planet_modifier = {
+		job_club_expert_add = 6
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			influence = 15
+			minerals = 750
+			energy = 750
+			volatile_motes = 60
+			rare_crystals = 60
+			exotic_gases = 60
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+			rare_crystals = 1
+			exotic_gases = 1
+		}
+	}
+	triggered_desc = {
+		text = job_club_expert_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_building_mind_club_factory"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 魔方维护中心
+#############
+azur_building_club_maintenance_center = {
+	base_buildtime = 540
+	base_cap_amount = 1
+	can_be_ruined = no
+	can_be_disabled = no
+	category = unity
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 5
+	}
+	planet_modifier = {
+		job_mind_club_nurse_add = 3
+		planet_housing_add = 5
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			mind_club = 100
+			exotic_gases = 200
+		}
+		upkeep = {
+			energy = 6
+			mind_club = 2
+			exotic_gases = 1
+		}
+	}
+	triggered_desc = {
+		text = job_mind_club_nurse_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_club_maintenance_center"
+	}
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#############
+# 乐园
+#############
+azur_building_pure_land = {
+	base_buildtime = 720
+	can_be_ruined = no
+	can_be_disabled = no
+	category = resource
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	planet_modifier = {
+		planet_housing_add = 40
+		planet_amenities_add = 25
+	}
+	country_modifier = {
+		country_resource_max_add = 10000
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			influence = 25
+			minerals = 2000
+			mind_club = 50
+			rare_crystals = 200
+			exotic_gases = 300
+		}
+		upkeep = {
+			energy = 10
+			mind_club = 1
+			rare_crystals = 2
+			exotic_gases = 3
+		}
+	}
+	prerequisites = {
+		"tech_azur_pure_land"
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			buildings_has_crystals = yes
+		}
+		modifier = {
+			factor = 10
+			free_housing < 0
+		}
+	}
+}
+
+#############
+# 服务中心
+#############
+azur_building_service_center = {
+	base_buildtime = 720
+	base_cap_amount = 1
+	can_be_ruined = no
+	can_be_disabled = no
+	category = unity
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+	}
+	allow = {
+		num_pops >= 75
+	}
+	planet_modifier = {
+		job_mind_servant_add = 20
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 750
+			consumer_goods = 3000
+			mind_club = 80
+			rare_crystals = 200
+		}
+		upkeep = {
+			energy = 10
+			mind_club = 2
+		}
+	}
+	triggered_desc = {
+		text = job_mind_servant_effect_desc
+	}
+	prerequisites = {
+		"tech_azur_service_center"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 心智总督府
+#############
+azur_building_mind_capital = {
+	base_buildtime = 1080
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	category = government
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 40
+	}
+	prerequisites = {
+		"tech_azur_unlock"
+	}
+	planet_modifier = {
+		job_mind_enforcer_add = 2
+		job_mind_researcher_add = 1
+		job_mind_administrator_add = 5
+		planet_housing_add = 20
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			influence = 150
+			minerals = 3000
+			energy = 3000
+			mind_club = 500
+		}
+		upkeep = {
+			mind_club = 4
+			energy = 20
+		}
+	}
+	triggered_desc = {
+		text = job_mind_administrator_effect_desc
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 心智网络节点
+#############
+azur_building_mind_net_capital = {
+	base_buildtime = 720
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	category = government
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 75
+	}
+	prerequisites = {
+		"tech_azur_unlock"
+	}
+	planet_modifier = {
+		job_mind_enforcer_add = 4
+		job_mind_researcher_add = 2
+		job_mind_administrator_add = 10
+		planet_housing_add = 20
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			influence = 100
+			energy = 3000
+			mind_club = 300
+		}
+		upkeep = {
+			mind_club = 5
+			energy = 25
+		}
+	}
+	triggered_desc = {
+		text = job_mind_administrator_effect_desc
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 心愿能量站
+#############
+azur_building_unity_to_energy = {
+	base_buildtime = 720
+	base_cap_amount = 1
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 100
+		has_building = azur_building_mind_net_capital
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 3000
+			minerals = 1000
+			mind_club = 300
+		}
+		produces = {
+			influence = 1
+		}
+		upkeep = {
+			unity = 666
+		}
+	}
+	prerequisites = {
+		"tech_azur_unity_to_energy"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#############
+# 舰队指挥部
+#############
+azur_building_bureaucratic = {
+	base_buildtime = 540
+	category = government
+	potential = {
+		exists = owner
+		building_relaxed_basic_income_check = yes
+		owner = {
+			is_regular_empire = yes
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_regular_empire = no
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			energy = 400
+			mind_club = 80
+			rare_crystals = 200
+		}
+		upkeep = {
+			energy = 10
+			mind_club = 2
+			rare_crystals = 1
+		}
+	}
+	planet_modifier = {
+		job_azur_bureaucrat_add = 6
+	}
+	prerequisites = {
+		"tech_azur_bureaucratic"
+	}
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+	}
+	triggered_desc = {
+		text = job_bureaucrat_effect_desc
+	}
+	on_queued = {
+		planet = {
+			set_timed_planet_flag = {
+				flag = recent_admin_building_built
+				days = 720
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			owner = {
+				empire_sprawl_over_cap > 0
+			}
+		}
+		modifier = {
+			weight = 2
+			owner = {
+				empire_sprawl_over_cap > 10
+			}
+		}
+		modifier = {
+			weight = 3
+			owner = {
+				empire_sprawl_over_cap > 20
+			}
+		}
+		modifier = {
+			weight = 4
+			owner = {
+				empire_sprawl_over_cap > 40
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_valid_civic = civic_byzantine_bureaucracy
+			}
+		}
+		modifier = {
+			weight = 0
+			has_planet_flag = recent_admin_building_built
+		}
+	}
+}
+
+#############
+# 母港
+#############
+azur_building_core = {
+	base_buildtime = 900
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	category = manufacturing
+	potential = {
+		owner = {
+			is_regular_empire = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		num_pops >= 5
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 10000
+			minerals = 10000
+		}
+		produces = {
+			physics_research = 30
+			society_research = 30
+			engineering_research = 30
+			energy = 15
+			consumer_goods = 15
+			mind_club = 1
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 10
+		job_mind_enforcer_add = 1
+		job_azur_bureaucrat_add = 2
+		job_mind_club_nurse_add = 1
+		job_nutrition_expert_add = 1
+		job_mineral_expert_add = 1
+	}
+	country_modifier = {
+		country_resource_max_add = 50000
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

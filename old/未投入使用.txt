@@ -1,0 +1,134 @@
+
+###############轨道轰炸#################
+tech_azur_pox = {
+	cost = @tier5cost3
+	area = society
+	tier = 5
+	category = { biology }
+        prerequisites = { "tech_decision_mind_rinse" }
+        is_rare = yes
+	weight = @tier5weight3
+        is_reverse_engineerable = no
+		
+        modifier = {
+		custom_tooltip = ADD_AZUR_POX
+	}
+
+	potential = {
+                has_ascension_perk = ap_evolutionary_mastery
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			has_origin = origin_azur_1
+		}
+		modifier = {
+			factor = 4
+			has_ascension_perk = ap_azur_1
+		}
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+	}
+}
+
+tech_azur_armageddon = {
+	cost = @tier6cost3
+	area = society
+	tier = 5
+	category = { military_theory }
+        prerequisites = { "tech_mind_club_control" "tech_titans" "tech_mass_drivers_5" "tech_missiles_5" "tech_kinetic_artillery_2" "tech_lasers_5" "tech_plasma_3" "tech_disruptors_3" "tech_energy_torpedoes_2" }
+	weight = @tier5weight3
+        is_reverse_engineerable = no
+	
+	modifier = {
+		custom_tooltip = ADD_AZUR_ARMAGEDDON
+	}
+
+	potential = {
+                has_ascension_perk = ap_azur_1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+	}
+}
+
+
+azur_armageddon = {
+	trigger = {
+		owner = {	has_technology = tech_azur_armageddon
+		}
+	}
+
+	icon_frame = 3
+	default = no
+
+	stop_when_armies_dead = no
+	abduct_pops = no
+
+	planet_damage = 30.0
+	army_damage = 30.0
+
+	kill_pop_chance = {
+		base = 30.0
+	}
+	min_pops_to_kill_pop = 0
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}
+
+azur_pox = {
+	trigger = {
+		owner = {	has_technology = tech_azur_pox
+		}
+	}
+
+	icon_frame = 5
+	default = no
+
+	stop_when_armies_dead = no
+	abduct_pops = no
+
+	planet_damage = 0.0
+	army_damage = 3.0
+
+	kill_pop_chance = {
+		base = 10.0
+	}
+	kill_pop_chance = { 
+		base = 10.0
+		modifier = {
+			factor = 0.02
+			pop_has_trait = trait_mechanical
+		}
+	}
+	min_pops_to_kill_pop = 0
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
