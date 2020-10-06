@@ -289,3 +289,84 @@ leader_trait_azur_robot_general = {
 	initial = no
 	randomized = no
 }
+
+leader_trait_azur_ring_general = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_ring.dds"
+	modifier = {
+		
+	}
+	leader_class = {
+		general
+	}
+	leader_trait = {
+		general
+	}
+	initial = no
+	randomized = no
+}
+leader_trait_azur_ring_scientist = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_ring.dds"
+	modifier = {
+		
+	}
+	leader_class = {
+		scientist
+	}
+	leader_trait = {
+		scientist
+	}
+	initial = no
+	randomized = no
+}
+leader_trait_azur_ring_governor = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_ring.dds"
+	modifier = {
+		
+	}
+	leader_class = {
+		governor
+	}
+	leader_trait = {
+		governor
+	}
+	initial = no
+	randomized = no
+}
+leader_trait_azur_ring_admiral = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_ring.dds"
+	modifier = {
+		
+	}
+	leader_class = {
+		admiral
+	}
+	leader_trait = {
+		admiral
+	}
+	initial = no
+	randomized = no
+}
+leader_trait_azur_ring_ruler = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_azur_ring.dds"
+	modifier = {
+		
+	}
+	leader_class = {
+		ruler
+	}
+	leader_trait = {
+		ruler
+	}
+	initial = no
+	randomized = no
+}

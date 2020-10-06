@@ -27,3 +27,9 @@ on_tech_increased = {
 		#azur_tech.0
 	}
 }
+
+on_policy_changed = {
+	events = {
+		azur_oath_ceremony.0
+	}
+}

@@ -1,0 +1,63 @@
+oath_ceremony = {
+	potential = {
+		is_ai = no
+		owner = {
+			has_authority = auth_azur_lane_0
+		}
+	}
+
+	option = {
+		name = oath_ceremony_close
+
+		potential = {
+			always = yes
+		}
+
+		policy_flags = {
+			oath_ceremony_close
+		}
+	}
+	option = {
+		name = oath_ceremony_open_one_year
+
+		potential = {
+			always = yes
+		}
+
+		modifier = {
+			planet_jobs_energy_produces_mult = -0.1
+		}
+		policy_flags = {
+			oath_ceremony_open_one_year
+		}
+	}
+	option = {
+		name = oath_ceremony_open_six_months
+
+		potential = {
+			always = yes
+		}
+
+		modifier = {
+			planet_jobs_energy_produces_mult = -0.1
+		}
+		policy_flags = {
+			oath_ceremony_open_six_months
+		}
+	}
+	option = {
+		name = oath_ceremony_open_three_months
+
+		potential = {
+			always = yes
+		}
+
+		modifier = {
+			planet_jobs_energy_produces_mult = -0.1
+		}
+		policy_flags = {
+			oath_ceremony_open_three_months
+		}
+	}
+	
+}
