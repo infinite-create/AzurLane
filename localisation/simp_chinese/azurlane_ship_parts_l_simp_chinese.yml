@@ -150,9 +150,17 @@
 
 
  GAIA_WAVE_GUN:0 "§M盖亚波动炮§!"
- GAIA_WAVE_GUN_DESC:0 "虽然看上去十分的扯淡，根据§YKuRUMiiii§!的指示，我们仍然制作出了这个武器\n\n这个武器如何运作我们无从得知，也许是通过各种乱七八糟的操作进行运转的，不过我们无需在意它是如何进行运作的，毕竟我们仅仅只是需要它的效果不是吗？"
+ GAIA_WAVE_GUN_DESC:0 "根据狡猾的§YKuRUMiiii§!的指导计划，我们制作出了这个武器\n\n这个武器如何运作我们无从得知，也许是通过各种乱七八糟的操作进行运转的，不过我们无需在意它是如何进行运作的，毕竟我们仅仅只是需要它的效果不是吗？"
  gaia_wave_gun:0 "§M盖亚波动炮§!"
  gaia_wave_gun_ACTION:0 "§R净化§!"
  gaia_wave_gun_DESC:0 ""
  FLEETORDER_DESTROY_PLANET_WITH_gaia_wave_gun:0 "§M波动炮充能中！§!"
  MESSAGE_DESC_FOR_gaia_wave_gun:0 "改造完毕！"
+
+ MILKY_WAY_TERMINAL:0 "§R星海终末§!"
+ MILKY_WAY_TERMINAL_DESC:0 "根据善良的§Y无言Infinite§!的指导计划，我们制作出了该武器\n\n长久的巨像武器制造使用使得我们认识到，对行星的巨像武器不过是泛泛之辈，我们需要更加“善良”的武器。"
+ milky_way_terminal:0 "§R星海终末§!"
+ milky_way_terminal_ACTION:0 "§R抹除§!"
+ milky_way_terminal_DESC:0 "该武器将会随机进行一次效果实施：\n\n1.将目标恒星变为§Y褐矮星§!，并将星系内的所有居住站摧毁，损毁环世界，其他星球均变为冰封星球（气态行星不受影响）。\n\n2.§Y第一阶段：§!将目标恒星变为中子星，并将星系内的所有居住站摧毁，损毁环世界，其他星球均变为熔岩星球（气态行星不受影响），并且对星系内所有舰队造成一定舰体伤害（巨像不受影响），降低所有舰船的亚光速速度。\n\n§Y第二阶段：§!将目标恒星变为黑洞，摧毁星系内所有巨构，并将所有星球变为冰封星球（气态行星不受影响），摧毁星系所有舰队。"
+ FLEETORDER_DESTROY_PLANET_WITH_milky_way_terminal:0 ""
+ MESSAGE_DESC_FOR_milky_way_terminal:0 ""

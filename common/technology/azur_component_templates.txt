@@ -378,3 +378,17 @@ tech_gaia_wave_gun = {
 	ai_update_type = all
 	is_reverse_engineerable = no
 }
+tech_milky_way_terminal = {
+	tier = 5
+	cost = 100000
+	area = society
+	category = { military_theory }
+	potential = {
+		azurlane_default_component_trigger = yes
+		has_technology = tech_colossus
+	}
+	is_rare = yes
+
+	ai_update_type = all
+	is_reverse_engineerable = no
+}

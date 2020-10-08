@@ -18,3 +18,24 @@ weapon_component_template = {
 	prerequisites = { tech_gaia_wave_gun }
 	planet_destruction_gfx = "shatter_planet_gfx"
 }
+
+weapon_component_template = {
+	key = "milky_way_terminal"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+	windup = {
+		min = 100
+		max = 100
+	}
+	total_fire_time = 20
+
+	icon = GFX_milky_way_terminal
+	icon_frame = 1
+
+	component_set = "MILKY_WAY_TERMINAL"
+	
+	prerequisites = { tech_milky_way_terminal }
+	planet_destruction_gfx = "shatter_planet_gfx"
+}

@@ -5,3 +5,26 @@ can_destroy_planet_with_gaia_wave_gun = {
 	}
 	is_star = no
 }
+can_destroy_planet_with_milky_way_terminal = {
+	custom_tooltip = {
+		fail_text = is_not_a_habitable_planet_or_megastructure
+		is_a_habitable_planet_megastructure = yes
+	}
+	is_star = yes
+	NOR = {
+		is_planet_class = pc_black_hole
+		is_planet_class = pc_neutron_star
+		is_planet_class = pc_t_star
+		is_planet_class = pc_pulsar
+	}
+	solar_system = {
+		NOT = {
+			any_system_planet = {
+				is_star = yes
+				NOT = {
+					is_same_value = system_star
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+ship_design = {
+	name = "NAME_mod_ceshi_sheji"
+	ship_size = colossus
+	section = {
+		template = "SHIP_COLOSSUS_SECTION"
+		slot = "ship"
+		
+		component = {
+			slot = "PLANET_KILLER_GUN_01"
+			template = "milky_way_terminal"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "mind_distortion_shield_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "mind_distortion_shield_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "mind_distortion_shield_3"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ARMOR_5"
+		}		
+	}
+	required_component="SENSOR_4"
+	required_component="mind_distortion_drive"
+	required_component="COLOSSUS_DARK_MATTER_REACTOR"
+	required_component="COLOSSUS_SHIP_THRUSTER_5"
+
+	
+}

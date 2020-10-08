@@ -3,3 +3,8 @@ on_destroy_planet_with_gaia_wave_gun = {
 		planet_attack.0
 	}
 }
+on_destroy_planet_with_milky_way_terminal = {
+	events = {
+		planet_attack.1
+	}
+}

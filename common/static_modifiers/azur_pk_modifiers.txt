@@ -1,0 +1,6 @@
+excessive_radiation = {
+	ship_hull_add = -20000
+}
+super_moment_of_torsion = {
+	ship_speed_reduction = 0.95
+}

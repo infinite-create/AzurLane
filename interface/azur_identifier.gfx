@@ -99,6 +99,12 @@ spriteTypes = {
 		name = "GFX_gaia_wave_gun"
 		textureFile = "gfx/interface/icons/ship_parts/gaia_wave_gun.dds"
 	}
+
+	spriteType = {
+		name = "GFX_milky_way_terminal"
+		textureFile = "gfx/interface/icons/ship_parts/milky_way_terminal.dds"
+	}
+
 	spriteType = {
 		name = "GFX_mind_distortion_drive"
 		textureFile = "gfx/interface/icons/ship_parts/mind_distortion_drive.dds"

@@ -1,6 +1,6 @@
 azurlane_default_component_trigger = {
 	has_authority = auth_azur_lane_0
-	always = no #锁死科技
+	#always = no #锁死科技
 }
 azurlane_default_prescripted_country_trigger = {
 	always = yes
