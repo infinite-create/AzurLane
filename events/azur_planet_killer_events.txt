@@ -35,6 +35,18 @@ planet_event = {
 	hide_window = yes
 
 	immediate = {
+		every_country = {
+			limit = {
+				is_fallen_empire = no
+				NOT = {
+					is_same_empire = root.owner
+				}
+			}
+			add_opinion_modifier = {
+				who = THIS
+				modifier = assassination_forgiven
+			}
+		}
 		random_list = {
 			10 = {
 				change_pc = pc_t_star
@@ -46,6 +58,8 @@ planet_event = {
 						if = {
 							limit = { 
 								is_planet_class = pc_habitat
+								is_planet_class = pc_asteroid
+								is_planet_class = pc_crystal_asteroid
 							}
 							remove_planet = yes
 						}
@@ -169,6 +183,7 @@ planet_event = {
 	hide_window = yes
 
 	immediate = {
+		change_pc = pc_black_hole
 		solar_system = {
 			every_system_planet = {
 				limit = {

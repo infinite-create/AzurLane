@@ -1,0 +1,37 @@
+namespace = azur_test
+
+country_event = {
+	id = azur_test.0
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		create_ship_design = {
+			design = NAME_mod_ceshi_sheji
+		}
+		capital_scope = {
+			create_fleet = {
+				name = random
+				effect = {
+					set_owner = root
+					create_ship = {
+						name = random
+						design = NAME_mod_ceshi_sheji
+						graphical_culture = root
+					}
+					set_location = {
+						target = capital_scope
+						distance = 0
+					}
+				}
+				settings = {
+					can_upgrade = no
+					can_disband = no
+					can_change_composition = no
+					can_change_leader = no
+					uses_naval_capacity = no
+				}
+			}
+		}
+	}
+}

@@ -162,5 +162,5 @@
  milky_way_terminal:0 "§R星海终末§!"
  milky_way_terminal_ACTION:0 "§R抹除§!"
  milky_way_terminal_DESC:0 "该武器将会随机进行一次效果实施：\n\n1.将目标恒星变为§Y褐矮星§!，并将星系内的所有居住站摧毁，损毁环世界，其他星球均变为冰封星球（气态行星不受影响）。\n\n2.§Y第一阶段：§!将目标恒星变为中子星，并将星系内的所有居住站摧毁，损毁环世界，其他星球均变为熔岩星球（气态行星不受影响），并且对星系内所有舰队造成一定舰体伤害（巨像不受影响），降低所有舰船的亚光速速度。\n\n§Y第二阶段：§!将目标恒星变为黑洞，摧毁星系内所有巨构，并将所有星球变为冰封星球（气态行星不受影响），摧毁星系所有舰队。"
- FLEETORDER_DESTROY_PLANET_WITH_milky_way_terminal:0 ""
- MESSAGE_DESC_FOR_milky_way_terminal:0 ""
+ FLEETORDER_DESTROY_PLANET_WITH_milky_way_terminal:0 "§R正在消解！§!"
+ MESSAGE_DESC_FOR_milky_way_terminal:0 "抹除完毕！"

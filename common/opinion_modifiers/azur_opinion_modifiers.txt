@@ -1,0 +1,5 @@
+terminal_deterrence = {
+	opinion = {
+		base = 200
+	}
+}
