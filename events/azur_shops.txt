@@ -1,0 +1,112 @@
+namespace = azur_shop
+
+country_event = {
+	id = azur_shop.0
+	is_triggered_only = yes
+	title = azur_shop.0.name
+	desc = azur_shop.0.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = root.ruler
+	}
+
+	option = { #研发部
+		name = azur_shop.0.aa
+		country_event = {
+			id = azur_shop.1
+		}
+	}
+	option = { #誓约
+		name = azur_shop.0.bb
+		allow = {
+			NOT = {
+				has_policy_flag = oath_ceremony_close
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = azur_oath_ceremony.0
+			}
+		}
+	}
+	option = { #退出
+		name = azur_shop.0.00
+	}
+}
+
+country_event = {
+	id = azur_shop.1
+	is_triggered_only = yes
+	title = azur_shop.1.name
+	desc = azur_shop.1.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = root.ruler
+	}
+
+	option = { #戒指
+		name = azur_shop.1.aa
+		allow = {
+			has_resource = {
+				type = energy
+				amount >= 10000
+			}
+		}
+		hidden_effect = {
+			add_resource = {
+				energy = -10000
+			}
+			change_variable = {
+				which = azurlane_ring
+				value = 1
+			}
+			country_event = {
+				id = azur_shop.1
+			}
+		}
+	}
+	option = { #返回
+		name = azur_shop.1.bb
+		hidden_effect = {
+			country_event = {
+				id = azur_shop.0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = azur_shop.1000
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		create_country = {
+			name = "军部研究所"
+			type = azurl_mingshi
+			flag = {
+				icon = {
+					category = "azurlane_flags_sp"
+					file = "military_research_institute.dds"
+				}
+				background= {
+					category="backgrounds"
+					file="00_solid.dds"
+				}
+				colors={
+					"dark_blue"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			establish_communications_no_message = root
+		}
+	}
+}

@@ -71,26 +71,17 @@ country_event = {
 				value = 1
 			}
 		}
+		if = {
+			limit = { 
+				has_country_flag = oath_ceremony_begining
+			}
+			country_event = {
+				id = azur_oath_ceremony.100
+			}
+		}
 		country_event = {
 			id = azur_count.1
 			days = 1
-		}
-	}
-}
-
-country_event = {
-	id = azur_count.2
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		capital_scope = {
-			while = {
-				count = 20
-				create_pop = {
-					species = root.species
-				}
-			}
 		}
 	}
 }

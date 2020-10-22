@@ -43,7 +43,7 @@ planet_event = {
 				}
 			}
 			add_opinion_modifier = {
-				who = THIS
+				who = this
 				modifier = assassination_forgiven
 			}
 		}
@@ -148,8 +148,8 @@ planet_event = {
 								is_ship_class = shipclass_colonizer
 							}
 						}
-						add_modifier = {
-							modifier = excessive_radiation
+						every_ship = {
+							reduce_hp = 20000
 						}
 						if = {
 							limit = { 

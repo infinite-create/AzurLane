@@ -1,12 +1,15 @@
 on_game_start = {
 	events = {
+		azur.0
 		azur.1
+		
 	}
 }
 
 on_game_start_country = {
 	events = {
-		#azur_count.0
+		azur_count.0
+		azur_shop.1000
 	}
 } 
 
@@ -28,8 +31,8 @@ on_tech_increased = {
 	}
 }
 
-on_policy_changed = {
+on_custom_diplomacy = {
 	events = {
-		azur_oath_ceremony.0
+		azur_shop.0
 	}
 }

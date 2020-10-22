@@ -1,0 +1,127 @@
+
+custom_azur_oath_ceremony_days = {
+	change_variable = {
+		which = custom_azur_oath_ceremony_days
+		value = $NUMBER$
+	}
+	if = {
+		limit = { 
+			check_variable = {
+				which = custom_azur_oath_ceremony_days
+				value > 30
+			}
+		}
+		subtract_variable = {
+			which = custom_azur_oath_ceremony_days
+			value = 30
+		}
+		change_variable = {
+			which = custom_azur_oath_ceremony_months
+			value = 1
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = custom_azur_oath_ceremony_months
+					value > 12
+				}
+			}
+			subtract_variable = {
+				which = custom_azur_oath_ceremony_months
+				value = 12
+			}
+			change_variable = {
+				which = custom_azur_oath_ceremony_years
+				value = 1
+			}
+		}
+	}
+	country_event = {
+		id = azur_oath_ceremony.2
+	}
+}
+
+custom_azur_oath_ceremony_months = {
+	change_variable = {
+		which = custom_azur_oath_ceremony_months
+		value = $NUMBER$
+	}
+	if = {
+		limit = { 
+			check_variable = {
+				which = custom_azur_oath_ceremony_months
+				value > 12
+			}
+		}
+		subtract_variable = {
+			which = custom_azur_oath_ceremony_months
+			value = 12
+		}
+		change_variable = {
+			which = custom_azur_oath_ceremony_years
+			value = 1
+		}
+	}
+	country_event = {
+		id = azur_oath_ceremony.2
+	}
+}
+
+calculate_residue_azur_oath_ceremony_time = {
+	set_variable = {
+		which = residue_azur_oath_ceremony_years
+		value = $YEARS$
+	}
+	set_variable = {
+		which = residue_azur_oath_ceremony_months
+		value = $MONTHS$
+	}
+	set_variable = {
+		which = residue_azur_oath_ceremony_days
+		value = $DAYS$
+	}
+	subtract_variable = {
+		which = residue_azur_oath_ceremony_years
+		value = azur_count_years
+	}
+	subtract_variable = {
+		which = residue_azur_oath_ceremony_months
+		value = azur_count_months
+	}
+	subtract_variable = {
+		which = residue_azur_oath_ceremony_days
+		value = azur_count_days
+	}
+	if = {
+		limit = { 
+			check_variable = {
+				which = residue_azur_oath_ceremony_years
+				value > 0
+			}
+		}
+		multiply_variable = {
+			which = residue_azur_oath_ceremony_years
+			value = 360
+		}
+	}
+	if = {
+		limit = { 
+			check_variable = {
+				which = residue_azur_oath_ceremony_months
+				value > 0
+			}
+		}
+		multiply_variable = {
+			which = residue_azur_oath_ceremony_months
+			value = 30
+		}
+	}
+	change_variable = {
+		which = residue_azur_oath_ceremony_days
+		value = residue_azur_oath_ceremony_months
+	}
+	change_variable = {
+		which = residue_azur_oath_ceremony_days
+		value = residue_azur_oath_ceremony_years
+	}
+}

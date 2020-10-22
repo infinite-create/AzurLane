@@ -1,0 +1,837 @@
+namespace = azur_oath_ceremony
+
+country_event = {
+	id = azur_oath_ceremony.0
+	is_triggered_only = yes
+	title = azur_oath_ceremony.0.name
+	desc = {
+		text = azur_oath_ceremony.0.desc.1
+		trigger = {
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+	}
+	desc = {
+		text = azur_oath_ceremony.0.desc.2
+		trigger = {
+			has_country_flag = oath_ceremony_begining
+			NOT = {
+				has_country_flag = custom_azur_oath_ceremony_time
+			}
+		}
+	}
+	desc = {
+		text = azur_oath_ceremony.0.desc.3
+		trigger = {
+			has_country_flag = oath_ceremony_begining
+			has_country_flag = custom_azur_oath_ceremony_time
+		}
+	}
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:pre-oath_crermony_target
+	}
+
+	immediate = {
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = oath_ceremony_begining
+				}
+			}
+			set_variable = {
+				which = azur_oath_ceremony_years
+				value = azur_count_years
+			}
+			set_variable = {
+				which = azur_oath_ceremony_months
+				value = azur_count_months
+			}
+			set_variable = {
+				which = azur_oath_ceremony_days
+				value = azur_count_days
+			}
+			every_owned_leader = {
+				set_variable = {
+					which = test_@this
+					value = 1
+				}
+			}
+			random_owned_leader = {
+				limit = {
+					NOT = {
+						has_leader_flag = select_oath_ceremony
+					}
+				}
+				set_leader_flag = select_oath_ceremony
+				save_event_target_as = azur_oath_ceremony_target_1
+			}
+			random_owned_leader = {
+				limit = {
+					NOT = {
+						has_leader_flag = select_oath_ceremony
+					}
+				}
+				set_leader_flag = select_oath_ceremony
+				save_event_target_as = azur_oath_ceremony_target_2
+			}
+			random_owned_leader = {
+				limit = {
+					NOT = {
+						has_leader_flag = select_oath_ceremony
+					}
+				}
+				set_leader_flag = select_oath_ceremony
+				save_event_target_as = azur_oath_ceremony_target_3
+			}
+			random_owned_leader = {
+				limit = {
+					NOT = {
+						has_leader_flag = select_oath_ceremony
+					}
+				}
+				set_leader_flag = select_oath_ceremony
+				save_event_target_as = azur_oath_ceremony_target_4
+			}
+			random_owned_leader = {
+				limit = {
+					NOT = {
+						has_leader_flag = select_oath_ceremony
+					}
+				}
+				set_leader_flag = select_oath_ceremony
+				save_event_target_as = azur_oath_ceremony_target_5
+			}
+			random_owned_leader = {
+				limit = {
+					NOT = {
+						has_leader_flag = select_oath_ceremony
+					}
+				}
+				set_leader_flag = select_oath_ceremony
+				save_event_target_as = azur_oath_ceremony_target_6
+			}
+			random_owned_leader = {
+				limit = {
+					NOT = {
+						has_leader_flag = select_oath_ceremony
+					}
+				}
+				set_leader_flag = select_oath_ceremony
+				save_event_target_as = azur_oath_ceremony_target_7
+			}
+			random_owned_leader = {
+				limit = {
+					NOT = {
+						has_leader_flag = select_oath_ceremony
+					}
+				}
+				set_leader_flag = select_oath_ceremony
+				save_event_target_as = azur_oath_ceremony_target_8
+			}
+		}
+		else = {
+			random_owned_leader = {
+				limit = {
+					has_leader_flag = pre-oath_crermony_flag
+				}
+				save_event_target_as = pre-oath_crermony_target
+			}
+			# if = {
+			# 	limit = { 
+			# 		NOT = {
+			# 			has_country_flag = custom_azur_oath_ceremony_time
+			# 		}
+			# 	}
+			# 	calculate_residue_azur_oath_ceremony_time = {YEARS = azur_oath_ceremony_years MONTHS = azur_oath_ceremony_months DAYS = azur_oath_ceremony_days}
+			# }
+			# else = {
+			# 	calculate_residue_azur_oath_ceremony_time = {YEARS = custom_azur_oath_ceremony_years MONTHS = custom_azur_oath_ceremony_months DAYS = custom_azur_oath_ceremony_days}
+			# }
+		}
+	}
+
+	option = { #刷新
+		name = azur_oath_ceremony.0.aa
+		trigger = {
+			exists = event_target:azur_oath_ceremony_target_8
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = azur_oath_ceremony.0
+			}
+		}
+	}
+
+	option = {
+		name = azur_oath_ceremony.0.bb
+		trigger = {
+			exists = event_target:azur_oath_ceremony_target_1
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+		hidden_effect = {
+			event_target:azur_oath_ceremony_target_1 = {
+				set_leader_flag = pre-oath_crermony_flag
+			}
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+	option = {
+		name = azur_oath_ceremony.0.cc
+		trigger = {
+			exists = event_target:azur_oath_ceremony_target_2
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+		hidden_effect = {
+			event_target:azur_oath_ceremony_target_2 = {
+				set_leader_flag = pre-oath_crermony_flag
+			}
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+	option = {
+		name = azur_oath_ceremony.0.dd
+		trigger = {
+			exists = event_target:azur_oath_ceremony_target_3
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+		hidden_effect = {
+			event_target:azur_oath_ceremony_target_3 = {
+				set_leader_flag = pre-oath_crermony_flag
+			}
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+	option = {
+		name = azur_oath_ceremony.0.ee
+		trigger = {
+			exists = event_target:azur_oath_ceremony_target_4
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+		hidden_effect = {
+			event_target:azur_oath_ceremony_target_4 = {
+				set_leader_flag = pre-oath_crermony_flag
+			}
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+	option = {
+		name = azur_oath_ceremony.0.ff
+		trigger = {
+			exists = event_target:azur_oath_ceremony_target_5
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+		hidden_effect = {
+			event_target:azur_oath_ceremony_target_5 = {
+				set_leader_flag = pre-oath_crermony_flag
+			}
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+	option = {
+		name = azur_oath_ceremony.0.gg
+		trigger = {
+			exists = event_target:azur_oath_ceremony_target_6
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+		hidden_effect = {
+			event_target:azur_oath_ceremony_target_6 = {
+				set_leader_flag = pre-oath_crermony_flag
+			}
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+	option = {
+		name = azur_oath_ceremony.0.hh
+		trigger = {
+			exists = event_target:azur_oath_ceremony_target_7
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+		hidden_effect = {
+			event_target:azur_oath_ceremony_target_7 = {
+				set_leader_flag = pre-oath_crermony_flag
+			}
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+	option = {
+		name = azur_oath_ceremony.0.ii
+		trigger = {
+			exists = event_target:azur_oath_ceremony_target_8
+			NOT = {
+				has_country_flag = oath_ceremony_begining
+			}
+		}
+		hidden_effect = {
+			event_target:azur_oath_ceremony_target_8 = {
+				set_leader_flag = pre-oath_crermony_flag
+			}
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+	option = {
+		name = azur_oath_ceremony.0.jj
+		hidden_effect = {
+			country_event = {
+				id = azur_shop.0
+			}
+		}
+	}
+
+	after = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = select_oath_ceremony
+			}
+			remove_leader_flag = select_oath_ceremony
+		}
+		if = {
+			limit = { 
+				has_country_flag = oath_crermony_initializatio_complete
+			}
+			remove_country_flag = oath_crermony_initializatio_complete
+		}
+	}
+}
+country_event = {
+	id = azur_oath_ceremony.1
+	is_triggered_only = yes
+	title = azur_oath_ceremony.1.name
+	desc = {
+		text = azur_oath_ceremony.1.desc.1
+		trigger = {
+			NOT = {
+				has_country_flag = custom_azur_oath_ceremony_time
+			}
+		}
+	}
+	desc = {
+		text = azur_oath_ceremony.1.desc.2
+		trigger = {
+			has_country_flag = custom_azur_oath_ceremony_time
+		}
+	}
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:oath_crermony_target
+	}
+
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = pre-oath_crermony_flag
+			}
+			save_event_target_as = oath_crermony_target
+		}
+		if = {
+			limit = { 
+				has_policy_flag = oath_ceremony_open_three_months
+			}
+			change_variable = {
+				which = azur_oath_ceremony_months
+				value = 3
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = azur_oath_ceremony_months
+						value > 12
+					}
+				}
+				subtract_variable = {
+					which = azur_oath_ceremony_months
+					value = 12
+				}
+				change_variable = {
+					which = azur_oath_ceremony_years
+					value = 1
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				has_policy_flag = oath_ceremony_open_six_months
+			}
+			change_variable = {
+				which = azur_oath_ceremony_months
+				value = 6
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = azur_oath_ceremony_months
+						value > 12
+					}
+				}
+				subtract_variable = {
+					which = azur_oath_ceremony_months
+					value = 12
+				}
+				change_variable = {
+					which = azur_oath_ceremony_years
+					value = 1
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				has_policy_flag = oath_ceremony_open_one_year
+			}
+			change_variable = {
+				which = azur_oath_ceremony_years
+				value = 1
+			}
+		}
+	}
+
+	option = { #自定义时间
+		name = azur_oath_ceremony.1.aa
+		hidden_effect = {
+			set_variable = {
+				which = custom_azur_oath_ceremony_years
+				value = azur_count_years
+			}
+			set_variable = {
+				which = custom_azur_oath_ceremony_months
+				value = azur_count_months
+			}
+			set_variable = {
+				which = custom_azur_oath_ceremony_days
+				value = azur_count_days
+			}
+			country_event = {
+				id = azur_oath_ceremony.2
+			}
+		}
+	}
+	option = { #即刻誓约
+		name = azur_oath_ceremony.1.bb
+		hidden_effect = {
+			country_event = {
+				id = azur_oath_ceremony.101
+			}
+			if = {
+				limit = { 
+					has_country_flag = custom_azur_oath_ceremony_time
+				}
+				remove_country_flag = custom_azur_oath_ceremony_time
+			}
+		}
+	}
+
+	option = { #采用政策规定默认时间
+		name = azur_oath_ceremony.1.02
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = oath_crermony_initializatio_complete
+					}
+				}
+				if = {
+					limit = { 
+						has_policy_flag = oath_ceremony_open_three_months
+					}
+					change_variable = {
+						which = azur_oath_ceremony_months
+						value = 3
+					}
+					if = {
+						limit = { 
+							check_variable = {
+								which = azur_oath_ceremony_months
+								value > 12
+							}
+						}
+						subtract_variable = {
+							which = azur_oath_ceremony_months
+							value = 12
+						}
+						change_variable = {
+							which = azur_oath_ceremony_years
+							value = 1
+						}
+					}
+				}
+				else_if = {
+					limit = { 
+						has_policy_flag = oath_ceremony_open_six_months
+					}
+					change_variable = {
+						which = azur_oath_ceremony_months
+						value = 6
+					}
+					if = {
+						limit = { 
+							check_variable = {
+								which = azur_oath_ceremony_months
+								value > 12
+							}
+						}
+						subtract_variable = {
+							which = azur_oath_ceremony_months
+							value = 12
+						}
+						change_variable = {
+							which = azur_oath_ceremony_years
+							value = 1
+						}
+					}
+				}
+				else_if = {
+					limit = { 
+						has_policy_flag = oath_ceremony_open_one_year
+					}
+					change_variable = {
+						which = azur_oath_ceremony_years
+						value = 1
+					}
+				}
+				country_event = {
+					id = azur_oath_ceremony.1
+				}
+			}
+			if = {
+				limit = { 
+					has_country_flag = custom_azur_oath_ceremony_time
+				}
+				remove_country_flag = custom_azur_oath_ceremony_time
+			}
+		}
+	}
+
+	option = { #决定
+		name = azur_oath_ceremony.1.01
+		hidden_effect = {
+			set_country_flag = oath_ceremony_begining
+			country_event = {
+				id = azur_oath_ceremony.0
+			}
+			subtract_variable = {
+				which = azurlane_ring
+				value = 1
+			}
+		}
+	}
+
+	option = { #返回
+		name = azur_oath_ceremony.1.00
+		hidden_effect = {
+			country_event = {
+				id = azur_oath_ceremony.0
+			}
+			every_owned_leader = {
+				limit = {
+					has_leader_flag = pre-oath_crermony_flag
+				}
+				remove_leader_flag = pre-oath_crermony_flag
+			}
+		}
+	}
+
+	after = {
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = oath_crermony_initializatio_complete
+				}
+			}
+			set_country_flag = oath_crermony_initializatio_complete
+		}
+	}
+}
+country_event = {
+	id = azur_oath_ceremony.2
+	is_triggered_only = yes
+	title = azur_oath_ceremony.2.name
+	desc = azur_oath_ceremony.2.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:oath_crermony_target
+	}
+
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = pre-oath_crermony_flag
+			}
+			save_event_target_as = oath_crermony_target
+		}
+	}
+
+	option = { #1天
+		name = azur_oath_ceremony.2.aa
+		hidden_effect = {
+			custom_azur_oath_ceremony_days = {NUMBER = 1}
+		}
+	}
+	option = { #2天
+		name = azur_oath_ceremony.2.bb
+		hidden_effect = {
+			custom_azur_oath_ceremony_days = {NUMBER = 2}
+		}
+	}
+	option = { #5天
+		name = azur_oath_ceremony.2.cc
+		hidden_effect = {
+			custom_azur_oath_ceremony_days = {NUMBER = 5}
+		}
+	}
+	option = { #10天
+		name = azur_oath_ceremony.2.dd
+		hidden_effect = {
+			custom_azur_oath_ceremony_days = {NUMBER = 10}
+		}
+	}
+	option = { #30天
+		name = azur_oath_ceremony.2.ee
+		hidden_effect = {
+			custom_azur_oath_ceremony_months = {NUMBER = 1}
+		}
+	}
+	option = { #90天
+		name = azur_oath_ceremony.2.ff
+		hidden_effect = {
+			custom_azur_oath_ceremony_months = {NUMBER = 3}
+		}
+	}
+	option = { #180天
+		name = azur_oath_ceremony.2.gg
+		hidden_effect = {
+			custom_azur_oath_ceremony_months = {NUMBER = 6}
+		}
+	}
+	option = { #360天
+		name = azur_oath_ceremony.2.hh
+		hidden_effect = {
+			change_variable = {
+				which = custom_azur_oath_ceremony_years
+				value = 1
+			}
+			country_event = {
+				id = azur_oath_ceremony.2
+			}
+		}
+	}
+	option = { #重置时间
+		name = azur_oath_ceremony.2.ii
+		hidden_effect = {
+			set_variable = {
+				which = custom_azur_oath_ceremony_years
+				value = azur_count_years
+			}
+			set_variable = {
+				which = custom_azur_oath_ceremony_months
+				value = azur_count_months
+			}
+			set_variable = {
+				which = custom_azur_oath_ceremony_days
+				value = azur_count_days
+			}
+			country_event = {
+				id = azur_oath_ceremony.2
+			}
+		}
+	}
+	option = { #决定并返回
+		name = azur_oath_ceremony.2.jj
+		hidden_effect = {
+			set_country_flag = custom_azur_oath_ceremony_time
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+
+	option = { #不保存并返回
+		name = azur_oath_ceremony.2.00
+		hidden_effect = {
+			set_variable = {
+				which = custom_azur_oath_ceremony_years
+				value = 0
+			}
+			set_variable = {
+				which = custom_azur_oath_ceremony_months
+				value = 0
+			}
+			set_variable = {
+				which = custom_azur_oath_ceremony_days
+				value = 0
+			}
+			country_event = {
+				id = azur_oath_ceremony.1
+			}
+		}
+	}
+}
+country_event = {
+	id = azur_oath_ceremony.100
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		if = {
+			limit = { 
+				has_country_flag = custom_azur_oath_ceremony_time
+			}
+			check_variable = {
+				which = custom_azur_oath_ceremony_years
+				value = azur_count_years
+			}
+			check_variable = {
+				which = custom_azur_oath_ceremony_months
+				value = azur_count_months
+			}
+			check_variable = {
+				which = custom_azur_oath_ceremony_days
+				value = azur_count_days
+			}
+		}
+		else = {
+			check_variable = {
+				which = azur_oath_ceremony_years
+				value = azur_count_years
+			}
+			check_variable = {
+				which = azur_oath_ceremony_months
+				value = azur_count_months
+			}
+			check_variable = {
+				which = azur_oath_ceremony_days
+				value = azur_count_days
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { 
+				has_country_flag = custom_azur_oath_ceremony_time
+			}
+			remove_country_flag = custom_azur_oath_ceremony_time
+		}
+		if = {
+			limit = { 
+				has_country_flag = oath_ceremony_begining
+			}
+			remove_country_flag = oath_ceremony_begining
+		}
+		country_event = {
+			id = azur_oath_ceremony.101
+		}
+	}
+}
+country_event = {
+	id = azur_oath_ceremony.101
+	is_triggered_only = yes
+	title = azur_oath_ceremony.101.name
+	desc = azur_oath_ceremony.101.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:oath_crermony_target
+	}
+
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = pre-oath_crermony_flag
+			}
+			save_event_target_as = oath_crermony_target
+		}
+	}
+
+	option = {
+		name = azur_oath_ceremony.101.aa
+		hidden_effect = {
+			random_owned_leader = {
+				limit = {
+					has_leader_flag = pre-oath_crermony_flag
+				}
+				if = {
+					limit = {
+						leader_class = admiral
+					}
+					add_trait = leader_trait_azur_ring_admiral
+					add_ruler_trait = leader_trait_azur_ring_ruler
+				}
+				if = {
+					limit = {
+						leader_class = general
+					}
+					add_trait = leader_trait_azur_ring_general
+					add_ruler_trait = leader_trait_azur_ring_ruler
+				}
+				if = {
+					limit = {
+						leader_class = governor
+					}
+					add_trait = leader_trait_azur_ring_governor
+					add_ruler_trait = leader_trait_azur_ring_ruler
+				}
+				if = {
+					limit = {
+						leader_class = scientist
+					}
+					add_trait = leader_trait_azur_ring_scientist
+					add_ruler_trait = leader_trait_azur_ring_ruler
+				}
+				if = {
+					limit = {
+						leader_class = ruler
+					}
+					add_trait = leader_trait_azur_ring_ruler
+					add_ruler_trait = leader_trait_azur_ring_ruler
+				}
+			}
+		}
+	}
+
+	after = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = pre-oath_crermony_flag
+			}
+			remove_leader_flag = pre-oath_crermony_flag
+		}
+		if = {
+			limit = { 
+				has_country_flag = custom_azur_oath_ceremony_time
+			}
+			remove_country_flag = custom_azur_oath_ceremony_time
+		}
+	}
+}

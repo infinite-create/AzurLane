@@ -2,6 +2,16 @@
 # Azur Lane Events #
 ####################
 namespace = azur
+
+event = { #标识符
+	id = azur.0
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		set_global_flag = 碧蓝航线_K
+	}
+}
 ### Azur Lane 
 country_event = {
 	id = azur.1000

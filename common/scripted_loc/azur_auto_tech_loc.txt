@@ -28,3 +28,25 @@ azur_read_auto_tech_time = {
 		}
 	}
 }
+
+azur_get_ring_nums = {
+	name = GetRingNums
+	text = {
+		localization_key = get_ring_nums_1
+		trigger = {
+			check_variable = {
+				which = azurlane_ring
+				value < 1
+			}
+		}
+	}
+	text = {
+		localization_key = get_ring_nums_2
+		trigger = {
+			check_variable = {
+				which = azurlane_ring
+				value >= 1
+			}
+		}
+	}
+}

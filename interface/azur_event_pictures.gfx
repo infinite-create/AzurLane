@@ -1,3 +1,28 @@
+#每个.gfx文件都由spriteTypes开头进行复数的图片注册初始化，然后开始单个图片开始注册，事件图片注册需要加上默认的一个masking_texture图框，如下示例：
+# spriteTypes = {
+# 	spriteType = {
+# 		name = GFX_X 		#此处定义图片注册的名称，之后需要调用该图片都可以直接引用该名称，约定俗成，采用GFX_开头的命名规则
+# 		textureFile = "" 	#此处填写图片路径，次级目录建议为在event_pictures下
+# 		masking_texture = "gfx/interface/situation_log/event_mask.dds" #此处采用默认路径，无需改变
+# 	}
+# }
+#当你需要注册复数文件时，直接在spriteTypes底下添加spriteType即可，如下示例，注册复数图片：
+# spriteTypes = {
+# 	spriteType = {
+# 		name = GFX_X
+# 		textureFile = ""
+# 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+# 	}
+# 	spriteType = {
+# 		name = GFX_Y
+# 		textureFile = ""
+# 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+# 	}
+# }
+#一般的事件图片大小为450*150，采用外交界面则为952*360
+
+
+
 spriteTypes = {
 	spriteType = {
 		name = "GFX_Stellaris_Modder_Association"
